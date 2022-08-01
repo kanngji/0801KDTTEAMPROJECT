@@ -1,0 +1,129 @@
+1장
+주석(comments)
+semantic web: 태그 자체로 컨텐츠에 대한 의미를
+명화하게 설명할 수 있는 것, 개발자가 의도한 요소의 의미가
+명확하게 나타남
+
+형식화 된 글자, <pre></pre>
+a태그 새창으로 열기 
+target="_blank"
+
+사용자 입력 
+Form 태그
+
+git 협업 하기 (3인)
+
+
+2장 
+선택자
+기본,복합,가상,클래스,가상요소,속성
+강제상속
+선택자, 우선 순위 점수
+!important: 999999999점
+인라인방식:1000점
+#id 선택자: 100점
+.class 선택자: 10점
+태그 선택자: 1점
+전체 선택자(*) : 0점
+
+3장
+글자와 상자
+요소와 화면에 출력되는 특성, 크게 2가지로 구분.
+인라인(Inline)요소: 글자를 만들기 위한 요소들
+블록(Block) 요소: 상자(레이아웃)를 ㅁ나들기 위한 요소들
+
+인라인 요소: 요소가 수평으로 쌓임
+색상표현
+색상이름, HEX 색상코드(#000 ,#FFFFFF)
+RGB 빛의 삼원색 rgb(255,255,255)
+RGBA 빛의 삼원색 + 투명도 rgba(0,0,0,0.5)
+
+Block 요소
+inline-block
+block 요소가 수직으로만 쌓이는 문제점을
+해결하고자 나온 개념
+
+line-height
+영역 요소 내부 컨텐츠 글자의 줄 높이
+컨텐츠가 1줄인 경우 box height와 line height를 동일하게 하면
+세로 중앙 정렬 효과
+
+요소를 숨기는 3가지 방법
+opacity (투명하게 만들기)
+모습만 숨기는 방법/ 속성 남음/ 자리차지
+visibility:hidden 
+모습과 속성을 숨기는 방법 / 자리차지
+display: none
+그냥 없애 버리는 방법/ 자리도 사라짐
+
+문자의 정렬 방식
+text-align 
+left , right ,center
+
+4장
+background 에 대해서.
+background-size 
+auto 이미지의 실제크기 
+cover 비율을 유지, 요소의 더 넓은 너비에 맞춤
+contain 비율을 유지, 요소의 더 짧은 너비에 맞춤
+
+요소의 배경 이미지 스크롤 특성
+background-attachment
+scroll : 이미지가 요소를 따라서 같이 스크롤
+fixed 이미지가 뷰포트에 고정, 스크롤 x
+
+그라데이션 넣기
+position
+absolute , relative , fixed (뷰포트(브라우저)를 기준으로 배치)
+
+요소 쌓임 순서
+flex 에 대해서
+
+5장
+transition 에 대해서 (PARANOMA)
+반응형 웹
+
+6장
+HEADER 
+구성: 로고 , nav메뉴, 검색창, 추가메뉴 , 로그인/회원가입 버튼
+
+B.E.M
+Block/ Element/ Modifier 의 약자
+CSS 클래스 이름을 짓는 방법
+
+요소__일부분 : 요소의 일부분을 표시
+요소--상태 : 요소의 상태를 표시
+
+Favicon 설정
+상대경로, 절대경로
+
+7,8강
+header logo가 아래에 뜬다면?
+스타벅스 클론코딩
+
+9강 
+자바스크립트
+표기법
+함수
+onclick
+dom
+
+10강
+js
+11강
+스타벅스 js 연결후 코딩
+12강
+todolist j쿼리 swiper 
+13 , 14 강
+js
+15강
+sass 배우기
+영상 렌딩
+멤버 표시
+애니메이션 기반
+16강
+sass 사용법
+17강
+sass 사용법, 파노라마 웹페이지 만들기
+18강
+뮤직플레이리스트
