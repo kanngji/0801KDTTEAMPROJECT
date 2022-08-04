@@ -4,7 +4,19 @@
 }
 
 body {
+    cursor: none;
     background-color: black;
+}
+
+.cursor_item {
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: -25px;
+    margin-left: -25px;
 }
 
 .pg_2 .container {
@@ -35,7 +47,7 @@ body {
 }
 
 /* Asteriod */
-.pg_2 .asteriod {
+.pg_2 .things .box .asteriod {
     width: 18em;
     height: 18em;
     position: absolute;
@@ -43,6 +55,14 @@ body {
     left: 20vw;
 }
 
-.broken {
-    background-image: url(./broken-asteroid.png);
+.pg_2 .things .box:nth-child(2) .asteriod {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+}
+
+.pg_2 .things .box:nth-child(3) .asteriod {
+    position: absolute;
+    top: 70vh;
+    left: 10vw;
 }
