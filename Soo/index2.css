@@ -1,0 +1,48 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+.pg_2 .container {
+    position: relative;
+}
+
+.pg_2 > div {
+    color: white;
+}
+
+/* Stars */
+.pg_2 .small-star {
+    width: 3em;
+    height: 3em;
+    position: absolute;
+}
+
+.pg_2 .normal-star {
+    width: 6em;
+    height: 6em;
+    position: absolute;
+}
+
+.pg_2 .big-star {
+    width: 9em;
+    height: 9em;
+    position: absolute;
+}
+
+/* Asteriod */
+.pg_2 .asteriod {
+    width: 18em;
+    height: 18em;
+    position: absolute;
+    top: 10vh;
+    left: 20vw;
+}
+
+.broken {
+    background-image: url(./broken-asteroid.png);
+}
