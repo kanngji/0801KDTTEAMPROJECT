@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./Page.css" />
+        <script defer src="./Page.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>우주에</br><br>엄청난</br>도깨비가
+            </h1>
+        </header>
+        <main>
+            <section>
+                <div class="sa sa-up">디비전 1</div>
+                <div class="sa sa-up" data-sa-delay="300">디비전 2</div>
+                <div class="sa sa-up" data-sa-delay="600">디비전 3</div>
+                <div class="sa sa-up" data-sa-delay="900">디비전 4</div>
+            </section>
+            <section>
+                <div class="sa sa-up" id="saDiv5">디비전 5</div>
+                <div class="sa sa-down" data-sa-trigger="#saDiv5">디비전 6</div>
+                <div class="sa sa-right" data-sa-trigger="#saDiv5">디비전 7</div>
+                <div class="sa sa-left" data-sa-trigger="#saDiv5">디비전 8</div>
+            </section>
+            <section>
+                <div class="sa sa-rotateL" id="saDiv9">디비전 9</div>
+                <div class="sa sa-rotateR">디비전 10</div>
+                <div class="sa sa-scaleUp" data-sa-trigger="#saDiv9">디비전 11</div>
+                <div class="sa sa-scaleDown" data-sa-trigger="#saDiv9">디비전 12</div>
+            </section>
+        </main>
+    </body>
+</html>
