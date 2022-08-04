@@ -1,0 +1,8 @@
+[22-08-04강지훈 , error>solved]
+blackhole.html 에서
+balckhole.css 에서 backgroundimage 속성으로 넣어서 
+배경화면을 넣었는데 전체창으로 하면 제대로 박히는데
+창을 줄이면 이상한 데로 타겟이 이동함
+그래서 html 에서 img 태그로 줘서 
+object-fit 속성을 줘서 해결함
+속성을 %로 주어서 창을 줄여도 그럭저럭 해결되게 맞춰놈
