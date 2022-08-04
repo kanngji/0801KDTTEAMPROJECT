@@ -1,3 +1,96 @@
-.part-1 {
-  color: red;
+/* reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+section {
+  width: 100%;
+  height: 100vh;
+  /* background-color: black; */
+  overflow: hidden;
+}
+
+section .container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+
+section .container p {
+  color: white;
+}
+
+#lastText {
+}
+#lastText .container {
+  padding: 6em;
+}
+
+#lastText .container div {
+  margin-top: 2em;
+}
+#lastText .container p {
+  font-size: 5em;
+}
+#lastText .container .part-1 {
+  border: 1px solid white;
+  /* transform: translateX(-700px); */
+  transition: 1s;
+}
+/* #lastText .container .part-1:hover {
+  transform: translateX(0px);
+} */
+#lastText .container .part-2 {
+  border: 1px solid white;
+  margin-left: 5em;
+  /* transform: translateX(700px); */
+  transition: 1s;
+}
+/* #lastText .container .part-2:hover {
+  transform: translateX(0px);
+} */
+
+/* 정강이 로고 */
+#lastText .container .commet img {
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -65%);
+}
+#lastText .container .part-3 {
+  /* margin-top: 5em; */
+  margin-left: 30em;
+  border: 1px solid white;
+  /* transform: translateX(-700px); */
+  transition: 1s;
+}
+/* #lastText .container .part-3:hover {
+  transform: translateX(0px);
+} */
+#lastText .container .part-4 {
+  margin-left: 35em;
+  border: 1px solid white;
+  transition: 1s;
+}
+
+/* ?를 텍스트로 구현하는것보다 
+네온 느낌나는 img 구해서 하는게 더 좋을것 같아서
+내일 승수한테 조언구하고 승수한테 부탁하기 */
+
+/* #lastText .container .questionMark > p {
+  position: absolute;
+  border: 1px solid #fff;
+  font-size: 4em;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* 왼쪽 아래 대각선에 외계괴물 귀여운거 넣기
+조원들에게 컨펌 받기 */
