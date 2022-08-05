@@ -6,27 +6,20 @@ window.addEventListener(
   { passive: false }
 );
 
-var $html = $("html");
-
+var mHtml = $("html");
 var page = 1;
 
-var lastPage = $(".content").length;
-
-$html.animate({ scrollTop: 0 }, 10);
+mHtml.animate({ scrollTop: 0 }, 10);
 
 $(window).on("wheel", function (e) {
-  if ($html.is(":animated")) return;
-
+  if (mHtml.is(":animated")) return;
   if (e.originalEvent.deltaY > 0) {
-    if (page == lastPage) return;
-
+    if (page == 4) return;
     page++;
   } else if (e.originalEvent.deltaY < 0) {
     if (page == 1) return;
-
     page--;
   }
   var posTop = (page - 1) * $(window).height();
-
-  $html.animate({ scrollTop: posTop });
+  mHtml.animate({ scrollTop: posTop });
 });
