@@ -10,7 +10,7 @@ body {
 .pg_2 {
   width: 100%;
   height: 300vh;
-  /* cursor: url(../img/cursor.png), auto; */
+  cursor: url(../img/cursor.png), auto;
 }
 
 /* .cursor_item {
