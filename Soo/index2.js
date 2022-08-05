@@ -5,20 +5,22 @@ const length = document.querySelectorAll(".asteriod").length;
 // brokenSound.src = "./broken-sound.wav";
 
 for (let i = 0; i < length; i++) {
-    const audio = document.createElement("audio");
-    audio.setAttribute("src", "./broken-sound.wav");
-    list[i].append(audio);
+  const audio = document.createElement("audio");
+  audio.setAttribute("src", "./broken-sound.wav");
+  list[i].append(audio);
 }
 
 for (let el of list) {
-    const play = el.querySelector(".asteriod");
-    play.addEventListener("mouseenter", function (e) {
-        if ((e.currentTarget = "./asteroid2.png")) {
-            e.currentTarget.src = "./broken-asteroid.png";
-            e.currentTarget.style = "width: 18em; height: 18em";
-        }
-        e.currentTarget.closest("div").querySelector("audio").play();
-    });
+  const play = el.querySelector(".asteriod");
+  play.addEventListener("mouseenter", function (e) {
+    if ((e.currentTarget = "./asteroid2.png")) {
+      e.currentTarget.src = "./broken-asteroid.png";
+      e.currentTarget.style = "width: 18em; height: 18em";
+      e.currentTarget.closest("div").querySelector("audio").play();
+      console.log(e.currentTarget);
+    } else if ((e.currentTarget.src = "./broken-asteriod.png")) {
+    }
+  });
 }
 
 // // 소행성 한개는 가능
@@ -33,17 +35,20 @@ for (let el of list) {
 //     }
 // });
 
-let cursor;
-let h1;
-let x, y;
-const mouseFunc = (e) => {
-    (x = e.clientX), (y = e.clientY);
-    h1.innerHTML = `x: ${x} y: ${y}`;
-    cursor.style.transform = `translate(${x}px, ${y}px)`;
-};
+// let cursor;
+// let h1;
+// let x, y;
+// const mouseFunc = (e) => {
+//   (x = e.clientX), (y = e.clientY);
+//   console.log(e.clientX);
+//   console.log(e.clientY);
+//   h1.innerHTML = `x: ${x} y: ${y}`;
+//   cursor.style.transform = `translate(${x}px, ${y}px)`;
+//   // 스크롤시 마우스 좌표 안먹음
+// };
 
-window.onload = () => {
-    cursor = document.getElementsByClassName("cursor_item")[0];
-    h1 = document.getElementsByTagName("h1")[0];
-    document.addEventListener("mousemove", mouseFunc);
-};
+// window.onload = () => {
+//   cursor = document.getElementsByClassName("cursor_item")[0];
+//   h1 = document.getElementsByTagName("h1")[0];
+//   document.addEventListener("mousemove", mouseFunc);
+// };

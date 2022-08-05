@@ -1,68 +1,73 @@
 * {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
-    cursor: none;
-    background-color: black;
+  /* cursor: none; */
+  background-color: black;
+}
+.pg_2 {
+  width: 100%;
+  height: 300vh;
+  /* cursor: url(../img/cursor.png), auto; */
 }
 
-.cursor_item {
-    width: 60px;
-    height: 160px;
-    background-image: url(./rocket-cursor.png);
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin-top: -110px;
-    margin-left: -25px;
-}
+/* .cursor_item {
+  width: 60px;
+  height: 160px;
+  background-image: url(./rocket-cursor.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: -110px;
+  margin-left: -25px;
+} */
 
 .pg_2 .container {
-    position: relative;
+  position: relative;
 }
 
 .pg_2 > div {
-    color: white;
+  color: white;
 }
 
 /* Stars */
 .pg_2 .small-star {
-    width: 3em;
-    height: 3em;
-    position: absolute;
+  width: 3em;
+  height: 3em;
+  position: absolute;
 }
 
 .pg_2 .normal-star {
-    width: 6em;
-    height: 6em;
-    position: absolute;
+  width: 6em;
+  height: 6em;
+  position: absolute;
 }
 
 .pg_2 .big-star {
-    width: 9em;
-    height: 9em;
-    position: absolute;
+  width: 9em;
+  height: 9em;
+  position: absolute;
 }
 
 /* Asteriod */
 .pg_2 .things .box .asteriod {
-    width: 18em;
-    height: 18em;
-    position: absolute;
-    top: 10vh;
-    left: 20vw;
+  width: 18em;
+  height: 18em;
+  position: absolute;
+  top: 10vh;
+  left: 20vw;
 }
 
 .pg_2 .things .box:nth-child(2) .asteriod {
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
 }
 
 .pg_2 .things .box:nth-child(3) .asteriod {
-    position: absolute;
-    top: 70vh;
-    left: 10vw;
+  position: absolute;
+  top: 70vh;
+  left: 10vw;
 }
