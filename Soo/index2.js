@@ -14,11 +14,13 @@ for (let el of list) {
   const play = el.querySelector(".asteriod");
   play.addEventListener("mouseenter", function (e) {
     if ((e.currentTarget = "./asteroid2.png")) {
+      e.currentTarget.classList.add("broken");
       e.currentTarget.src = "./broken-asteroid.png";
       e.currentTarget.style = "width: 18em; height: 18em";
       e.currentTarget.closest("div").querySelector("audio").play();
       console.log(e.currentTarget);
-    } else if ((e.currentTarget.src = "./broken-asteriod.png")) {
+    } else if (e.currentTarget.classList.contains("broken")) {
+      e.currentTarget.closest("div").querySelector("audio").pause();
     }
   });
 }
