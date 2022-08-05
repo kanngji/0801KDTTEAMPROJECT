@@ -22,6 +22,7 @@
 .hotpink {
   background: hotpink;
   cursor: url(./rocket.png), auto;
+  height: 300vh;
 }
 
 .brown {
