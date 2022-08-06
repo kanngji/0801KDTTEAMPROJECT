@@ -3,7 +3,7 @@ window.addEventListener(
   function (e) {
     e.preventDefault();
   },
-  { passive: false }
+  { passive: true }
 );
 
 var $html = $("html");

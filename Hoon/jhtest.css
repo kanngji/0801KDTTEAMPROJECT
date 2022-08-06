@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  border: 5px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  border-radius: 50%;
+}
+
+.circle1 {
+  width: 600px;
+  height: 700px;
+  border: 1px solid #000;
+  background-color: black;
+}
+.circle1:hover {
+  background-color: red;
+}
+.circle2 {
+  position: absolute;
+  width: 500px;
+  height: 600px;
+  border: 1px solid #000;
+  transition: 1.4s;
+}
+.circle2:hover {
+  background-color: yellow;
+  z-index: 5;
+  transform: scale(1.3);
+}
+.circle3 {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #000;
+}
+.circle4 {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #000;
+}

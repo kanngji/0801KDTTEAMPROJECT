@@ -6,3 +6,13 @@ balckhole.css 에서 backgroundimage 속성으로 넣어서
 그래서 html 에서 img 태그로 줘서 
 object-fit 속성을 줘서 해결함
 속성을 %로 주어서 창을 줄여도 그럭저럭 해결되게 맞춰놈
+
+[22-08-06 강지훈 error>solved]
+blackhole.css 에서
+transform 속성을 2개 줘서 
+원하는대로 scale이 안먹었음
+그래서 transform 으로 위치 조정하는거
+주석 처리하고 top,left로 위치 조정함
+
+할일: 이제 배경이미지를 z-index 처리해서
+커져보이는 효과 구현하면 될듯
