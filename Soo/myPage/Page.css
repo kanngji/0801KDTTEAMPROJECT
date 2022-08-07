@@ -10,6 +10,7 @@ main {
     padding-bottom: 100px;
     background-color: black;
 }
+
 header {
     background-color: black;
     height: 300vh;
@@ -17,6 +18,30 @@ header {
     color: aliceblue;
     text-align: center;
 }
+body .btn {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+header div:nth-child(1) img {
+    width: 149px;
+    height: 91px;
+    margin-bottom: 50px;
+}
+
+header div:nth-child(2) img {
+    width: 350px;
+    height: 116px;
+    margin-bottom: 50px;
+}
+
+header div:nth-child(3) img {
+    width: 86px;
+    height: 100px;
+}
+
 section {
     display: flex;
     justify-content: space-between;

@@ -29,5 +29,15 @@ const saFunc = function () {
     }
 };
 
+const scrollMove = (event) => {
+    if (event.target.dataset.direction === "bottom") window.scrollBy(0, 1000);
+    else if (event.target.dataset.direction === "top") window.scrollBy(0, -300);
+};
+
+document.querySelector(".btn").addEventListener("click", scrollMove);
 window.addEventListener("load", saFunc);
 window.addEventListener("scroll", saFunc);
+window.addEventListener("scroll", () => {
+    //스크롤을 할 때마다 로그로 현재 스크롤의 위치가 찍혀나온다.
+    console.log(window.scrollX, window.scrollY);
+});
