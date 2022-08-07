@@ -1,13 +1,9 @@
-/* Reset */
 * {
-    margin: 0;
     padding: 0;
-    border: 0;
+    top: 0;
+    left: 0;
+    margin: 0;
 }
-
-/* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-
 html,
 body {
     background-color: #000;
@@ -86,7 +82,7 @@ p {
 .enter {
     position: relative;
     width: 100%;
-    height: 150vh;
+    height: 100vh;
 }
 
 #p6 a {
@@ -97,88 +93,4 @@ p {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-/* Content */
-.content {
-    position: relative;
-    width: 100%;
-    height: 200vh;
-}
-
-.content .blank {
-    padding: 30px;
-}
-
-/* BangMangE */
-#p7 {
-    color: white;
-    width: 10vw;
-    height: 40vh;
-    position: absolute;
-    /* left: 50%;
-    top: 150%;
-    margin-left: -10vw;
-    margin-top: -32.5vh;
-    transition: 1s; */
-}
-
-#p7 article {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 30vh;
-    left: 20vw;
-}
-
-#p7 article .inner {
-    width: 100%;
-    height: 30vh;
-    /* padding: 5vh 2.5vw 8vh; */
-    border-radius: 10px;
-    /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); */
-    /* background-color: white; */
-    transform: scale(0.8);
-    transition: 1s;
-    /* position: absolute; */
-}
-
-#p7 article .inner .pic {
-    width: 150px;
-    height: 280px;
-    /* position: relative; */
-}
-
-/* Btn Prev */
-.btnPrev {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 45vh;
-    left: 50%;
-    /* transform: translate(-20vw, -50%); */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 16px;
-    padding-left: 20px;
-    cursor: pointer;
-    color: white;
-}
-
-/* Btn Next */
-.btnNext {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 49vh;
-    right: -17vw;
-    transform: translate(20vw, -50%);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 16px;
-    padding-right: 20px;
-    cursor: pointer;
-    color: white;
 }

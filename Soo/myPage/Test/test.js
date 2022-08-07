@@ -100,14 +100,15 @@ moveUp.addEventListener("click", function (e) {
 });
 
 // BangMangE
-const frame = document.querySelector("div.content");
+const frame = document.querySelector("figure section");
 const list = frame.querySelectorAll("article");
+console.log(list);
 const len = list.length;
 const deg = 360 / len;
 const names = ["red1", "orange1", "yellow1", "green1", "sky1", "navy1", "violet1", "black1"];
 
 for (let i = 0; i < len; i++) {
-    list[i].style.transform = `rotate(${deg * i}deg) translateX(0vw) translateY(30vh)`;
+    list[i].style.transform = `rotate(${deg * i}deg) translateY(-10vh)`;
 
     const pic = list[i].querySelector(".pic");
     pic.style.backgroundImage = `url("../photo/${names[i]}.png")`;
