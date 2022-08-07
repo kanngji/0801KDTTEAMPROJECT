@@ -66,13 +66,13 @@ function scrollHandler() {
 window.addEventListener("scroll", scrollHandler);
 animate();
 
-window.addEventListener("wheel", function () {
-    console.log(window.scrollY);
-    if (window.scrollY >= 1600) {
-        console.log("참");
-        document.querySelector("body").style = "overflow-Y: hidden";
-    }
-});
+// window.addEventListener("wheel", function () {
+//     console.log(window.scrollY);
+//     if (window.scrollY >= 1600) {
+//         console.log("참");
+//         document.querySelector("body").style = "overflow-Y: hidden";
+//     }
+// });
 
 // MoveBtn
 let countBtn = 1;
@@ -97,4 +97,56 @@ moveUp.addEventListener("click", function (e) {
     } else if (countBtn == 1) {
         moveUp.href = `#p${countBtn - 1}`;
     }
+});
+
+// BangMangE
+const frame = document.querySelector("div.content");
+const list = frame.querySelectorAll("article");
+const len = list.length;
+const deg = 360 / len;
+const names = ["red1", "orange1", "yellow1", "green1", "sky1", "navy1", "violet1", "black1"];
+
+for (let i = 0; i < len; i++) {
+    list[i].style.transform = `rotate(${deg * i}deg) translateX(0vw) translateY(30vh)`;
+
+    const pic = list[i].querySelector(".pic");
+    pic.style.backgroundImage = `url("../photo/${names[i]}.png")`;
+
+    const title = list[i].querySelector(".text>h2");
+    title.innerHTML = `${names[i]}`;
+}
+
+const prev = document.querySelector(".btnPrev");
+const next = document.querySelector(".btnNext");
+let num = 0;
+let active = 0;
+
+prev.addEventListener("click", function (e) {
+    frame.style.transform = `rotate(${deg * ++num}deg)`;
+
+    if (active === 0) {
+        active = len - 1;
+    } else {
+        active--;
+    }
+
+    for (let el of list) {
+        el.classList.remove("on");
+    }
+    list[active].classList.add("on");
+});
+
+next.addEventListener("click", function (e) {
+    frame.style.transform = `rotate(${deg * --num}deg)`;
+
+    if (active === len - 1) {
+        active = 0;
+    } else {
+        active++;
+    }
+
+    for (el of list) {
+        el.classList.remove("on");
+    }
+    list[active].classList.add("on");
 });
