@@ -5,24 +5,24 @@ const length = document.querySelectorAll(".asteriod").length;
 // brokenSound.src = "./broken-sound.wav";
 
 for (let i = 0; i < length; i++) {
-  const audio = document.createElement("audio");
-  audio.setAttribute("src", "./broken-sound.wav");
-  list[i].append(audio);
+    const audio = document.createElement("audio");
+    audio.setAttribute("src", "./img/broken-sound.wav");
+    list[i].append(audio);
 }
 
 for (let el of list) {
-  const play = el.querySelector(".asteriod");
-  play.addEventListener("mouseenter", function (e) {
-    if (e.currentTarget.classList.contains("broken")) {
-      e.currentTarget.closest("div").querySelector("audio").pause();
-    } else if ((e.currentTarget = "./asteroid2.png")) {
-      e.currentTarget.classList.add("broken");
-      e.currentTarget.src = "./broken-asteroid.png";
-      e.currentTarget.style = "width: 18em; height: 18em";
-      e.currentTarget.closest("div").querySelector("audio").play();
-      console.log(e.currentTarget);
-    }
-  });
+    const play = el.querySelector(".asteriod");
+    play.addEventListener("mouseenter", function (e) {
+        if (e.currentTarget.classList.contains("broken")) {
+            e.currentTarget.closest("div").querySelector("audio").pause();
+        } else if ((e.currentTarget = "./asteroid2.png")) {
+            e.currentTarget.classList.add("broken");
+            e.currentTarget.src = "./img/broken-asteroid.png";
+            e.currentTarget.style = "width: 18em; height: 18em";
+            e.currentTarget.closest("div").querySelector("audio").play();
+            console.log(e.currentTarget);
+        }
+    });
 }
 
 // // 소행성 한개는 가능
