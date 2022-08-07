@@ -32,7 +32,7 @@ section img {
 /* 블랙홀 가장 작은 부분 찾기 */
 .part-1 {
   position: absolute;
-  border: 2px solid black;
+  border: 2px solid white;
   width: 25%;
   height: 30%;
   top: 45%;
@@ -42,15 +42,15 @@ section img {
   /* transform: translate(-40%, -20%); */
   /* 오른쪽 위 대각선 영역이 걸쳐져있어서 4부분으로 줘서  */
   /* border-radius 수정했따 */
-  border-radius: 45% 12% 45% 45%;
-  /* transition: 5s; */
+  border-radius: 45% 45% 45% 45%;
+  transition: 1s;
   z-index: 10;
-  transition: all 0.5s linear;
+  /* transition: all 0.5s linear; */
 }
 .part-1:hover {
   border: 1px solid red;
   /* z-index: 5; */
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 /* 블랙홀 두번 째로 작은 부분 찾기 */
@@ -64,9 +64,11 @@ section img {
   /* transform: translate(-40%, -35%); */
   border-radius: 40%;
   z-index: 9;
+  transition: 1s;
 }
 .part-2:hover {
   border: 1px solid red;
+  transform: scale(1.1);
 }
 
 /* 블랙홀 세번째로 작은 부분 찾기 */
@@ -80,9 +82,11 @@ section img {
   /* transform: translate(-40%, -35%); */
   border-radius: 40%;
   z-index: 8;
+  transition: 1s;
 }
 .part-3:hover {
   border: 1px solid red;
+  transform: scale(1.1);
 }
 
 /* 블랙홀 네번째로 작은 부분 찾기 */
@@ -96,10 +100,12 @@ section img {
   /* transform: translate(-40%, -35%); */
   border-radius: 40%;
   z-index: 7;
+  transition: 1s;
 }
 
 .part-4:hover {
   border: 1px solid red;
+  transform: scale(1.1);
   /* transform: scale(1.3); */
 }
 
