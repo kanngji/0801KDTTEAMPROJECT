@@ -78,6 +78,29 @@ section .container p {
   transition: 1s;
 }
 
+#lastText .container .questionMark {
+  position: absolute;
+  top: 70%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+  /* width: 1vw;
+  height: 1vw; */
+}
+
+#lastText .container .questionMark img {
+  width: 15vw;
+  height: 15vw;
+}
+
+#lastText .container .monster {
+  position: absolute;
+  top: 55%;
+  left: 15%;
+}
+#lastText .container .monster img {
+  width: 20vw;
+  height: 20vw;
+}
 /* ?를 텍스트로 구현하는것보다 
 네온 느낌나는 img 구해서 하는게 더 좋을것 같아서
 내일 승수한테 조언구하고 승수한테 부탁하기 */
