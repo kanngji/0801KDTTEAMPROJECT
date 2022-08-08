@@ -126,7 +126,7 @@ const deg = 360 / len;
 const names = ["red1", "orange1", "yellow1", "green1", "sky1", "navy1", "violet1", "black1"];
 
 for (let i = 0; i < len; i++) {
-  list[i].style.transform = `rotate(${deg * i}deg) translateX(10vh) translateY(-10vh)`;
+  list[i].style.transform = `rotate(${deg * i}deg) translateX(11.1vw) translateY(5vh)`;
 
   const pic = list[i].querySelector(".pic");
   pic.style.backgroundImage = `url("../photo/${names[i]}.png")`;

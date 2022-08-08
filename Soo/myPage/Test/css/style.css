@@ -132,9 +132,10 @@ figure .player {
   width: 30vw;
   height: 95vh;
   position: absolute;
-  left: 50%;
-  top: 100%;
+  left: 20%;
+  top: 40%;
   margin-left: -10vw;
+  margin-top: -32.5vh;
   transition: 1s;
 }
 figure .player article {
@@ -145,20 +146,17 @@ figure .player article {
   left: 0px;
 }
 figure .player article .inner {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   padding: 5vh 2.5vw 8vh;
   border-radius: 10px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-  opacity: 0.6;
-  background-color: white;
-  transform: scale(0.8);
+  opacity: 0.3;
   transition: 1s;
 }
 figure .player article .inner .pic {
   width: 150px;
   height: 282px;
-  position: relative;
+  position: absolute;
   background-repeat: no-repeat;
 }
 figure .player article .inner .pic::before, figure .player article .inner .pic::after {
@@ -232,7 +230,7 @@ figure .player article.on .inner {
     transform: translate(0, 0) rotate(0deg) scale(1);
   }
   50% {
-    transform: translate(0, -40%) rotate(180deg) scale(1.2);
+    transform: translate(0, -40%) rotate(180deg) scale(1.1);
   }
   100% {
     transform: translate(0, 0) rotate(360deg) scale(1);
@@ -297,8 +295,8 @@ figure .btnNext {
   height: 60px;
   position: absolute;
   top: 50%;
-  right: 50%;
-  transform: translate(20vw, -50%);
+  right: 10%;
+  transform: translate(33vw, -50%);
   display: flex;
   justify-content: flex-start;
   align-items: center;
