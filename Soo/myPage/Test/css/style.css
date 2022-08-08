@@ -342,4 +342,12 @@ figure > p {
   transform: translate(-50%, 0);
 }
 
+#p7 .explain {
+  position: relative;
+  transform: translate(93%, 10%);
+  width: 50vw;
+  height: 40vw;
+  border: 2px solid red;
+}
+
 /*# sourceMappingURL=style.css.map */
