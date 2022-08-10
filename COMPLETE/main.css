@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: url(./img/space.jpg);
+  height: 3000px;
+}
+
+/* =================================================================================== */
+/* SeungSoo */
+#pg_2 {
+  width: 100%;
+  height: 300vh;
+  cursor: url(../img/cursor.png), auto;
+}
+
+/* .cursor_item {
+  width: 60px;
+  height: 160px;
+  background-image: url(./rocket-cursor.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: -110px;
+  margin-left: -25px;
+} */
+
+#pg_2 .container {
+  position: relative;
+}
+
+#pg_2 > div {
+  color: white;
+}
+
+/* Stars */
+#pg_2 .small-star {
+  width: 3em;
+  height: 3em;
+  position: absolute;
+}
+
+#pg_2 .normal-star {
+  width: 6em;
+  height: 6em;
+  position: absolute;
+}
+
+#pg_2 .big-star {
+  width: 9em;
+  height: 9em;
+  position: absolute;
+}
+
+/* Asteriod */
+#pg_2 .things .box .asteriod {
+  width: 18em;
+  height: 18em;
+  position: absolute;
+  top: 10vh;
+  left: 20vw;
+}
+
+#pg_2 .things .box:nth-child(2) .asteriod {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+}
+
+#pg_2 .things .box:nth-child(3) .asteriod {
+  position: absolute;
+  top: 70vh;
+  left: 10vw;
+}
+/* =================================================================================== */
+/* MinJung */
+/* SUN */
+#pg_3 .sun {
+  background-image: url(./img/sun4.png);
+  display: flex;
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: translate(56vh, 50vh);
+  height: 100vh;
+  width: 100vh;
+  top: 130vh;
+  left: 4vh;
+  /* animation: rotate 5s linear infinite; */
+}
+
+#pg_3 .sun.animate {
+  transition: 5s;
+  transform: translate(-10vh, 117vh) scale(1.1);
+}
+
+/* PLANET */
+#pg_3 .wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 90vh;
+  left: 100vh;
+  top: 255vh;
+  /* border: 1px solid gray; */
+  opacity: 0;
+  transition: 1s;
+}
+
+#pg_3 .wrapper.on {
+  opacity: 1;
+}
+
+#pg_3 .wrapper .card {
+  width: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9vh;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  animation: animate 20s linear infinite;
+  animation-delay: calc(4s * var(--delay));
+}
+
+#pg_3 .wrapper .card:last-child {
+  animation-delay: calc(-4s * var(--delay));
+}
+
+/* 지정된 공간에 hover 하면 애니메이션 멈추기 */
+#pg_3 .wrapper:hover .card {
+  animation-play-state: paused;
+}
+
+#pg_3 .card .content {
+  display: flex;
+  align-items: center;
+}
+
+/* HTML 말고 css로 background image 를 줘야 애니메이션 먹음 */
+#pg_3 .wrapper .card .img {
+  height: 20vh;
+  width: 20vh;
+  position: absolute;
+  box-shadow: 0px 0px 5px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#pg_3 .wrapper .card .img:hover {
+  transform: scale(1.1);
+}
+
+/* 이미지 hover 했을 때 자전하는 것처럼 표현 */
+/* .wrapper .card .img:hover {
+    animation: rotate 15s linear infinite;
+}    */
+
+/* EXPLORE 버튼 */
+#pg_3 .card > a {
+  text-decoration: none;
+  padding: 7px 18px;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
+  color: #fff;
+  transition: 0.8s;
+}
+
+#pg_3 .card > a:hover {
+  color: black;
+}
+
+/* 우주선 이모티콘 */
+#pg_3 .spaceship i {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  top: 200vh;
+  left: -8vh;
+  z-index: 1;
+  animation: spaceship 10s linear infinite;
+  opacity: 0;
+}
+
+#pg_3 .spaceship.on i {
+  opacity: 1;
+}
+
+/* 점프하는 사람 이모티콘 */
+/* .jp i {
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    top: 161vh;
+    left: 132vh;
+    z-index: 1;
+    animation: jump 4s linear infinite;
+} */
+
+/* 슬라이드 애니메이션 */
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0.5);
+  }
+  5%,
+  20% {
+    opacity: 0.4;
+    transform: translateY(100%) scale(0.7);
+  }
+  25%,
+  40% {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0%) scale(1);
+  }
+  45%,
+  60% {
+    opacity: 0.4;
+    transform: translateY(-100%) scale(0.7);
+  }
+  65%,
+  100% {
+    opacity: 0;
+    transform: translateY(-100%) scale(0.5);
+  }
+}
+
+/* 행성 자전하는 애니메이션 */
+@keyframes rotate {
+  to {
+    background-position: -200%, 0;
+  }
+}
+
+/* 점프하는 애니메이션 */
+@keyframes jump {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, -3vh);
+  }
+
+  100% {
+    transform: translateY(-1vh);
+  }
+}
+
+/* 우주선 애니메이션 */
+@keyframes spaceship {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(40vh, -40vh) rotate(-270deg);
+  }
+  50% {
+    transform: translate(80vh, -80vh) rotate(100deg);
+  }
+  75% {
+    transform: translate(40vh, -40vh);
+  }
+  100% {
+    z-index: 0;
+  }
+}
+/* 
+.card>.earth:active .card .content .img{
+    transform: scale(5.0);
+} */
+/* =================================================================================== */
