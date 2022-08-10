@@ -1,3 +1,136 @@
+// GreenSock
+gsap.registerPlugin(ScrollTrigger);
+const h1 = gsap.timeline();
+const h2 = gsap.timeline();
+const h3 = gsap.timeline();
+const h4 = gsap.timeline();
+const h5 = gsap.timeline();
+
+h1.from(".h1", {
+  x: -1000,
+  delay: 0.5,
+  scale: 3,
+  duration: 5,
+  opacity: 0,
+}).to(".h1", {
+  delay: 0.5,
+  opacity: 0,
+  scale: 1,
+  duration: 5,
+  y: -100,
+});
+
+ScrollTrigger.create({
+  animation: h1,
+  trigger: ".h1",
+  start: "top top ",
+  // end: "top 20%",
+  end: "+=3000",
+  scrub: 2,
+  markers: true,
+  pin: true,
+});
+
+h2.from(".h2", {
+  x: -1000,
+  delay: 0.5,
+  scale: 3,
+  duration: 5,
+  opacity: 0,
+}).to(".h2", {
+  delay: 0.5,
+  opacity: 0,
+  scale: 1,
+  duration: 5,
+  y: -100,
+});
+
+ScrollTrigger.create({
+  animation: h2,
+  trigger: ".h2",
+  start: "top top ",
+  // end: "top 20%",
+  end: "+=3000",
+  scrub: 2,
+  markers: true,
+  pin: true,
+});
+
+h3.from(".h3", {
+  x: -1000,
+  delay: 0.5,
+  scale: 3,
+  duration: 5,
+  opacity: 0,
+}).to(".h3", {
+  delay: 0.5,
+  opacity: 0,
+  scale: 1,
+  duration: 5,
+  y: -100,
+});
+
+ScrollTrigger.create({
+  animation: h3,
+  trigger: ".h3",
+  start: "top top ",
+  // end: "top 20%",
+  end: "+=3000",
+  scrub: 2,
+  markers: true,
+  pin: true,
+});
+
+h4.from(".h4", {
+  x: -1000,
+  delay: 0.5,
+  scale: 3,
+  duration: 5,
+  opacity: 0,
+}).to(".h4", {
+  delay: 0.5,
+  opacity: 0,
+  scale: 1,
+  duration: 5,
+  y: -100,
+});
+
+ScrollTrigger.create({
+  animation: h4,
+  trigger: ".h4",
+  start: "top top ",
+  // end: "top 20%",
+  end: "+=3000",
+  scrub: 2,
+  markers: true,
+  pin: true,
+});
+
+h5.from(".h5", {
+  x: -1000,
+  delay: 0.5,
+  scale: 3,
+  duration: 5,
+  opacity: 0,
+}).to(".h5", {
+  delay: 0.5,
+  opacity: 0,
+  scale: 1,
+  duration: 5,
+  y: -100,
+});
+
+ScrollTrigger.create({
+  animation: h5,
+  trigger: ".h5",
+  start: "top top ",
+  // end: "top 20%",
+  end: "+=3000",
+  scrub: 2,
+  markers: true,
+  pin: true,
+});
+// Flag
 const pTag1 = document.querySelector(".first");
 const pTag2 = document.querySelector(".second");
 const pTag3 = document.querySelector(".third");
@@ -126,7 +259,7 @@ const deg = 360 / len;
 const names = ["red1", "orange1", "yellow1", "green1", "sky1", "navy1", "violet1", "black1"];
 
 for (let i = 0; i < len; i++) {
-  list[i].style.transform = `rotate(${deg * i}deg) translateX(11.1vw) translateY(5vh)`;
+  list[i].style.transform = `rotate(${deg * i}deg) translateX(6.5vw) translateY(5vh) scale(0.6)`;
 
   const pic = list[i].querySelector(".pic");
   pic.style.backgroundImage = `url("../photo/${names[i]}.png")`;
@@ -165,4 +298,18 @@ next.addEventListener("click", function (e) {
     el.classList.remove("on");
   }
   list[active].classList.add("on");
+});
+
+// Swiper
+
+var swiper = new Swiper(".mySwiper", {
+  effect: "cards",
+  grabCursor: true,
+});
+
+console.log(document.querySelectorAll(".swiper-slide-active"));
+const swiperPage = document.querySelector(".swiper-wrapper");
+console.log(swiperPage);
+swiperPage.addEventListener("focus", function (e) {
+  console.log(e.currentTarget.querySelector(".swiper-slide-active").innerText);
 });

@@ -3,11 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <title>Space Monster</title>
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+      integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- SWIPER     -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <script defer src="./test.js"></script>
   </head>
   <body>
     <div class="box">
+      <section class="greensock">
+        <div class="intro">
+          <div class="h1">안녕하세요</div>
+          <div class="h2">지금부터 탐험 시작할 행성은</div>
+          <div class="h3">승수별</div>
+          <div class="h4">현재 방망이를 잃어버린</div>
+          <div class="h5">우주도깨비가 화나있는 곳입니다.</div>
+        </div>
+      </section>
       <div class="contain">
         <div class="btn">
           <a href="#p2" class="moveDown">Down</a>
@@ -119,9 +145,20 @@
         <nav class="btnNext">
           <span>Right BangMangE</span>
         </nav>
-
-        <div class="explain">
-          <div class="ch_ex"></div>
+        <!-- Swiper -->
+        <div class="promotion">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Red</div>
+              <div class="swiper-slide">Orange</div>
+              <div class="swiper-slide">Yellow</div>
+              <div class="swiper-slide">Green</div>
+              <div class="swiper-slide">Sky</div>
+              <div class="swiper-slide">Navy</div>
+              <div class="swiper-slide">Violet</div>
+              <div class="swiper-slide">Black</div>
+            </div>
+          </div>
         </div>
       </figure>
     </div>
