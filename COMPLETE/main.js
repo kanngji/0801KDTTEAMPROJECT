@@ -61,12 +61,12 @@ window.addEventListener("scroll", function () {
     scrollYpos = window.scrollY;
     console.log(scrollYpos);
 
-    if (scrollYpos > 3300) {
+    if (scrollYpos > 3400) {
         const sunAnimate = document.querySelector("#pg_3 .sun");
         sunAnimate.classList.add("animate");
     }
 
-    if (scrollYpos > 3700) {
+    if (scrollYpos > 4200) {
         const sunAnimate = document.querySelector("#pg_3 .wrapper");
         sunAnimate.classList.add("on");
     }

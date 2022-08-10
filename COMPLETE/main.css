@@ -263,16 +263,16 @@ font-family: 'Roboto', sans-serif; */
     position: absolute;
     /* transform: translate(56vh, 50vh); */
     transform: translate(30vw, 70vw);
-    height: 100vh;
-    width: 100vh;
-    top: 72vw;
-    left: 2vw;
+    height: 100vw;
+    width: 100vw;
+    top: -70vw;
+    left: -2.5vw;
     /* animation: rotate 5s linear infinite; */
 }
 
 #pg_3 .sun.animate {
     transition: 5s;
-    transform: translate(-10vh, 117vh) scale(1.1);
+    transform: translate(-2vw, 120vw) scale(1.1);
 }
 
 /* PLANET */
@@ -281,10 +281,10 @@ font-family: 'Roboto', sans-serif; */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
-    width: 90vh;
+    height: 40vw;
+    width: 40vw;
     left: 100vh;
-    top: 255vh;
+    top: 49vw;
     /* border: 1px solid gray; */
     opacity: 0;
     transition: 1s;
@@ -299,7 +299,7 @@ font-family: 'Roboto', sans-serif; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 9vh;
+    padding: 5vw;
     position: absolute;
     opacity: 0;
     pointer-events: none;
@@ -326,7 +326,6 @@ font-family: 'Roboto', sans-serif; */
     height: 20vh;
     width: 20vh;
     position: absolute;
-    /* box-shadow: 0px 0px 5px; */
     border-radius: 50%;
     transition: 0.5s;
     background-repeat: no-repeat;
