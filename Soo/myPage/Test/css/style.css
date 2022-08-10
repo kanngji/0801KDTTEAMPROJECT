@@ -2,12 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 /* font-family: 'Ubuntu', sans-serif; */
 .box .greensock .intro {
-  height: 3000vh;
+  height: 1100vw;
   width: 100%;
-  padding: 5vw;
-  text-align: center;
   color: white;
-  font: 12vh/1.8 "arial";
+  font: 7vw/1.8 "arial";
+  text-align: center;
 }
 
 * {
@@ -75,7 +74,7 @@ html {
 p {
   display: flex;
   padding: 3rem 0;
-  font-size: 6rem;
+  font-size: 8rem;
 }
 
 .btn a {
@@ -143,10 +142,10 @@ figure h1 span {
 }
 figure .player {
   width: 30vw;
-  height: 95vh;
+  height: 45vw;
   position: absolute;
   left: 10%;
-  top: 40%;
+  top: 37%;
   margin-left: -10vw;
   margin-top: -32.5vh;
   transition: 1s;
@@ -261,12 +260,12 @@ figure .player article.on .inner {
   }
 }
 figure .btnPrev {
-  width: 60px;
-  height: 60px;
+  width: 1vw;
+  height: 1vw;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-40vw, -50%);
+  top: 15vw;
+  left: 48.7vw;
+  transform: translate(-40vw, 40%);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -278,38 +277,26 @@ figure .btnPrev {
 figure .btnPrev span {
   transition: 0.5s;
 }
-figure .btnPrev::before, figure .btnPrev::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: white;
+figure .btnPrev .fa-solid {
   position: absolute;
-  left: 0px;
-  transform-origin: left center;
-  transform: rotate(-180deg);
+  left: -0.5vw;
+  font-size: 20px;
   transition: 0.5s;
-}
-figure .btnPrev::after {
-  transform: rotate(180deg);
 }
 figure .btnPrev:hover span {
   transform: translate(100%, 0);
   opacity: 0;
 }
-figure .btnPrev:hover::before {
-  transform: rotate(-30deg);
-}
-figure .btnPrev:hover::after {
-  transform: rotate(30deg);
+figure .btnPrev:hover .fa-solid {
+  transform: rotate(-40deg) scale(1.7);
 }
 figure .btnNext {
-  width: 60px;
-  height: 60px;
+  width: 1vw;
+  height: 1vw;
   position: absolute;
-  top: 50%;
-  right: 10%;
-  transform: translate(33vw, -50%);
+  top: 15.85vw;
+  left: -5.3vw;
+  transform: translate(23vw, -50%);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -321,30 +308,18 @@ figure .btnNext {
 figure .btnNext span {
   transition: 0.5s;
 }
-figure .btnNext::before, figure .btnNext::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: white;
+figure .btnNext .fa-solid {
   position: absolute;
-  left: 0px;
-  transform-origin: right center;
-  transform: rotate(-180deg);
+  left: 2.5vw;
+  font-size: 20px;
   transition: 0.5s;
-}
-figure .btnNext::after {
-  transform: rotate(180deg);
 }
 figure .btnNext:hover span {
   transform: translate(-100%, 0);
   opacity: 0;
 }
-figure .btnNext:hover::before {
-  transform: rotate(-30deg);
-}
-figure .btnNext:hover::after {
-  transform: rotate(30deg);
+figure .btnNext:hover .fa-solid {
+  transform: rotate(40deg) scale(1.7);
 }
 figure > p {
   position: absolute;
@@ -364,8 +339,8 @@ figure > p {
   height: 45vw;
 }
 #p7 .promotion .swiper {
-  width: 360px;
-  height: 480px;
+  width: 420px;
+  height: 560px;
 }
 #p7 .promotion .swiper-slide {
   display: flex;
@@ -377,30 +352,34 @@ figure > p {
   color: #fff;
 }
 #p7 .promotion .swiper-slide:nth-child(1n) {
-  background-image: url("/Soo/myPage/photo/ch_red.jpg");
+  background-image: url("/Soo/myPage/photo/ch_red.png");
   stroke: #fff;
   color: red;
 }
 #p7 .promotion .swiper-slide:nth-child(2n) {
-  background-image: url("/Soo/myPage/photo/ch_orange.jpg");
+  background-image: url("/Soo/myPage/photo/ch_orange.png");
 }
 #p7 .promotion .swiper-slide:nth-child(3n) {
-  background-image: url("/Soo/myPage/photo/ch_yellow.jpg");
+  background-image: url("/Soo/myPage/photo/ch_yellow.png");
 }
 #p7 .promotion .swiper-slide:nth-child(4n) {
-  background-image: url("/Soo/myPage/photo/ch_green.jpg");
+  background-image: url("/Soo/myPage/photo/ch_green.png");
 }
 #p7 .promotion .swiper-slide:nth-child(5n) {
-  background-image: url("/Soo/myPage/photo/ch_sky.jpg");
+  background-image: url("/Soo/myPage/photo/ch_sky.png");
 }
 #p7 .promotion .swiper-slide:nth-child(6n) {
-  background-image: url("/Soo/myPage/photo/ch_navy.jpg");
+  background-image: url("/Soo/myPage/photo/ch_navy.png");
 }
 #p7 .promotion .swiper-slide:nth-child(7n) {
-  background-image: url("/Soo/myPage/photo/ch_violet.jpg");
+  background-image: url("/Soo/myPage/photo/ch_violet.png");
 }
 #p7 .promotion .swiper-slide:nth-child(8n) {
-  background-image: url("/Soo/myPage/photo/ch_black.jpg");
+  background-image: url("/Soo/myPage/photo/ch_black.png");
+}
+#p7 .promotion .swiper-slide .clicked::after {
+  content: url("/Soo/myPage/photo/point.png");
+  z-index: 10;
 }
 
 /*# sourceMappingURL=style.css.map */

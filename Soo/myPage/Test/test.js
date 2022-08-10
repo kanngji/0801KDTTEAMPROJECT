@@ -8,7 +8,7 @@ const h5 = gsap.timeline();
 const h6 = gsap.timeline();
 
 h1.from(".h1", {
-    x: -1000,
+    x: -800,
     delay: 0.5,
     scale: 3,
     duration: 5,
@@ -26,7 +26,7 @@ ScrollTrigger.create({
     trigger: ".h1",
     start: "top top ",
     // end: "top 20%",
-    end: "+=3000",
+    end: "+=5000",
     scrub: 2,
     markers: true,
     pin: true,
@@ -279,13 +279,12 @@ moveUp.addEventListener("click", function (e) {
 // // BangMangE
 const frame = document.querySelector("figure section");
 const list = frame.querySelectorAll("article");
-console.log(list);
 const len = list.length;
 const deg = 360 / len;
 const names = ["red1", "orange1", "yellow1", "green1", "sky1", "navy1", "violet1", "black1"];
 
 for (let i = 0; i < len; i++) {
-    list[i].style.transform = `rotate(${deg * i}deg) translateX(6.5vw) translateY(5vh) scale(0.6)`;
+    list[i].style.transform = `rotate(${deg * i}deg) translateX(7.2vw) translateY(3vw) scale(0.6)`;
 
     const pic = list[i].querySelector(".pic");
     pic.style.backgroundImage = `url("../photo/${names[i]}.png")`;
@@ -333,9 +332,21 @@ var swiper = new Swiper(".mySwiper", {
     grabCursor: true,
 });
 
-console.log(document.querySelectorAll(".swiper-slide-active"));
 const swiperPage = document.querySelector(".swiper-wrapper");
-console.log(swiperPage);
-swiperPage.addEventListener("focus", function (e) {
-    console.log(e.currentTarget.querySelector(".swiper-slide-active").innerText);
+const img = document.createElement("img");
+img.src = "../photo/point.png";
+img.style = "width: 3vw; height: 3vw; transform: rotate(-90deg)";
+
+swiperPage.addEventListener("click", function (e) {
+    e.currentTarget.querySelector(".swiper-slide-active").appendChild(img);
+    // console.log(e.currentTarget.querySelector(".swiper-slide-active").innerText);
+    let colorRight = e.currentTarget.querySelector(".swiper-slide-active").innerText;
+    let colorLeft = document.querySelector(".on > .inner > .pic").classList[1];
+    // console.log(document.querySelector(".on > .inner > .pic").classList[1]);
+
+    if (colorLeft === colorRight) {
+        console.log("짝짝꿍");
+    } else {
+        console.log("틀렸어");
+    }
 });
