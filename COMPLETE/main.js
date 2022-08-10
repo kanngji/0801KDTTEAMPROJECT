@@ -21,7 +21,6 @@ for (let el of list) {
       e.currentTarget.src = "./img/broken-asteroid.png";
       e.currentTarget.style = "width: 18em; height: 18em";
       e.currentTarget.closest("div").querySelector("audio").play();
-      console.log(e.currentTarget);
     }
   });
 }
@@ -77,3 +76,28 @@ window.addEventListener("scroll", function () {
     sunAnimate.classList.add("on");
   }
 });
+
+// =====================================================================================================
+
+gsap.registerPlugin(ScrollTrigger);
+
+let tl = gsap.timeline();
+
+tl.from(".part-1", {
+  x: 1000,
+  duration: 2,
+})
+  .from(".part-2", {
+    x: 1000,
+    duration: 1,
+  })
+  .fromTo(".commet >img", 0.6, { opacity: 0 }, { opacity: 1, delay: 0.6 })
+  .from(".part-3", {
+    x: 1000,
+    duration: 1,
+  })
+  .from(".part-4", {
+    x: 1000,
+    duration: 1,
+  })
+  .fromTo(".monster >img", 1.0, { opacity: 0 }, { opacity: 1, delay: 1.0 });
