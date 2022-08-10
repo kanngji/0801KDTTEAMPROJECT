@@ -1,6 +1,15 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 /* font-family: 'Ubuntu', sans-serif; */
+.box .greensock .intro {
+  height: 3000vh;
+  width: 100%;
+  padding: 5vw;
+  text-align: center;
+  color: white;
+  font: 12vh/1.8 "arial";
+}
+
 * {
   padding: 0;
   top: 0;
@@ -99,6 +108,10 @@ p {
   transform: translate(-50%, -50%);
 }
 
+.box {
+  position: relative;
+}
+
 figure {
   font: 16px "Ubuntu";
   overflow: hidden;
@@ -132,7 +145,7 @@ figure .player {
   width: 30vw;
   height: 95vh;
   position: absolute;
-  left: 20%;
+  left: 10%;
   top: 40%;
   margin-left: -10vw;
   margin-top: -32.5vh;
@@ -342,12 +355,52 @@ figure > p {
   transform: translate(-50%, 0);
 }
 
-#p7 .explain {
-  position: relative;
-  transform: translate(93%, 10%);
+#p7 .promotion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(93%, 5%);
   width: 50vw;
-  height: 40vw;
-  border: 2px solid red;
+  height: 45vw;
+}
+#p7 .promotion .swiper {
+  width: 360px;
+  height: 480px;
+}
+#p7 .promotion .swiper-slide {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+#p7 .promotion .swiper-slide:nth-child(1n) {
+  background-image: url("/Soo/myPage/photo/ch_red.jpg");
+  stroke: #fff;
+  color: red;
+}
+#p7 .promotion .swiper-slide:nth-child(2n) {
+  background-image: url("/Soo/myPage/photo/ch_orange.jpg");
+}
+#p7 .promotion .swiper-slide:nth-child(3n) {
+  background-image: url("/Soo/myPage/photo/ch_yellow.jpg");
+}
+#p7 .promotion .swiper-slide:nth-child(4n) {
+  background-image: url("/Soo/myPage/photo/ch_green.jpg");
+}
+#p7 .promotion .swiper-slide:nth-child(5n) {
+  background-image: url("/Soo/myPage/photo/ch_sky.jpg");
+}
+#p7 .promotion .swiper-slide:nth-child(6n) {
+  background-image: url("/Soo/myPage/photo/ch_navy.jpg");
+}
+#p7 .promotion .swiper-slide:nth-child(7n) {
+  background-image: url("/Soo/myPage/photo/ch_violet.jpg");
+}
+#p7 .promotion .swiper-slide:nth-child(8n) {
+  background-image: url("/Soo/myPage/photo/ch_black.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */
