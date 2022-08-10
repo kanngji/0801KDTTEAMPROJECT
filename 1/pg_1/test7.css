@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Koulen&family=Roboto:wght@700;900&display=swap");
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Bungee', cursive;
+font-family: 'Koulen', cursive;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* BANNER */
+.pg_1 .banner {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pg_1 .banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pg_1 .banner h2 {
+  /* position: absolute; */
+  /* top: 0;
+    left: 0; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 12vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(245, 243, 243, 0.5);
+  /* line-height: 100vh; */
+  mix-blend-mode: screen;
+  /* animation: glow 2s 6s ease-in-out infinite; */
+}
+
+.pg_1 .banner span {
+  /* animation: glow 2s 6s ease-in-out infinite; */
+  display: inline-block;
+}
+
+/* CONTAINER */
+.pg_1 .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pg_1 .container h2 {
+  display: block;
+}
+
+/* TITLE */
+.pg_1 .container .title1 {
+  transform: translate(600vh, 0);
+}
+
+.pg_1:hover .container .title1 {
+  transform: translate(37vh, 0);
+  transition: 4s;
+  transition-delay: 4s;
+}
+
+.pg_1:active .container .title1 {
+  transform: translate(37vh, 32.4vh);
+  transition: 1s;
+}
+
+.pg_1 .container .title2 {
+  transform: translate(-600vh, 0);
+}
+
+.pg_1:hover .container .title2 {
+  transform: translate(-30vh, 0);
+  transition: 4s;
+  transition-delay: 6s;
+}
+
+.pg_1 .container .title3 {
+  transform: translate(600vh, 0);
+}
+
+.pg_1:hover .container .title3 {
+  transform: translate(22vh, 0);
+  transition: 3s;
+  transition-delay: 8s;
+}
+
+.pg_1:active .container .title3 {
+  transform: translate(21.8vh, -32.2vh);
+  transition: 1s;
+}
+
+.pg_1 .container .title1 .title_neon {
+  animation: glow 2s 15s ease-in-out infinite;
+}
+
+.pg_1 .container .title1 .title_opacity0 {
+  animation: shadownone 2s 15s ease infinite;
+  transition: 2s;
+  margin-top: 4vh;
+}
+
+.pg_1 .container .title2 .title_neon {
+  animation: glow 5s 17s ease-in-out infinite;
+  transition-delay: 0.1s;
+  margin-top: 4vh;
+}
+
+.pg_1 .container .title2 .title_opacity0 {
+  animation: shadownone 2s 17s ease infinite;
+  transition-delay: 0.1s;
+  margin-top: 4vh;
+}
+
+.pg_1 .container .title3 .title_neon {
+  animation: glow 4s 19s ease-in-out infinite;
+  margin-top: 4vh;
+}
+
+.pg_1 .container .title3 .title_opacity0 {
+  animation: shadownone 2s 19s ease infinite;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #0652dd, 0 0 50px #0652dd, 0 0 100px #0652dd;
+  }
+
+  /* 10%, 90% {
+     
+      color: #111;
+      text-shadow: none;
+    } */
+}
+
+@keyframes shadownone {
+  0%,
+  100% {
+    /* color: #111;
+        text-shadow: none; */
+    opacity: 0;
+  }
+}
