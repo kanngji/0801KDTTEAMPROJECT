@@ -1,3 +1,15 @@
+#p7 .plusBtn {
+    position: absolute;
+    top: 25vw;
+    left: 45vw;
+    text-decoration: none;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 30%;
+    color: white;
+    cursor: pointer;
+}
+
 #p7 .promotion {
     display: flex;
     justify-content: center;

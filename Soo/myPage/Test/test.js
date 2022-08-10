@@ -334,19 +334,73 @@ var swiper = new Swiper(".mySwiper", {
 
 const swiperPage = document.querySelector(".swiper-wrapper");
 const img = document.createElement("img");
+const plusBtn = document.querySelector("#p7 .plus");
+let colorRight = "";
+let colorLeft = "";
+let red = 0,
+    orange = 0,
+    yellow = 0,
+    green = 0,
+    sky = 0,
+    blue = 0,
+    navy = 0,
+    violet = 0,
+    black = 0;
+
 img.src = "../photo/point.png";
 img.style = "width: 3vw; height: 3vw; transform: rotate(-90deg)";
-
 swiperPage.addEventListener("click", function (e) {
     e.currentTarget.querySelector(".swiper-slide-active").appendChild(img);
     // console.log(e.currentTarget.querySelector(".swiper-slide-active").innerText);
-    let colorRight = e.currentTarget.querySelector(".swiper-slide-active").innerText;
-    let colorLeft = document.querySelector(".on > .inner > .pic").classList[1];
-    // console.log(document.querySelector(".on > .inner > .pic").classList[1]);
+    colorRight = e.currentTarget.querySelector(".swiper-slide-active").innerText;
 
+    // console.log(document.querySelector(".on > .inner > .pic").classList[1]);
+});
+
+plusBtn.addEventListener("click", function () {
+    colorLeft = document.querySelector(".on > .inner > .pic").classList[1];
+    console.log(colorLeft);
+    console.log(colorRight);
     if (colorLeft === colorRight) {
-        console.log("짝짝꿍");
-    } else {
-        console.log("틀렸어");
+        switch (colorLeft) {
+            case "Red":
+                red = 1;
+                console.log("해결!");
+                break;
+            case "Orange":
+                orange = 1;
+                console.log("해결!");
+                break;
+            case "Yellow":
+                yellow = 1;
+                console.log("해결!");
+                break;
+            case "Green":
+                green = 1;
+                console.log("해결!");
+                break;
+            case "Sky":
+                sky = 1;
+                console.log("해결!");
+                break;
+            case "Navy":
+                navy = 1;
+                console.log("해결!");
+                break;
+            case "Violet":
+                violet = 1;
+                console.log("해결!");
+                break;
+            case "Black":
+                black = 1;
+                console.log("해결!");
+                break;
+        }
+
+        if (red === 1 && orange === 1 && yellow === 1 && green === 1 && sky === 1 && navy === 1 && violet === 1 && black === 1) {
+            console.log("클리어!");
+        } else {
+            console.log("아직부족");
+        }
     }
 });
