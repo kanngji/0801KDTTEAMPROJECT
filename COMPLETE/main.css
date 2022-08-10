@@ -82,20 +82,20 @@ font-family: 'Roboto', sans-serif; */
 
 #pg_1:hover .container .title1 {
     /* transform: translate(38vh, 0); */
-    transform: translate(23.5vw, 0);
+    transform: translate(22.5vw, 0);
     transition: 4s;
     transition-delay: 4s;
 }
 
 #pg_1:active .container .title1 {
     /* transform: translate(37vh, 32.4vh); */
-    transform: translate(24vw, 16.5vw);
+    transform: translate(23vw, 16.5vw);
     transition: 1s;
 }
 
 #pg_1 .container .title2 {
     /* transform: translate(-600vh, 0); */
-    transform: translate(-600vw, 0);
+    transform: translate(-590vw, 0);
 }
 
 #pg_1:hover .container .title2 {
@@ -250,16 +250,23 @@ font-family: 'Roboto', sans-serif; */
 /* =================================================================================== */
 /* MinJung */
 /* SUN */
+
+#pg_3 {
+    position: relative;
+    width: 100%;
+    height: 500vw;
+}
 #pg_3 .sun {
     background-image: url(./img/sun4.png);
     display: flex;
     background-repeat: no-repeat;
     position: absolute;
-    transform: translate(56vh, 50vh);
+    /* transform: translate(56vh, 50vh); */
+    transform: translate(30vw, 70vw);
     height: 100vh;
     width: 100vh;
-    top: 130vh;
-    left: 4vh;
+    top: 72vw;
+    left: 2vw;
     /* animation: rotate 5s linear infinite; */
 }
 
@@ -319,7 +326,7 @@ font-family: 'Roboto', sans-serif; */
     height: 20vh;
     width: 20vh;
     position: absolute;
-    box-shadow: 0px 0px 5px;
+    /* box-shadow: 0px 0px 5px; */
     border-radius: 50%;
     transition: 0.5s;
     background-repeat: no-repeat;

@@ -6,23 +6,23 @@ const length = document.querySelectorAll(".asteriod").length;
 // brokenSound.src = "./broken-sound.wav";
 
 for (let i = 0; i < length; i++) {
-  const audio = document.createElement("audio");
-  audio.setAttribute("src", "./img/broken-sound.wav");
-  list[i].append(audio);
+    const audio = document.createElement("audio");
+    audio.setAttribute("src", "./img/broken-sound.wav");
+    list[i].append(audio);
 }
 
 for (let el of list) {
-  const play = el.querySelector(".asteriod");
-  play.addEventListener("mouseenter", function (e) {
-    if (e.currentTarget.classList.contains("broken")) {
-      e.currentTarget.closest("div").querySelector("audio").pause();
-    } else if ((e.currentTarget = "./asteroid2.png")) {
-      e.currentTarget.classList.add("broken");
-      e.currentTarget.src = "./img/broken-asteroid.png";
-      e.currentTarget.style = "width: 18em; height: 18em";
-      e.currentTarget.closest("div").querySelector("audio").play();
-    }
-  });
+    const play = el.querySelector(".asteriod");
+    play.addEventListener("mouseenter", function (e) {
+        if (e.currentTarget.classList.contains("broken")) {
+            e.currentTarget.closest("div").querySelector("audio").pause();
+        } else if ((e.currentTarget = "./asteroid2.png")) {
+            e.currentTarget.classList.add("broken");
+            e.currentTarget.src = "./img/broken-asteroid.png";
+            e.currentTarget.style = "width: 18em; height: 18em";
+            e.currentTarget.closest("div").querySelector("audio").play();
+        }
+    });
 }
 
 // // 소행성 한개는 가능
@@ -58,23 +58,23 @@ for (let el of list) {
 // =====================================================================================================
 let scrollYpos;
 window.addEventListener("scroll", function () {
-  scrollYpos = window.scrollY;
-  console.log(scrollYpos);
+    scrollYpos = window.scrollY;
+    console.log(scrollYpos);
 
-  if (scrollYpos > 1300) {
-    const sunAnimate = document.querySelector("#pg_3 .sun");
-    sunAnimate.classList.add("animate");
-  }
+    if (scrollYpos > 3300) {
+        const sunAnimate = document.querySelector("#pg_3 .sun");
+        sunAnimate.classList.add("animate");
+    }
 
-  if (scrollYpos > 1700) {
-    const sunAnimate = document.querySelector("#pg_3 .wrapper");
-    sunAnimate.classList.add("on");
-  }
+    if (scrollYpos > 3700) {
+        const sunAnimate = document.querySelector("#pg_3 .wrapper");
+        sunAnimate.classList.add("on");
+    }
 
-  if (scrollYpos > 830) {
-    const sunAnimate = document.querySelector("#pg_3 .spaceship");
-    sunAnimate.classList.add("on");
-  }
+    if (scrollYpos > 3830) {
+        const sunAnimate = document.querySelector("#pg_3 .spaceship");
+        sunAnimate.classList.add("on");
+    }
 });
 
 // =====================================================================================================
@@ -84,20 +84,20 @@ gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline();
 
 tl.from(".part-1", {
-  x: 1000,
-  duration: 2,
+    x: 1000,
+    duration: 2,
 })
-  .from(".part-2", {
-    x: 1000,
-    duration: 1,
-  })
-  .fromTo(".commet >img", 0.6, { opacity: 0 }, { opacity: 1, delay: 0.6 })
-  .from(".part-3", {
-    x: 1000,
-    duration: 1,
-  })
-  .from(".part-4", {
-    x: 1000,
-    duration: 1,
-  })
-  .fromTo(".monster >img", 1.0, { opacity: 0 }, { opacity: 1, delay: 1.0 });
+    .from(".part-2", {
+        x: 1000,
+        duration: 1,
+    })
+    .fromTo(".commet >img", 0.6, { opacity: 0 }, { opacity: 1, delay: 0.6 })
+    .from(".part-3", {
+        x: 1000,
+        duration: 1,
+    })
+    .from(".part-4", {
+        x: 1000,
+        duration: 1,
+    })
+    .fromTo(".monster >img", 1.0, { opacity: 0 }, { opacity: 1, delay: 1.0 });
