@@ -5,26 +5,24 @@
   box-sizing: border-box;
 }
 
-section {
+section#lastText {
   width: 100%;
   height: 100vh;
   /* background-color: black; */
   overflow: hidden;
 }
 
-section .container {
+section#lastText .container {
   width: 100%;
   height: 100vh;
   background-color: black;
   position: relative;
 }
 
-section .container p {
+section#lastText .container p {
   color: white;
 }
 
-#lastText {
-}
 #lastText .container {
   padding: 6em;
 }
