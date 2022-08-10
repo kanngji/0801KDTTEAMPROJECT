@@ -1,14 +1,14 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  background: url(./img/space.jpg);
-  height: 3000px;
+    width: 100%;
+    height: 100%;
+    background: url(./img/space.jpg);
+    height: 3000px;
 }
 /* =================================================================================== */
 
@@ -21,139 +21,147 @@ font-family: 'Roboto', sans-serif; */
 /* BANNER */
 
 #pg_1 {
-  position: relative;
+    position: relative;
 }
 
 #pg_1 .banner {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #pg_1 .banner video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #pg_1 .banner h2 {
-  /* position: absolute; */
-  /* top: 0;
+    /* position: absolute; */
+    /* top: 0;
     left: 0; */
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 12vw;
-  text-align: center;
-  text-transform: uppercase;
-  color: rgba(245, 243, 243, 0.5);
-  /* line-height: 100vh; */
-  mix-blend-mode: screen;
-  /* animation: glow 2s 6s ease-in-out infinite; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 12vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(245, 243, 243, 0.5);
+    /* line-height: 100vh; */
+    mix-blend-mode: screen;
+    /* animation: glow 2s 6s ease-in-out infinite; */
 }
 
 #pg_1 .banner span {
-  /* animation: glow 2s 6s ease-in-out infinite; */
-  display: inline-block;
+    /* animation: glow 2s 6s ease-in-out infinite; */
+    display: inline-block;
 }
 
 /* CONTAINER */
 #pg_1 .container {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 #pg_1 .container h2 {
-  display: block;
+    display: block;
 }
 
 /* TITLE */
 #pg_1 .container .title1 {
-  transform: translate(600vh, 0);
+    /* transform: translate(600vh, 0); */
+    transform: translate(600vw, 0);
 }
 
 #pg_1:hover .container .title1 {
-  transform: translate(38vh, 0);
-  transition: 4s;
-  transition-delay: 4s;
+    /* transform: translate(38vh, 0); */
+    transform: translate(23.5vw, 0);
+    transition: 4s;
+    transition-delay: 4s;
 }
 
 #pg_1:active .container .title1 {
-  transform: translate(37vh, 32.4vh);
-  transition: 1s;
+    /* transform: translate(37vh, 32.4vh); */
+    transform: translate(24vw, 16.5vw);
+    transition: 1s;
 }
 
 #pg_1 .container .title2 {
-  transform: translate(-600vh, 0);
+    /* transform: translate(-600vh, 0); */
+    transform: translate(-600vw, 0);
 }
 
 #pg_1:hover .container .title2 {
-  transform: translate(-30vh, 0);
-  transition: 4s;
-  transition-delay: 6s;
+    /* transform: translate(-30vh, 0); */
+    transform: translate(-10vw, 0);
+    transition: 4s;
+    transition-delay: 6s;
 }
 
 #pg_1 .container .title3 {
-  transform: translate(600vh, 0);
+    /* transform: translate(600vh, 0); */
+    transform: translate(600vw, 0);
 }
 
 #pg_1:hover .container .title3 {
-  transform: translate(22vh, 0);
-  transition: 3s;
-  transition-delay: 8s;
+    /* transform: translate(22vh, 0); */
+    transform: translate(16vw, 0);
+    transition: 3s;
+    transition-delay: 8s;
 }
 
 #pg_1:active .container .title3 {
-  transform: translate(21.8vh, -32.2vh);
-  transition: 1s;
+    /* transform: translate(21.8vh, -32.2vh); */
+    transform: translate(16.5vw, -16.5vw);
+    transition: 1s;
 }
 
 #pg_1 .container .title1 .title_neon {
-  animation: glow 2s 15s ease-in-out infinite;
+    animation: glow 2s 15s ease-in-out infinite;
 }
 
 #pg_1 .container .title1 .title_opacity0 {
-  animation: shadownone 2s 15s ease infinite;
-  transition: 2s;
-  margin-top: 4vh;
+    animation: shadownone 2s 15s ease infinite;
+    transition: 2s;
+    margin-top: 4vh;
 }
 
 #pg_1 .container .title2 .title_neon {
-  animation: glow 5s 17s ease-in-out infinite;
-  transition-delay: 0.1s;
-  margin-top: 4vh;
+    animation: glow 5s 17s ease-in-out infinite;
+    transition-delay: 0.1s;
+    margin-top: 4vh;
 }
 
 #pg_1 .container .title2 .title_opacity0 {
-  animation: shadownone 2s 17s ease infinite;
-  transition-delay: 0.1s;
-  margin-top: 4vh;
+    animation: shadownone 2s 17s ease infinite;
+    transition-delay: 0.1s;
+    margin-top: 4vh;
 }
 
 #pg_1 .container .title3 .title_neon {
-  animation: glow 4s 19s ease-in-out infinite;
-  margin-top: 4vh;
+    animation: glow 4s 19s ease-in-out infinite;
+    margin-top: 4vh;
 }
 
 #pg_1 .container .title3 .title_opacity0 {
-  animation: shadownone 2s 19s ease infinite;
+    animation: shadownone 2s 19s ease infinite;
 }
 
 @keyframes glow {
-  0%,
-  100% {
-    color: #fff;
-    text-shadow: 0 0 10px #0652dd, 0 0 50px #0652dd, 0 0 100px #0652dd;
-  }
+    0%,
+    100% {
+        color: #fff;
+        text-shadow: 0 0 10px #0652dd, 0 0 50px #0652dd, 0 0 100px #0652dd;
+    }
 
-  /* 10%, 90% {
+    /* 10%, 90% {
      
       color: #111;
       text-shadow: none;
@@ -161,24 +169,24 @@ font-family: 'Roboto', sans-serif; */
 }
 
 @keyframes shadownone {
-  0%,
-  100% {
-    /* color: #111;
+    0%,
+    100% {
+        /* color: #111;
         text-shadow: none; */
-    opacity: 0;
-  }
+        opacity: 0;
+    }
 }
 /* =================================================================================== */
 /* SeungSoo */
 
 .noContent {
-  width: 100%;
-  height: 200vh;
+    width: 100%;
+    height: 200vh;
 }
 #pg_2 {
-  width: 100%;
-  height: 300vh;
-  cursor: url(../img/cursor.png), auto;
+    width: 100%;
+    height: 300vh;
+    cursor: url(../img/cursor.png), auto;
 }
 
 /* .cursor_item {
@@ -193,133 +201,133 @@ font-family: 'Roboto', sans-serif; */
 } */
 
 #pg_2 .container {
-  position: relative;
+    position: relative;
 }
 
 #pg_2 > div {
-  color: white;
+    color: white;
 }
 
 /* Stars */
 #pg_2 .small-star {
-  width: 3em;
-  height: 3em;
-  position: absolute;
+    width: 3em;
+    height: 3em;
+    position: absolute;
 }
 
 #pg_2 .normal-star {
-  width: 6em;
-  height: 6em;
-  position: absolute;
+    width: 6em;
+    height: 6em;
+    position: absolute;
 }
 
 #pg_2 .big-star {
-  width: 9em;
-  height: 9em;
-  position: absolute;
+    width: 9em;
+    height: 9em;
+    position: absolute;
 }
 
 /* Asteriod */
 #pg_2 .things .box .asteriod {
-  width: 18em;
-  height: 18em;
-  position: absolute;
-  top: 10vh;
-  left: 20vw;
+    width: 18em;
+    height: 18em;
+    position: absolute;
+    top: 10vh;
+    left: 20vw;
 }
 
 #pg_2 .things .box:nth-child(2) .asteriod {
-  position: absolute;
-  top: 50vh;
-  left: 50vw;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
 }
 
 #pg_2 .things .box:nth-child(3) .asteriod {
-  position: absolute;
-  top: 70vh;
-  left: 10vw;
+    position: absolute;
+    top: 70vh;
+    left: 10vw;
 }
 /* =================================================================================== */
 /* MinJung */
 /* SUN */
 #pg_3 .sun {
-  background-image: url(./img/sun4.png);
-  display: flex;
-  background-repeat: no-repeat;
-  position: absolute;
-  transform: translate(56vh, 50vh);
-  height: 100vh;
-  width: 100vh;
-  top: 130vh;
-  left: 4vh;
-  /* animation: rotate 5s linear infinite; */
+    background-image: url(./img/sun4.png);
+    display: flex;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(56vh, 50vh);
+    height: 100vh;
+    width: 100vh;
+    top: 130vh;
+    left: 4vh;
+    /* animation: rotate 5s linear infinite; */
 }
 
 #pg_3 .sun.animate {
-  transition: 5s;
-  transform: translate(-10vh, 117vh) scale(1.1);
+    transition: 5s;
+    transform: translate(-10vh, 117vh) scale(1.1);
 }
 
 /* PLANET */
 #pg_3 .wrapper {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
-  width: 90vh;
-  left: 100vh;
-  top: 255vh;
-  /* border: 1px solid gray; */
-  opacity: 0;
-  transition: 1s;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 90vh;
+    left: 100vh;
+    top: 255vh;
+    /* border: 1px solid gray; */
+    opacity: 0;
+    transition: 1s;
 }
 
 #pg_3 .wrapper.on {
-  opacity: 1;
+    opacity: 1;
 }
 
 #pg_3 .wrapper .card {
-  width: 430px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 9vh;
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-  animation: animate 20s linear infinite;
-  animation-delay: calc(4s * var(--delay));
+    width: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9vh;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    animation: animate 20s linear infinite;
+    animation-delay: calc(4s * var(--delay));
 }
 
 #pg_3 .wrapper .card:last-child {
-  animation-delay: calc(-4s * var(--delay));
+    animation-delay: calc(-4s * var(--delay));
 }
 
 /* 지정된 공간에 hover 하면 애니메이션 멈추기 */
 #pg_3 .wrapper:hover .card {
-  animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 #pg_3 .card .content {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 /* HTML 말고 css로 background image 를 줘야 애니메이션 먹음 */
 #pg_3 .wrapper .card .img {
-  height: 20vh;
-  width: 20vh;
-  position: absolute;
-  box-shadow: 0px 0px 5px;
-  border-radius: 50%;
-  transition: 0.5s;
-  background-repeat: no-repeat;
-  cursor: pointer;
+    height: 20vh;
+    width: 20vh;
+    position: absolute;
+    box-shadow: 0px 0px 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 #pg_3 .wrapper .card .img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* 이미지 hover 했을 때 자전하는 것처럼 표현 */
@@ -329,32 +337,32 @@ font-family: 'Roboto', sans-serif; */
 
 /* EXPLORE 버튼 */
 #pg_3 .card > a {
-  text-decoration: none;
-  padding: 7px 18px;
-  border-radius: 25px;
-  background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
-  color: #fff;
-  transition: 0.8s;
+    text-decoration: none;
+    padding: 7px 18px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
+    color: #fff;
+    transition: 0.8s;
 }
 
 #pg_3 .card > a:hover {
-  color: black;
+    color: black;
 }
 
 /* 우주선 이모티콘 */
 #pg_3 .spaceship i {
-  position: absolute;
-  font-size: 40px;
-  color: white;
-  top: 200vh;
-  left: -8vh;
-  z-index: 1;
-  animation: spaceship 10s linear infinite;
-  opacity: 0;
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    top: 200vh;
+    left: -8vh;
+    z-index: 1;
+    animation: spaceship 10s linear infinite;
+    opacity: 0;
 }
 
 #pg_3 .spaceship.on i {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* 점프하는 사람 이모티콘 */
@@ -370,72 +378,72 @@ font-family: 'Roboto', sans-serif; */
 
 /* 슬라이드 애니메이션 */
 @keyframes animate {
-  0% {
-    opacity: 0;
-    transform: translateY(100%) scale(0.5);
-  }
-  5%,
-  20% {
-    opacity: 0.4;
-    transform: translateY(100%) scale(0.7);
-  }
-  25%,
-  40% {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0%) scale(1);
-  }
-  45%,
-  60% {
-    opacity: 0.4;
-    transform: translateY(-100%) scale(0.7);
-  }
-  65%,
-  100% {
-    opacity: 0;
-    transform: translateY(-100%) scale(0.5);
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(100%) scale(0.5);
+    }
+    5%,
+    20% {
+        opacity: 0.4;
+        transform: translateY(100%) scale(0.7);
+    }
+    25%,
+    40% {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0%) scale(1);
+    }
+    45%,
+    60% {
+        opacity: 0.4;
+        transform: translateY(-100%) scale(0.7);
+    }
+    65%,
+    100% {
+        opacity: 0;
+        transform: translateY(-100%) scale(0.5);
+    }
 }
 
 /* 행성 자전하는 애니메이션 */
 @keyframes rotate {
-  to {
-    background-position: -200%, 0;
-  }
+    to {
+        background-position: -200%, 0;
+    }
 }
 
 /* 점프하는 애니메이션 */
 @keyframes jump {
-  0% {
-    transform: translate(0, 0);
-  }
+    0% {
+        transform: translate(0, 0);
+    }
 
-  50% {
-    transform: translate(0, -3vh);
-  }
+    50% {
+        transform: translate(0, -3vh);
+    }
 
-  100% {
-    transform: translateY(-1vh);
-  }
+    100% {
+        transform: translateY(-1vh);
+    }
 }
 
 /* 우주선 애니메이션 */
 @keyframes spaceship {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  25% {
-    transform: translate(40vh, -40vh) rotate(-270deg);
-  }
-  50% {
-    transform: translate(80vh, -80vh) rotate(100deg);
-  }
-  75% {
-    transform: translate(40vh, -40vh);
-  }
-  100% {
-    z-index: 0;
-  }
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(40vh, -40vh) rotate(-270deg);
+    }
+    50% {
+        transform: translate(80vh, -80vh) rotate(100deg);
+    }
+    75% {
+        transform: translate(40vh, -40vh);
+    }
+    100% {
+        z-index: 0;
+    }
 }
 /* 
 .card>.earth:active .card .content .img{
@@ -443,46 +451,46 @@ font-family: 'Roboto', sans-serif; */
 } */
 /* =================================================================================== */
 section#pg_4 {
-  width: 100%;
-  height: 100vh;
-  margin-top: 100vh;
-  /* background-color: black; */
-  overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100vh;
+    /* background-color: black; */
+    overflow: hidden;
 }
 
 section#pg_4 .container {
-  width: 100%;
-  height: 100vh;
-  position: relative;
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
 section#pg_4 .container p {
-  color: white;
+    color: white;
 }
 
 #pg_4 .container {
-  padding: 6em;
+    padding: 6em;
 }
 
 #pg_4 .container div {
-  margin-top: 2em;
+    margin-top: 2em;
 }
 #pg_4 .container p {
-  font-size: 5em;
+    font-size: 5em;
 }
 #pg_4 .container .part-1 {
-  /* border: 1px solid white; */
-  /* transform: translateX(-700px); */
-  transition: 1s;
+    /* border: 1px solid white; */
+    /* transform: translateX(-700px); */
+    transition: 1s;
 }
 /* #pg_4 .container .part-1:hover {
   transform: translateX(0px);
 } */
 #pg_4 .container .part-2 {
-  /* border: 1px solid white; */
-  margin-left: 5em;
-  /* transform: translateX(700px); */
-  transition: 1s;
+    /* border: 1px solid white; */
+    margin-left: 5em;
+    /* transform: translateX(700px); */
+    transition: 1s;
 }
 /* #pg_4 .container .part-2:hover {
   transform: translateX(0px);
@@ -490,51 +498,51 @@ section#pg_4 .container p {
 
 /* 정강이 로고 */
 #pg_4 .container .commet img {
-  position: absolute;
-  width: 60vw;
-  height: 60vw;
-  top: 50%;
-  left: 50%;
-  transform: translate(-40%, -65%);
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -65%);
 }
 #pg_4 .container .part-3 {
-  /* margin-top: 5em; */
-  margin-left: 30em;
-  /* border: 1px solid white; */
-  /* transform: translateX(-700px); */
-  transition: 1s;
+    /* margin-top: 5em; */
+    margin-left: 30em;
+    /* border: 1px solid white; */
+    /* transform: translateX(-700px); */
+    transition: 1s;
 }
 /* #pg_4 .container .part-3:hover {
   transform: translateX(0px);
 } */
 #pg_4 .container .part-4 {
-  margin-left: 35em;
-  /* border: 1px solid white; */
-  transition: 1s;
+    margin-left: 35em;
+    /* border: 1px solid white; */
+    transition: 1s;
 }
 
 #pg_4 .container .questionMark {
-  position: absolute;
-  top: 70%;
-  right: 15%;
-  transform: translate(-50%, -50%);
-  /* width: 1vw;
+    position: absolute;
+    top: 70%;
+    right: 15%;
+    transform: translate(-50%, -50%);
+    /* width: 1vw;
   height: 1vw; */
 }
 
 #pg_4 .container .questionMark img {
-  width: 15vw;
-  height: 15vw;
+    width: 15vw;
+    height: 15vw;
 }
 
 #pg_4 .container .monster {
-  position: absolute;
-  top: 55%;
-  left: 15%;
+    position: absolute;
+    top: 55%;
+    left: 15%;
 }
 #pg_4 .container .monster img {
-  width: 20vw;
-  height: 20vw;
+    width: 20vw;
+    height: 20vw;
 }
 /* ?를 텍스트로 구현하는것보다 
 네온 느낌나는 img 구해서 하는게 더 좋을것 같아서
