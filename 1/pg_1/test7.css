@@ -117,7 +117,7 @@ font-family: 'Roboto', sans-serif; */
 }
 
 #pg_1 .container .title3 .title_neon {
-  animation: glow 4s 17s ease-in-out infinite;
+  animation: glow 2s 17s ease-in-out infinite;
   margin-top: 4vh;
 }
 
