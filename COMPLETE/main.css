@@ -349,8 +349,8 @@ font-family: 'Roboto', sans-serif; */
     background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
     color: #fff;
     transition: 0.8s;
-    margin-left: 13vw;
-    margin-bottom: 2vw;
+    margin-left: 15vw;
+    margin-bottom: 0.5vw;
 }
 
 #pg_3 .card > a:hover {
