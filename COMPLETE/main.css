@@ -18,164 +18,142 @@ font-family: 'Bungee', cursive;
 font-family: 'Koulen', cursive;
 font-family: 'Roboto', sans-serif; */
 
-/* BANNER */
-
-#pg_1 {
-    position: relative;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
 }
 
+/* BANNER */
 #pg_1 .banner {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #pg_1 .banner video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#pg_1 .banner h2 {
-    /* position: absolute; */
-    /* top: 0;
-    left: 0; */
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 12vw;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgba(245, 243, 243, 0.5);
-    /* line-height: 100vh; */
-    mix-blend-mode: screen;
-    /* animation: glow 2s 6s ease-in-out infinite; */
-}
-
-#pg_1 .banner span {
-    /* animation: glow 2s 6s ease-in-out infinite; */
-    display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* CONTAINER */
 #pg_1 .container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #pg_1 .container h2 {
     display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 11vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(245, 243, 243, 0.5);
+  mix-blend-mode: screen;
 }
+
+#pg_1 .container span {
+  display: inline-block;
+}
+
 
 /* TITLE */
 #pg_1 .container .title1 {
-    /* transform: translate(600vh, 0); */
-    transform: translate(600vw, 0);
+  transform: translate(600vw, 0);
 }
 
 #pg_1:hover .container .title1 {
-    /* transform: translate(38vh, 0); */
-    transform: translate(22.5vw, 0);
-    transition: 4s;
-    transition-delay: 4s;
+  transform: translate(20.2vw, 0);
+  transition: 4s;
+  transition-delay: 4s;
 }
 
 #pg_1:active .container .title1 {
-    /* transform: translate(37vh, 32.4vh); */
-    transform: translate(23vw, 16.5vw);
-    transition: 1s;
+  transform: translate(20.2vw, 15.3vw);
+  transition: 1s;
 }
 
 #pg_1 .container .title2 {
-    /* transform: translate(-600vh, 0); */
-    transform: translate(-590vw, 0);
+  transform: translate(-600vw, 0);
 }
 
 #pg_1:hover .container .title2 {
-    /* transform: translate(-30vh, 0); */
-    transform: translate(-10vw, 0);
-    transition: 4s;
-    transition-delay: 6s;
+  transform: translate(-11vw, 0);
+  transition: 4s;
+  transition-delay: 6s;
 }
 
 #pg_1 .container .title3 {
-    /* transform: translate(600vh, 0); */
-    transform: translate(600vw, 0);
+  transform: translate(600vw, 0);
 }
 
 #pg_1:hover .container .title3 {
-    /* transform: translate(22vh, 0); */
-    transform: translate(16vw, 0);
-    transition: 3s;
-    transition-delay: 8s;
+  transform: translate(13vw, 0);
+  transition: 3s;
+  transition-delay: 8s;
 }
 
 #pg_1:active .container .title3 {
-    /* transform: translate(21.8vh, -32.2vh); */
-    transform: translate(16.5vw, -16.5vw);
-    transition: 1s;
+  transform: translate(13vw, -15.2vw);
+  transition: 1s;
 }
 
 #pg_1 .container .title1 .title_neon {
-    animation: glow 2s 15s ease-in-out infinite;
+  animation: glow 2s 15s ease-in-out infinite;
 }
 
 #pg_1 .container .title1 .title_opacity0 {
-    animation: shadownone 2s 15s ease infinite;
-    transition: 2s;
-    margin-top: 4vh;
+  animation: shadownone 2s 15s ease infinite;
+  transition: 2s;
+  margin-top: 4vh;
 }
 
 #pg_1 .container .title2 .title_neon {
-    animation: glow 5s 17s ease-in-out infinite;
-    transition-delay: 0.1s;
-    margin-top: 4vh;
+  animation: glow 5s 16s ease-in-out infinite;
+  transition-delay: 0.1s;
+  margin-top: 4vh;
 }
 
 #pg_1 .container .title2 .title_opacity0 {
-    animation: shadownone 2s 17s ease infinite;
-    transition-delay: 0.1s;
-    margin-top: 4vh;
+  animation: shadownone 2s 16s ease infinite;
+  transition-delay: 0.1s;
+  margin-top: 4vh;
 }
 
 #pg_1 .container .title3 .title_neon {
-    animation: glow 4s 19s ease-in-out infinite;
-    margin-top: 4vh;
+  animation: glow 2s 17s ease-in-out infinite;
+  margin-top: 4vh;
 }
 
 #pg_1 .container .title3 .title_opacity0 {
-    animation: shadownone 2s 19s ease infinite;
+  animation: shadownone 2s 17s ease infinite;
 }
 
 @keyframes glow {
-    0%,
-    100% {
-        color: #fff;
-        text-shadow: 0 0 10px #0652dd, 0 0 50px #0652dd, 0 0 100px #0652dd;
-    }
-
-    /* 10%, 90% {
-     
-      color: #111;
-      text-shadow: none;
-    } */
+  0%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #0652dd, 0 0 50px #0652dd, 0 0 100px #0652dd;
+  }
 }
 
 @keyframes shadownone {
-    0%,
-    100% {
-        /* color: #111;
-        text-shadow: none; */
-        opacity: 0;
-    }
+  0%,
+  100% {
+    opacity: 0;
+  }
 }
+
 /* =================================================================================== */
 /* SeungSoo */
 
