@@ -169,8 +169,9 @@ font-family: 'Roboto', sans-serif; */
 
 .noContent section {
   position: absolute;
-  top: 50vw;
+  top: 44vw;
   left: 50vw;
+  z-index: 3;
 }
 
 /* 
@@ -285,15 +286,95 @@ section::after {
   transform: rotate(180deg);
 }
 
-.greensock .moving .things {
+/* .greensock .container .things {
   position: relative;
+} */
+
+.greensock .container .things .aster1 {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 200vw;
+  left: 0;
 }
 
-.greensock .moving .things .aster1 {
-  width: 50vw;
-  height: 50vw;
+.greensock .container .things .aster2 {
+  width: 20vw;
+  height: 20vw;
   position: absolute;
-  top: 0;
+  top: 220vw;
+  left: 0;
+}
+
+.greensock .container .things .aster3 {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 240vw;
+  left: 0;
+}
+
+.greensock .container .things .aster4 {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 260vw;
+  left: 0;
+}
+
+.greensock .container .things .aster5 {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 280vw;
+  left: 0;
+}
+
+.greensock .container .things .aster6 {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 300vw;
+  left: 0;
+}
+
+.greensock .container .things .aster7 {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 320vw;
+  left: 0;
+}
+
+.greensock .container .things .aster8 {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 340vw;
+  left: 0;
+}
+
+.greensock .container .things .nebula {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 360vw;
+  left: 0;
+}
+
+.greensock .container .things .sate {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 380vw;
+  left: 0;
+}
+
+.greensock .container .things .ufo {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 400vw;
   left: 0;
 }
 /* #pg_2 {

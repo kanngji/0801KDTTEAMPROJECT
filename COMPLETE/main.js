@@ -1,3 +1,10 @@
+const scrollBtn = document.querySelector(".noContent section");
+
+setTimeout(function () {
+  scrollBtn.setAttribute("style", "display: block");
+  console.log(scrollBtn);
+}, 20000);
+
 // GreenSock
 gsap.registerPlugin(ScrollTrigger);
 const h1 = gsap.timeline();
