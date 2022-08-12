@@ -16,17 +16,15 @@ body {
   overflow-x: hidden;
 }
 /* =================================================================================== */
-
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Koulen&family=Roboto:wght@700;900&display=swap");
 /* font-family: 'Bebas Neue', cursive;
 font-family: 'Bungee', cursive;
 font-family: 'Koulen', cursive;
 font-family: 'Roboto', sans-serif; */
 
-#pg_1 {
+/* #pg_1 {
   position: relative;
-}
-
+} */
 /* BANNER */
 #pg_1 .banner {
   position: absolute;
@@ -51,13 +49,14 @@ font-family: 'Roboto', sans-serif; */
 #pg_1 .container {
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 
 #pg_1 .container h2 {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   font-size: 11vw;
   text-align: center;
   text-transform: uppercase;
@@ -159,9 +158,7 @@ font-family: 'Roboto', sans-serif; */
 .noneDisplay {
   position: absolute;
   top: 50vw;
-  opacity: 0;
 }
-
 /* =================================================================================== */
 /* No-Content */
 .noContent {
