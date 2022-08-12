@@ -1,22 +1,24 @@
 body {
-    background-color: black;
-    position: relative;
+  background-color: black;
+  position: relative;
 }
 .greensock .intro {
-    height: 100vw;
-    width: 100%;
-    color: white;
-    font: 7vw/1.8 "arial";
-    // text-align: center;
-    top: 0px;
+  height: 100vw;
+  width: 100%;
+  color: white;
+  font: 7vw/1.8 "arial";
+  // text-align: center;
+  top: 0px;
 }
 
 .greensock .intro .h1 {
-    position: absolute;
-    top: 10%;
+  position: absolute;
+  top: 10%;
+  //   perspective: 300px;
 }
 
 .photo {
-    width: 100px;
-    height: 100px;
+  width: 150px;
+  height: 210px;
+  transform: rotate(180deg);
 }

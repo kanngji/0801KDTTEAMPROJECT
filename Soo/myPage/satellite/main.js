@@ -8,62 +8,82 @@ const h5 = gsap.timeline();
 const h6 = gsap.timeline();
 
 h1.from(".h1", {
-    x: -100,
-    scale: 3,
-    duration: 1,
-    opacity: 0,
+  scale: 3,
+  duration: 1,
+  opacity: 0,
 })
-    .to(".h1", {
-        opacity: 1,
-        scale: 1,
-        duration: 2,
-        x: "90vw",
-        y: "10vw",
-    })
-    .to(".h1", {
-        opacity: 1,
-        scale: 1,
-        duration: 2,
-        x: "60vw",
-        y: "20vw",
-    })
-    .to(".h1", {
-        opacity: 1,
-        scale: 1,
-        duration: 2,
-        x: "50vw",
-        y: "30vw",
-    })
-    .to(".h1", {
-        opacity: 1,
-        scale: 1,
-        duration: 2,
-        x: "30vw",
-        y: "40vw",
-    })
-    .to(".h1", {
-        opacity: 1,
-        scale: 1,
-        duration: 2,
-        x: "10vw",
-        y: "20vw",
-    })
-    .to(".h1", {
-        opacity: 1,
-        scale: 1,
-        duration: 2,
-        x: "30vw",
-        y: "10vw",
-    });
+  .to(
+    ".h1",
+    {
+      duration: 1,
+      x: "45vw",
+      y: "-10vw",
+    },
+    "<"
+  )
+  .to(".h1", {
+    perspective: "300px",
+    rotateY: "-180deg",
+    opacity: 1,
+    scale: 5,
+    duration: 2.2,
+    x: "75vw",
+    y: "5vw",
+  })
+  .to(".h1", {
+    scale: 0.8,
+    duration: 2,
+    x: "20vw",
+    y: "-3vw",
+    perspective: "300px",
+    rotateY: "180deg",
+  })
+  .to(".h1", {
+    scale: 1.4,
+    duration: 2,
+    x: "40vw",
+    y: "3vw",
+  })
+  .to(".h1", {
+    duration: 1,
+    x: "70vw",
+    y: "5vw",
+  })
+  .to(".h1", {
+    duration: 1,
+    x: "10vw",
+    y: "20vw",
+  })
+  .to(".h1", {
+    duration: 1,
+    rotate: "-110deg",
+  })
+  .to(".h1", {
+    duration: 2,
+    x: "70vw",
+    y: "-3vw",
+  })
+  .to(".h1", {
+    duration: 2,
+    x: "40vw",
+    y: "-7vw",
+    rotate: "-360deg",
+  })
+  .to(".h1", {
+    duration: 2,
+    x: "40vw",
+    y: "37vw",
+  });
+
 ScrollTrigger.create({
-    animation: h1,
-    trigger: ".h1",
-    start: "top top",
-    // end: "top 20%",
-    end: "+=10000",
-    scrub: 2,
-    markers: true,
-    pin: true,
+  animation: h1,
+  trigger: ".h1",
+  start: "top top",
+  // end: "top 20%",
+  end: "+=10000",
+  scrub: true,
+  markers: true,
+  pin: true,
 });
 
 // h2.from(".h2", {
