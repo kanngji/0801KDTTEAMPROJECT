@@ -73,6 +73,7 @@ h1.from(".h1", {
     duration: 2,
     x: "47.5vw",
     y: "37vw",
+    opacity: 0,
   });
 
 ScrollTrigger.create({
