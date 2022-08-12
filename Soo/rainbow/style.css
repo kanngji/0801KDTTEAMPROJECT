@@ -1,3 +1,41 @@
+html,
+body {
+  height: 100%;
+  background: lightpink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+svg {
+  fill: none;
+  width: 600px;
+  stroke-width: 30px;
+  stroke-linecap: round;
+}
+
+path {
+  stroke: #000;
+  stroke-dasharray: var(--length);
+  stroke-dashoffset: var(--length);
+}
+
+.svg-main > path {
+  stroke: firebrick;
+  animation: path var(--duration) ease-in forwards;
+  animation-delay: var(--delay);
+}
+
+.svg-bg > path {
+  stroke: #fff;
+  animation: path var(--duration) ease forwards;
+  animation-delay: var(--delay);
+}
+
+@keyframes path {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
