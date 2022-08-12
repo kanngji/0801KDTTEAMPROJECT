@@ -176,7 +176,7 @@ ScrollTrigger.create({
   // end: "top 20%",
   end: "+=10000",
   scrub: true,
-  markers: true,
+  // markers: true,
   pin: true,
 });
 
