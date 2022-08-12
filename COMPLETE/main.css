@@ -292,7 +292,7 @@ section::after {
 } */
 .greensock .intro .container {
   color: white;
-  font-size: 5vw;
+  font-size: 8vw;
 }
 
 .greensock .intro .container .t1 {
@@ -305,24 +305,35 @@ section::after {
   position: absolute;
   top: 15vw;
   left: 10vw;
+  line-height: 15vw;
+  text-align: center;
+  z-index: -2;
 }
 
 .greensock .intro .container .t3 {
   position: absolute;
-  top: 15vw;
+  top: 12vw;
   left: 10vw;
+  line-height: 15vw;
+  text-align: center;
+  z-index: -2;
 }
 
 .greensock .intro .container .t4 {
   position: absolute;
   top: 15vw;
   left: 10vw;
+  line-height: 15vw;
+  text-align: center;
+  z-index: -2;
 }
 
 .greensock .intro .container .t5 {
   position: absolute;
   top: 15vw;
-  left: 10vw;
+  left: 20vw;
+  text-align: center;
+  z-index: -2;
 }
 
 .greensock .container .things {
