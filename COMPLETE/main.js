@@ -9,7 +9,7 @@ const h6 = gsap.timeline();
 
 h1.from(".h1", {
   scale: 3,
-  duration: 1,
+  duration: 2.5,
   opacity: 0,
 })
   .to(
@@ -78,7 +78,7 @@ h1.from(".h1", {
 ScrollTrigger.create({
   animation: h1,
   trigger: ".intro",
-  start: "top 14%",
+  start: "3.5% 14%",
   // end: "top 20%",
   end: "+=10000",
   scrub: true,
