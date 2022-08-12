@@ -49,7 +49,7 @@ font-family: 'Roboto', sans-serif; */
 #pg_1 .container {
   display: flex;
   flex-direction: column;
-  z-index: 2;
+  z-index: 3;
 }
 
 #pg_1 .container h2 {
@@ -263,7 +263,9 @@ section::after {
   }
 }
 /* SeungSoo */
-
+/* .greensock {
+  position: relative;
+} */
 .greensock .intro {
   height: 100vw;
   width: 100%;
@@ -281,6 +283,18 @@ section::after {
   width: 150px;
   height: 210px;
   transform: rotate(180deg);
+}
+
+.greensock .moving .things {
+  position: relative;
+}
+
+.greensock .moving .things .aster1 {
+  width: 50vw;
+  height: 50vw;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /* #pg_2 {
     width: 100%;
