@@ -74,13 +74,13 @@ font-family: 'Roboto', sans-serif; */
 }
 
 #pg_1:hover .container .title1 {
-  transform: translate(20.2vw, 0);
+  transform: translate(18.5vw, 0);
   transition: 4s;
   transition-delay: 4s;
 }
 
 #pg_1:active .container .title1 {
-  transform: translate(20.2vw, 15.3vw);
+  transform: translate(22.7vw, 16.7vw);
   transition: 1s;
 }
 
@@ -99,13 +99,13 @@ font-family: 'Roboto', sans-serif; */
 }
 
 #pg_1:hover .container .title3 {
-  transform: translate(13vw, 0);
+  transform: translate(19vw, 0);
   transition: 3s;
   transition-delay: 8s;
 }
 
 #pg_1:active .container .title3 {
-  transform: translate(13vw, -15.2vw);
+  transform: translate(13.5vw, -16.5vw);
   transition: 1s;
 }
 
