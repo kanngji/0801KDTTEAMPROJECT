@@ -8,11 +8,6 @@ setTimeout(function () {
 // GreenSock
 gsap.registerPlugin(ScrollTrigger);
 const h1 = gsap.timeline();
-const h2 = gsap.timeline();
-const h3 = gsap.timeline();
-const h4 = gsap.timeline();
-const h5 = gsap.timeline();
-const h6 = gsap.timeline();
 
 h1.from(".h1", {
   scale: 3,
@@ -29,38 +24,79 @@ h1.from(".h1", {
     "<"
   )
   .to(".h1", {
-    perspective: "300px",
-    rotateY: "-180deg",
     opacity: 1,
     scale: 5,
     duration: 2.2,
     x: "75vw",
     y: "5vw",
   })
+  .to(
+    ".t1",
+    {
+      duration: 5,
+      opacity: 0,
+      y: -100,
+    },
+    "<"
+  )
   .to(".h1", {
     scale: 0.8,
     duration: 2,
     x: "20vw",
     y: "-3vw",
-    perspective: "300px",
-    rotateY: "180deg",
   })
+  .to(
+    ".t2",
+    {
+      duration: 5,
+      opacity: 0,
+      y: -100,
+    },
+    "<"
+  )
   .to(".h1", {
     scale: 1.4,
     duration: 2,
     x: "40vw",
     y: "3vw",
   })
+  .to(
+    ".t3",
+    {
+      duration: 5,
+      opacity: 0,
+      y: -100,
+    },
+    "<"
+  )
   .to(".h1", {
     duration: 1,
     x: "70vw",
     y: "5vw",
   })
+  .to(
+    ".t4",
+    {
+      duration: 5,
+      opacity: 0,
+      y: -100,
+    },
+    "<"
+  )
   .to(".h1", {
     duration: 1,
     x: "10vw",
     y: "20vw",
   })
+  .to(
+    ".t5",
+    {
+      duration: 5,
+      opacity: 0,
+      y: -100,
+    },
+    "<"
+  )
   .to(".h1", {
     duration: 1,
     rotate: "-110deg",
@@ -88,11 +124,34 @@ ScrollTrigger.create({
   trigger: ".intro",
   start: "3.5% 14%",
   // end: "top 20%",
-  end: "+=10000",
+  end: "+=5000",
   scrub: true,
   markers: true,
   pin: true,
 });
+
+// const t1 = gsap.timeline();
+
+// t1.to(".text", {
+//   duration: 2,
+//   opacity: 0,
+//   y: -100,
+// }).to(".t2", {
+//   duration: 2,
+//   opacity: 0,
+//   y: -100,
+// });
+
+// ScrollTrigger.create({
+//   animation: t1,
+//   trigger: ".intro",
+//   start: "top top",
+//   // end: "top 20%",
+//   end: "+=10000",
+//   scrub: 2,
+//   markers: true,
+//   pin: true,
+// });
 
 // =====================================================================================================
 // const asteriod = document.querySelector(".asteriod");

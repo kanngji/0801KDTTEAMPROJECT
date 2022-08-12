@@ -284,26 +284,65 @@ section::after {
   width: 150px;
   height: 210px;
   transform: rotate(180deg);
+  z-index: 20;
 }
 
 /* .greensock .container .things {
   position: relative;
 } */
+.greensock .intro .container {
+  color: white;
+  font-size: 5vw;
+}
 
+.greensock .intro .container .t1 {
+  position: absolute;
+  top: 15vw;
+  left: 10vw;
+}
+
+.greensock .intro .container .t2 {
+  position: absolute;
+  top: 15vw;
+  left: 10vw;
+}
+
+.greensock .intro .container .t3 {
+  position: absolute;
+  top: 15vw;
+  left: 10vw;
+}
+
+.greensock .intro .container .t4 {
+  position: absolute;
+  top: 15vw;
+  left: 10vw;
+}
+
+.greensock .intro .container .t5 {
+  position: absolute;
+  top: 15vw;
+  left: 10vw;
+}
+
+.greensock .container .things {
+  z-index: -1;
+}
 .greensock .container .things .aster1 {
   width: 20vw;
   height: 20vw;
   position: absolute;
   top: 200vw;
-  left: 0;
+  left: 20vw;
 }
 
 .greensock .container .things .aster2 {
   width: 20vw;
   height: 20vw;
   position: absolute;
-  top: 220vw;
-  left: 0;
+  /* top: 230vw;
+  left: 70vw;
+  z-index: -1; */
 }
 
 .greensock .container .things .aster3 {
@@ -355,11 +394,12 @@ section::after {
 }
 
 .greensock .container .things .nebula {
-  width: 20vw;
-  height: 20vw;
+  width: 40vw;
+  height: 30vw;
   position: absolute;
-  top: 360vw;
-  left: 0;
+  top: 230vw;
+  left: 50vw;
+  z-index: -1;
 }
 
 .greensock .container .things .sate {
