@@ -1,33 +1,3 @@
-// const mainGroup = document.querySelector(".svg-main");
-// const mainPaths = mainGroup.querySelectorAll("path");
-
-// mainPaths.forEach((path, index) => {
-//     const length = path.getTotalLength();
-//     path.style.setProperty("--length", length);
-//     path.style.setProperty("--delay", index * 100 + "ms");
-//     path.style.setProperty("--duration", length * 5 + "ms");
-// });
-
-// const bgGroup = document.querySelector(".svg-bg");
-// const bgPaths = bgGroup.querySelectorAll("path");
-
-// bgPaths.forEach((path, index) => {
-//     const length = path.getTotalLength();
-//     path.style.setProperty("--length", length);
-//     path.style.setProperty("--delay", index * 100 + "ms");
-//     path.style.setProperty("--duration", length * 5 + "ms");
-// });
-
-// var options = {
-//     strings: ["Hello", "DoGGaeB", "kkk"],
-//     typeSpeed: 200,
-//     backSpeed: 100,
-//     fadeOut: true,
-//     smartBackspace: true,
-//     cursorChar: "_",
-//     loop: true,
-// };
-
 var typed = new Typed(".element", {
     // Waits 1000ms after typing "First"
     strings: ["Hello^2000", "DoGGaeB^2000", "kkk^2000"],
@@ -73,11 +43,15 @@ function fade_in() {
     }
 }
 
+function mainMove() {
+    window.location.replace("./main/main.html");
+}
 enterBtn.addEventListener("click", function () {
     albumEl.setAttribute("style", "display: none");
     loadingEl.setAttribute("style", "display: block");
-    loadingEl.animate({ transform: ["scale(1)", "scale(1.75)"] }, { duration: 2000, fill: "forwards", easing: "ease" });
-    setTimeout(displayNone, 3000);
+    loadingEl.animate({ transform: ["scale(1)", "scale(1.75)", "scale(1.325)", "scale(1)"] }, { duration: 5000, fill: "forwards", easing: "ease" });
+    // setTimeout(displayNone, 5000);
+    setTimeout(mainMove, 4000);
 });
 
 // ===============================================================================================

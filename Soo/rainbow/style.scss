@@ -69,15 +69,6 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.swing .album {
-    position: absolute;
-    width: 80vw;
-    height: 40vw;
-    border: 5px solid #f8f8f8;
-    background-color: white;
-    border-radius: 30px;
-}
-
 @keyframes swing {
     0% {
         transform: translate(0, 0);
@@ -88,20 +79,30 @@ body {
 }
 
 // Album > Text-typing
-.album .element {
+
+.swing .album {
+    position: absolute;
+    width: 80vw;
+    height: 40vw;
+    border: 5px solid #f8f8f8;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.swing .album .element {
     // position: absolute;
     font-family: "Lora", serif;
     font-size: 5vw;
     margin-left: 30vw;
 }
 
-.album .typed-cursor,
+.swing .album .typed-cursor,
 .swing .loading .typed-cursor {
     font-family: "Lora", serif;
     font-size: 2vw;
 }
 
-.album .noBox {
+.swing .album .noBox {
     width: 100%;
     height: 15vw;
 }
@@ -126,7 +127,7 @@ body {
     margin-left: 30vw;
 }
 
-.album .enterBtn {
+.swing .album .enterBtn {
     position: absolute;
     font-family: "Lora", serif;
     font-size: 1.6vw;
@@ -139,7 +140,7 @@ body {
     opacity: 0;
 }
 
-.album .enterBtn:hover {
+.swing .album .enterBtn:hover {
     transform: scale(1.3);
     transition: 0.5s;
 }
