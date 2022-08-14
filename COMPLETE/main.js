@@ -267,20 +267,20 @@ window.addEventListener("scroll", function () {
     scrollYpos = window.scrollY;
     console.log(scrollYpos);
 
-    if (scrollYpos > 3400) {
+    if (scrollYpos > 13500) {
         const sunAnimate = document.querySelector("#pg_3 .sun");
         sunAnimate.classList.add("animate");
     }
 
-    if (scrollYpos > 4200) {
+    if (scrollYpos > 14600) {
         const sunAnimate = document.querySelector("#pg_3 .wrapper");
         sunAnimate.classList.add("on");
     }
 
-    if (scrollYpos > 3830) {
-        const sunAnimate = document.querySelector("#pg_3 .spaceship");
-        sunAnimate.classList.add("on");
-    }
+    // if (scrollYpos > 3830) {
+    //     const sunAnimate = document.querySelector("#pg_3 .spaceship");
+    //     sunAnimate.classList.add("on");
+    // }
 });
 
 // =====================================================================================================
