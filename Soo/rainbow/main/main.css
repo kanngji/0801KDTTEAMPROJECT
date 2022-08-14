@@ -13,7 +13,7 @@ body {
   background-image: url("../img/space.jpg");
   background-repeat: repeat;
   width: 100%;
-  height: 1000vw;
+  height: 2000vw;
 }
 
 .container {
@@ -21,7 +21,7 @@ body {
   top: 3vw;
   left: 10vw;
   width: 80vw;
-  height: 1000vw;
+  height: 2000vw;
   border: 5px solid #f8f8f8;
   border-radius: 30px;
 }
@@ -181,6 +181,18 @@ section.innerbox::after {
   transform-origin: center;
   border-radius: 10px;
   z-index: 2;
+}
+.second .red img:nth-child(3) {
+  position: absolute;
+  top: 17.3vw;
+  left: 30vw;
+  border-radius: 30px;
+  width: 15vw;
+  height: 27vw;
+  transform-origin: center;
+  border-radius: 10px;
+  z-index: 2;
+  transform: scale(1.5);
 }
 .second .red .text {
   font-size: 10vw;

@@ -11,10 +11,10 @@ const red = gsap.timeline();
 red.from(
     ".pic1",
     {
-        x: 200,
+        x: 600,
         scale: 2,
         duration: 3,
-        opacity: 0.5,
+        opacity: 0,
         rotate: "10deg",
     },
     0
@@ -40,7 +40,7 @@ red.from(
     .to(
         ".text1",
         {
-            duration: 1,
+            duration: 3,
         },
         "<"
     )
@@ -109,11 +109,10 @@ red.from(
         4
     )
     .to(".pic1", {
-        x: 450,
-        y: -100,
-        duration: 3,
-        scale: 1.7,
+        opacity: 0,
     })
+    .from(".pic3", { opacity: 0, x: -450, y: 100, duration: 3, scale: 1.7 })
+
     .from(
         ".text5",
         {
