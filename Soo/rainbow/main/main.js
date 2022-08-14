@@ -11,22 +11,139 @@ const red = gsap.timeline();
 red.from(
     ".pic1",
     {
-        y: 100,
-        scale: 1,
+        x: 200,
+        scale: 2,
         duration: 3,
-        opacity: 0,
+        opacity: 0.5,
+        rotate: "10deg",
     },
     0
-).to(".pic1", {
-    scale: 1,
-});
+)
+    .from(
+        ".pic2",
+        {
+            scale: 0,
+            duration: 3,
+            opacity: 0.5,
+        },
+        0
+    )
+    .from(
+        ".text1",
+        {
+            color: "white",
+            y: 100,
+            textShadow: "none",
+        },
+        1
+    )
+    .to(
+        ".text1",
+        {
+            duration: 1,
+        },
+        "<"
+    )
+    .to(
+        ".pic2",
+        {
+            rotate: "4deg",
+        },
+        1
+    )
+    .from(
+        ".text2",
+        {
+            color: "white",
+            y: 100,
+            textShadow: "none",
+        },
+        2
+    )
+    .to(".text2", {
+        duration: 1,
+    })
+    .to(
+        ".pic2",
+        {
+            rotate: "8deg",
+        },
+        2
+    )
+    .from(
+        ".text3",
+        {
+            color: "white",
+            y: 100,
+            textShadow: "none",
+        },
+        3
+    )
+    .to(".text3", {
+        duration: 1,
+    })
+    .to(
+        ".pic2",
+        {
+            rotate: "12deg",
+        },
+        3
+    )
+    .from(
+        ".text4",
+        {
+            color: "white",
+            y: 100,
+            textShadow: "none",
+        },
+        4
+    )
+    .to(".text4", {
+        duration: 1,
+    })
+    .to(
+        ".pic2",
+        {
+            rotate: "16deg",
+        },
+        4
+    )
+    .to(".pic1", {
+        x: 450,
+        y: -100,
+        duration: 3,
+        scale: 1.7,
+    })
+    .from(
+        ".text5",
+        {
+            color: "white",
+            y: 100,
+            textShadow: "none",
+        },
+        5
+    )
+    .to(
+        ".pic2",
+        {
+            rotate: "20deg",
+            opacity: 0,
+        },
+        5
+    )
+    .to(".text5", {
+        duration: 1,
+    })
+    .to(".pic2", {
+        opacity: 0,
+    });
 
 ScrollTrigger.create({
     animation: red,
-    trigger: ".pic1",
-    start: "-50% top",
+    trigger: ".red",
+    start: "top 7%",
     // end: "top 20%",
-    end: "+=5000",
+    end: "+=7500",
     scrub: 2,
     markers: true,
     pin: true,
