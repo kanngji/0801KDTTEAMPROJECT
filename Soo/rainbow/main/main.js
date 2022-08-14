@@ -142,7 +142,7 @@ ScrollTrigger.create({
     trigger: ".red",
     start: "top 7%",
     // end: "top 20%",
-    end: "+=7500",
+    end: "+=8000",
     scrub: 2,
     markers: true,
     pin: true,
