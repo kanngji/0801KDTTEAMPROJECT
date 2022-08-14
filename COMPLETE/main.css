@@ -507,17 +507,17 @@ section::after {
   background-repeat: no-repeat;
   position: absolute;
   /* transform: translate(56vh, 50vh); */
-  transform: translate(30vw, 70vw);
+  /* transform: translate(40vw, 30vw); */
   height: 100vw;
   width: 100vw;
-  top: -70vw;
-  left: -1vw;
+  top: -10vw;
+  left: 24vw;
   /* animation: rotate 5s linear infinite; */
 }
 
 #pg_3 .sun.animate {
   transition: 5s;
-  transform: translate(-2vw, 120vw) scale(1.1);
+  transform: translate(-27vw, 60vw) scale(1.1);
 }
 
 /* PLANET */
@@ -530,7 +530,6 @@ section::after {
   width: 40vw;
   left: 100vh;
   top: 50vw;
-  /* border: 1px solid gray; */
   opacity: 0;
   transition: 1s;
 }
