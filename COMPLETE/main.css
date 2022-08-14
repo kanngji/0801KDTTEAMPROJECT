@@ -548,12 +548,12 @@ section::after {
   position: absolute;
   opacity: 0;
   pointer-events: none;
-  animation: animate 20s linear infinite;
-  animation-delay: calc(4s * var(--delay));
+  animation: animate 15s linear infinite;
+  animation-delay: calc(3s * var(--delay));
 }
 
 #pg_3 .wrapper .card:last-child {
-  animation-delay: calc(-4s * var(--delay));
+  animation-delay: calc(-3s * var(--delay));
 }
 
 /* 지정된 공간에 hover 하면 애니메이션 멈추기 */
