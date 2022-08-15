@@ -144,7 +144,7 @@ ScrollTrigger.create({
     // end: "top 20%",
     end: "+=8000",
     scrub: 2,
-    markers: true,
+    // markers: true,
     pin: true,
 });
 // gsap.set(".one_half .main", { position: "fixed", width: "100%", maxWidth: "1200px", height: "100%", top: "0vw", left: "50%", x: "-50%" });
@@ -169,9 +169,9 @@ setInterval(function () {
 
     document.getElementById("month").innerHTML = month + " months ";
     document.getElementById("day").innerHTML = day + " days ";
-    document.getElementById("hour").innerHTML = hour + " ";
-    document.getElementById("min").innerHTML = min + " ";
-    document.getElementById("sec").innerHTML = sec + " ";
+    document.getElementById("hour").innerHTML = hour + "　h";
+    document.getElementById("min").innerHTML = min + "　m";
+    document.getElementById("sec").innerHTML = sec + " s";
 }, 1000);
 
 const birth = gsap.timeline();
@@ -194,28 +194,28 @@ birth
     })
     .to("#month", {
         color: "rgb(256, 256, 256)",
-        webkitTextStroke: "7px rgb(11, 24, 39)",
+        // webkitTextStroke: "7px rgb(11, 24, 39)",
         duration: 1,
     })
     .to("#day", {
         color: "rgb(256, 256, 256)",
-        webkitTextStroke: "7px rgb(11, 24, 39)",
+        // webkitTextStroke: "7px rgb(11, 24, 39)",
         duration: 1,
     })
     .to("#hour", {
         color: "rgb(256, 256, 256)",
-        webkitTextStroke: "7px rgb(11, 24, 39)",
+        // webkitTextStroke: "7px rgb(11, 24, 39)",
         duration: 1,
     })
     .to("#min", {
         color: "rgb(256, 256, 256)",
-        webkitTextStroke: "7px rgb(11, 24, 39)",
+        // webkitTextStroke: "7px rgb(11, 24, 39)",
         duration: 1,
     })
     .to("#sec", {
         color: "rgb(256, 256, 256)",
-        webkitTextStroke: "7px rgb(11, 24, 39)",
-        duration: 5,
+        // webkitTextStroke: "7px rgb(11, 24, 39)",
+        duration: 3,
     });
 
 ScrollTrigger.create({
@@ -225,6 +225,6 @@ ScrollTrigger.create({
     // end: "top 20%",
     end: "+=10000",
     scrub: 2,
-    markers: true,
+    // markers: true,
     pin: true,
 });
