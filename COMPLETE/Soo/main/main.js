@@ -260,6 +260,7 @@ redBtn.addEventListener("click", function () {
             wrap[i].setAttribute("style", "display: none");
             // wrap[i].animate({ opacity: 1, opacity: 0, opacity: 0 }, { duration: 1000, fill: "forwards", easing: "ease" });
         }
+        // list.querySelectorAll(".btn")[i].style = "color: #343434";
     }
     redEl.setAttribute("style", "display: block");
     // wrap.animate({ opacity: 0, opacity: 1, opacity: 0 }, { duration: 1000, fill: "forwards", easing: "ease" });
@@ -321,7 +322,9 @@ blackBtn.addEventListener("click", function () {
         if (i != 6) {
             wrap[i].setAttribute("style", "display: none");
         }
+        // list.querySelectorAll(".btn")[i].style = "color: white";
     }
+
     blackEl.setAttribute("style", "display: block");
     blackEl.animate({ opacity: 0.3, opacity: 1, opacity: 1 }, { duration: 1000, fill: "forwards", easing: "ease" });
 });

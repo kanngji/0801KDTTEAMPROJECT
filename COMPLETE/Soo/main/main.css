@@ -313,14 +313,14 @@ section.innerbox::after {
   top: 1405vw;
 }
 #fourth .wrap div {
-  width: 79vw;
+  width: 79.5vw;
   height: 52vw;
   position: absolute;
   top: 0vw;
   opacity: 0;
 }
 #fourth .wrap .red {
-  background-color: red;
+  background-color: #f25c54;
 }
 #fourth .wrap .red img {
   position: absolute;
@@ -328,7 +328,7 @@ section.innerbox::after {
   top: 10vw;
 }
 #fourth .wrap .orange {
-  background-color: orange;
+  background-color: #ff8c42;
 }
 #fourth .wrap .orange img {
   position: absolute;
@@ -336,7 +336,7 @@ section.innerbox::after {
   top: 10vw;
 }
 #fourth .wrap .yellow {
-  background-color: yellow;
+  background-color: #f9dc5c;
 }
 #fourth .wrap .yellow img {
   position: absolute;
@@ -344,7 +344,7 @@ section.innerbox::after {
   top: 10vw;
 }
 #fourth .wrap .green {
-  background-color: green;
+  background-color: #76c893;
 }
 #fourth .wrap .green img {
   position: absolute;
@@ -352,7 +352,7 @@ section.innerbox::after {
   top: 10vw;
 }
 #fourth .wrap .sky {
-  background-color: skyblue;
+  background-color: #90caf9;
 }
 #fourth .wrap .sky img {
   position: absolute;
@@ -360,7 +360,7 @@ section.innerbox::after {
   top: 10vw;
 }
 #fourth .wrap .violet {
-  background-color: violet;
+  background-color: #e5b3fe;
 }
 #fourth .wrap .violet img {
   position: absolute;
@@ -368,7 +368,7 @@ section.innerbox::after {
   top: 10vw;
 }
 #fourth .wrap .black {
-  background-color: black;
+  background-color: #212529;
 }
 #fourth .wrap .black img {
   position: absolute;
@@ -377,18 +377,236 @@ section.innerbox::after {
 }
 #fourth #btns {
   position: absolute;
-  top: 5vw;
-  width: 6vw;
-  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  top: 43vw;
+  left: 12.5vw;
+  width: 55vw;
   font-size: 2vw;
   cursor: pointer;
   z-index: 999;
+  text-align: center;
 }
 #fourth #btns .btn {
   width: 5vw;
   height: 5vw;
-  background-color: red;
-  border-radius: 50%;
+}
+#fourth #btns .btn_orange {
+  margin-right: 2.5vw;
+}
+#fourth #btns .btn_yellow {
+  margin-right: 1.5vw;
+}
+
+.btn_red {
+  display: inline-block;
+  color: #343434;
+  transition: color 250ms, text-shadow 250ms;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgb(255, 255, 255);
+  position: relative;
+  z-index: 0;
+}
+.btn_red::after {
+  position: absolute;
+  z-index: -1;
+  bottom: 2vw;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #f25c54;
+  transition: all 250ms;
+}
+.btn_red:hover {
+  color: white;
+  text-shadow: 0px 1px 0px rgb(0, 0, 0);
+}
+.btn_red:hover::after {
+  height: 65%;
+  width: 110%;
+}
+
+.btn_yellow {
+  display: inline-block;
+  color: #343434;
+  transition: color 250ms, text-shadow 250ms;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgb(255, 255, 255);
+  position: relative;
+  z-index: 0;
+}
+.btn_yellow::after {
+  position: absolute;
+  z-index: -1;
+  bottom: 2vw;
+  left: 50%;
+  transform: translateX(-45%);
+  content: "";
+  width: 130%;
+  height: 3px;
+  background-color: #f9dc5c;
+  transition: all 250ms;
+}
+.btn_yellow:hover {
+  color: white;
+  text-shadow: 0px 1px 0px rgb(0, 0, 0);
+}
+.btn_yellow:hover::after {
+  height: 65%;
+  width: 130%;
+}
+
+.btn_orange {
+  display: inline-block;
+  color: #343434;
+  transition: color 250ms, text-shadow 250ms;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgb(255, 255, 255);
+  position: relative;
+  z-index: 0;
+}
+.btn_orange::after {
+  position: absolute;
+  z-index: -1;
+  bottom: 2vw;
+  left: 50%;
+  transform: translateX(-40%);
+  content: "";
+  width: 150%;
+  height: 3px;
+  background-color: #ff8c42;
+  transition: all 250ms;
+}
+.btn_orange:hover {
+  color: white;
+  text-shadow: 0px 1px 0px rgb(0, 0, 0);
+}
+.btn_orange:hover::after {
+  height: 65%;
+  width: 150%;
+}
+
+.btn_green {
+  display: inline-block;
+  color: #343434;
+  transition: color 250ms, text-shadow 250ms;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgb(255, 255, 255);
+  position: relative;
+  z-index: 0;
+}
+.btn_green::after {
+  position: absolute;
+  z-index: -1;
+  bottom: 2vw;
+  left: 50%;
+  transform: translateX(-47%);
+  content: "";
+  width: 120%;
+  height: 3px;
+  background-color: #76c893;
+  transition: all 250ms;
+}
+.btn_green:hover {
+  color: white;
+  text-shadow: 0px 1px 0px rgb(0, 0, 0);
+}
+.btn_green:hover::after {
+  height: 65%;
+  width: 120%;
+}
+
+.btn_sky {
+  display: inline-block;
+  color: #343434;
+  transition: color 250ms, text-shadow 250ms;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgb(255, 255, 255);
+  position: relative;
+  z-index: 0;
+}
+.btn_sky::after {
+  position: absolute;
+  z-index: -1;
+  bottom: 2vw;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #90caf9;
+  transition: all 250ms;
+}
+.btn_sky:hover {
+  color: white;
+  text-shadow: 0px 1px 0px rgb(0, 0, 0);
+}
+.btn_sky:hover::after {
+  height: 65%;
+  width: 100%;
+}
+
+.btn_violet {
+  display: inline-block;
+  color: #343434;
+  transition: color 250ms, text-shadow 250ms;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgb(255, 255, 255);
+  position: relative;
+  z-index: 0;
+}
+.btn_violet::after {
+  position: absolute;
+  z-index: -1;
+  bottom: 2vw;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 130%;
+  height: 3px;
+  background-color: #e5b3fe;
+  transition: all 250ms;
+}
+.btn_violet:hover {
+  color: white;
+  text-shadow: 0px 1px 0px rgb(0, 0, 0);
+}
+.btn_violet:hover::after {
+  height: 65%;
+  width: 130%;
+}
+
+.btn_black {
+  display: inline-block;
+  color: #343434;
+  transition: color 250ms, text-shadow 250ms;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgb(255, 255, 255);
+  position: relative;
+  z-index: 0;
+}
+.btn_black::after {
+  position: absolute;
+  z-index: -1;
+  bottom: 2vw;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #212529;
+  transition: all 250ms;
+}
+.btn_black:hover {
+  color: white;
+  text-shadow: 0px 1px 0px rgb(0, 0, 0);
+}
+.btn_black:hover::after {
+  height: 65%;
+  width: 110%;
 }
 
 /*# sourceMappingURL=main.css.map */
