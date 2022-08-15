@@ -10,12 +10,66 @@ html {
 
 body {
     position: relative;
-    background-image: url("../img/space.jpg");
-    background-repeat: repeat;
+    // background-image: url("../img/space.jpg");
+    // background-repeat: repeat;
     width: 100%;
     height: 2000vw;
 }
+// =====================================================================
+@import url("https://fonts.googleapis.com/css?family=Corben:700");
 
+.bg {
+    background-image: radial-gradient(50% 176%, #000000 80%, #061922 100%);
+    // min-height: 100vh;
+    min-height: 3000vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    &__content {
+        position: relative;
+        align-self: center;
+        padding: 3rem 0;
+    }
+}
+
+.star {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.star .svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#star-top-layer {
+    will-change: transform;
+    transform: translateY(-768px);
+    animation: fall 22.5s infinite linear;
+}
+
+#star-bottom-layer {
+    will-change: transform;
+    transform: translateY(-768px);
+    animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+// =====================================================================
 .container {
     position: absolute;
     top: 3vw;
@@ -275,8 +329,9 @@ section.innerbox {
     height: 200vw;
     background-color: rgb(18, 41, 67);
     font-size: 9vw;
-    color: rgb(11, 24, 39);
+    color: rgb(15, 33, 53);
     text-shadow: 3px 3px 3px rgb(47, 75, 119);
+    // text-shadow: 6px 6px 7px rgba(166, 180, 200, 0.7), -6px -6px 6px rgba(255, 255, 255, 0.8);
 
     & .bbaegom1 {
         width: 100%;
@@ -284,20 +339,20 @@ section.innerbox {
 
     & h1.from {
         position: absolute;
-        top: 23vw;
+        top: 22vw;
         left: 5vw;
     }
 
     & h1.the {
         position: absolute;
-        top: 25vw;
+        top: 24vw;
         left: 30vw;
         font-size: 3vw;
     }
 
     & h1.birthday {
         position: absolute;
-        top: 23vw;
+        top: 22vw;
         left: 35vw;
     }
 
@@ -319,3 +374,118 @@ section.innerbox {
         left: 0.1vw;
     }
 }
+
+//
+#fourth {
+    position: absolute;
+    width: 100%;
+    height: 200vw;
+    background-color: white;
+    top: 1405vw;
+
+    & .wrap {
+        & div {
+            width: 79vw;
+            height: 52vw;
+            position: absolute;
+            top: 0vw;
+            opacity: 0;
+        }
+        & .red {
+            background-color: red;
+
+            & img {
+                position: absolute;
+                right: 0;
+                top: 10vw;
+            }
+        }
+
+        & .orange {
+            background-color: orange;
+
+            & img {
+                position: absolute;
+                right: 0;
+                top: 10vw;
+            }
+        }
+
+        & .yellow {
+            background-color: yellow;
+
+            & img {
+                position: absolute;
+                right: 0;
+                top: 10vw;
+            }
+        }
+
+        & .green {
+            background-color: green;
+
+            & img {
+                position: absolute;
+                right: 0;
+                top: 10vw;
+            }
+        }
+
+        & .sky {
+            background-color: skyblue;
+
+            & img {
+                position: absolute;
+                right: 0;
+                top: 10vw;
+            }
+        }
+
+        & .violet {
+            background-color: violet;
+
+            & img {
+                position: absolute;
+                right: 0;
+                top: 10vw;
+            }
+        }
+
+        & .black {
+            background-color: black;
+
+            & img {
+                position: absolute;
+                right: 0;
+                top: 10vw;
+            }
+        }
+    }
+
+    & #btns {
+        position: absolute;
+        top: 5vw;
+        width: 6vw;
+        border: 2px solid red;
+        font-size: 2vw;
+        cursor: pointer;
+        z-index: 999;
+
+        & .btn {
+            width: 5vw;
+            height: 5vw;
+            background-color: red;
+            border-radius: 50%;
+        }
+    }
+}
+
+#fourth .wrap .on {
+    // animation: 5000 forwards ease;
+}
+
+// @keyframes show {
+//     (opacity: 0),
+//     opacity: 1;
+//     opacity: 1;
+// } ;

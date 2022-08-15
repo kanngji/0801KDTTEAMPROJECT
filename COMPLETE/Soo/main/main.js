@@ -47,7 +47,7 @@ red.from(
     .to(
         ".pic2",
         {
-            rotate: "4deg",
+            rotate: "5deg",
         },
         1
     )
@@ -66,7 +66,7 @@ red.from(
     .to(
         ".pic2",
         {
-            rotate: "8deg",
+            rotate: "-5deg",
         },
         2
     )
@@ -85,7 +85,7 @@ red.from(
     .to(
         ".pic2",
         {
-            rotate: "12deg",
+            rotate: "5deg",
         },
         3
     )
@@ -104,7 +104,7 @@ red.from(
     .to(
         ".pic2",
         {
-            rotate: "16deg",
+            rotate: "-5deg",
         },
         4
     )
@@ -125,7 +125,7 @@ red.from(
     .to(
         ".pic2",
         {
-            rotate: "20deg",
+            rotate: "0deg",
             opacity: 0,
         },
         5
@@ -170,7 +170,7 @@ setInterval(function () {
     document.getElementById("month").innerHTML = month + " months ";
     document.getElementById("day").innerHTML = day + " days ";
     document.getElementById("hour").innerHTML = hour + "　h";
-    document.getElementById("min").innerHTML = min + "　m";
+    document.getElementById("min").innerHTML = min + " m";
     document.getElementById("sec").innerHTML = sec + " s";
 }, 1000);
 
@@ -179,7 +179,7 @@ const birth = gsap.timeline();
 birth
     .to(".from", {
         color: "rgb(256, 256, 256)",
-        webkitTextStroke: "10px rgb(11, 24, 39)",
+        webkitTextStroke: "8px rgb(11, 24, 39)",
         duration: 1,
     })
     .to(".the", {
@@ -189,7 +189,7 @@ birth
     })
     .to(".birthday", {
         color: "rgb(256, 256, 256)",
-        webkitTextStroke: "10px rgb(11, 24, 39)",
+        webkitTextStroke: "8px rgb(11, 24, 39)",
         duration: 1,
     })
     .to("#month", {
@@ -227,4 +227,101 @@ ScrollTrigger.create({
     scrub: 2,
     // markers: true,
     pin: true,
+});
+
+// ===========================================================================
+const list = document.querySelector("#fourth");
+const wrap = list.querySelectorAll(".wrap div");
+
+const redEl = list.querySelector(".wrap .red");
+const redBtn = list.querySelector("#btns .btn_red");
+
+const orangeEl = list.querySelector(".wrap .orange");
+const orangeBtn = list.querySelector("#btns .btn_orange");
+
+const yellowEl = list.querySelector(".wrap .yellow");
+const yellowBtn = list.querySelector("#btns .btn_yellow");
+
+const greenEl = list.querySelector(".wrap .green");
+const greenBtn = list.querySelector("#btns .btn_green");
+
+const skyEl = list.querySelector(".wrap .sky");
+const skyBtn = list.querySelector("#btns .btn_sky");
+
+const violetEl = list.querySelector(".wrap .violet");
+const violetBtn = list.querySelector("#btns .btn_violet");
+
+const blackEl = list.querySelector(".wrap .black");
+const blackBtn = list.querySelector("#btns .btn_black");
+
+redBtn.addEventListener("click", function () {
+    for (let i = 0; i < 7; i++) {
+        if (i != 0) {
+            wrap[i].setAttribute("style", "display: none");
+            // wrap[i].animate({ opacity: 1, opacity: 0, opacity: 0 }, { duration: 1000, fill: "forwards", easing: "ease" });
+        }
+    }
+    redEl.setAttribute("style", "display: block");
+    // wrap.animate({ opacity: 0, opacity: 1, opacity: 0 }, { duration: 1000, fill: "forwards", easing: "ease" });
+    redEl.animate({ opacity: 0.3, opacity: 1, opacity: 1 }, { duration: 1000, fill: "forwards", easing: "ease" });
+});
+
+orangeBtn.addEventListener("click", function () {
+    for (let i = 0; i < 7; i++) {
+        if (i != 1) {
+            wrap[i].setAttribute("style", "display: none");
+        }
+    }
+    orangeEl.setAttribute("style", "display: block");
+    orangeEl.animate({ opacity: 0.3, opacity: 1, opacity: 1 }, { duration: 1000, fill: "forwards", easing: "ease" });
+});
+
+yellowBtn.addEventListener("click", function () {
+    for (let i = 0; i < 7; i++) {
+        if (i != 2) {
+            wrap[i].setAttribute("style", "display: none");
+        }
+    }
+    yellowEl.setAttribute("style", "display: block");
+    yellowEl.animate({ opacity: 0.3, opacity: 1, opacity: 1 }, { duration: 1000, fill: "forwards", easing: "ease" });
+});
+
+greenBtn.addEventListener("click", function () {
+    for (let i = 0; i < 7; i++) {
+        if (i != 3) {
+            wrap[i].setAttribute("style", "display: none");
+        }
+    }
+    greenEl.setAttribute("style", "display: block");
+    greenEl.animate({ opacity: 0.3, opacity: 1, opacity: 1 }, { duration: 1000, fill: "forwards", easing: "ease" });
+});
+
+skyBtn.addEventListener("click", function () {
+    for (let i = 0; i < 7; i++) {
+        if (i != 4) {
+            wrap[i].setAttribute("style", "display: none");
+        }
+    }
+    skyEl.setAttribute("style", "display: block");
+    skyEl.animate({ opacity: 0.3, opacity: 1, opacity: 1 }, { duration: 1000, fill: "forwards", easing: "ease" });
+});
+
+violetBtn.addEventListener("click", function () {
+    for (let i = 0; i < 7; i++) {
+        if (i != 5) {
+            wrap[i].setAttribute("style", "display: none");
+        }
+    }
+    violetEl.setAttribute("style", "display: block");
+    violetEl.animate({ opacity: 0.3, opacity: 1, opacity: 1 }, { duration: 1000, fill: "forwards", easing: "ease" });
+});
+
+blackBtn.addEventListener("click", function () {
+    for (let i = 0; i < 7; i++) {
+        if (i != 6) {
+            wrap[i].setAttribute("style", "display: none");
+        }
+    }
+    blackEl.setAttribute("style", "display: block");
+    blackEl.animate({ opacity: 0.3, opacity: 1, opacity: 1 }, { duration: 1000, fill: "forwards", easing: "ease" });
 });
