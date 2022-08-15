@@ -1,43 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
-// html,
-// body {
-//     height: 100%;
-//     background: lightpink;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
 
-// svg {
-//     fill: none;
-//     width: 600px;
-//     stroke-width: 30px;
-//     stroke-linecap: round;
-// }
-
-// path {
-//     stroke: #000;
-//     stroke-dasharray: var(--length);
-//     stroke-dashoffset: var(--length);
-// }
-
-// .svg-main > path {
-//     stroke: firebrick;
-//     animation: path var(--duration) ease-in forwards;
-//     animation-delay: var(--delay);
-// }
-
-// .svg-bg > path {
-//     stroke: #fff;
-//     animation: path var(--duration) ease forwards;
-//     animation-delay: var(--delay);
-// }
-
-// @keyframes path {
-//     100% {
-//         stroke-dashoffset: 0;
-//     }
-// }
 * {
     margin: 0;
     padding: 0;
@@ -81,6 +43,7 @@ body {
 // Album > Text-typing
 
 .swing .album {
+    text-align: center;
     position: absolute;
     width: 80vw;
     height: 40vw;
@@ -93,7 +56,7 @@ body {
     // position: absolute;
     font-family: "Lora", serif;
     font-size: 5vw;
-    margin-left: 30vw;
+    // margin-left: 30vw;
 }
 
 .swing .album .typed-cursor,

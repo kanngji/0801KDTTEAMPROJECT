@@ -1,8 +1,8 @@
 var typed = new Typed(".element", {
     // Waits 1000ms after typing "First"
-    strings: ["Hello^2000", "DoGGaeB^2000", "kkk^2000"],
-    typeSpeed: 200,
-    backSpeed: 100,
+    strings: ["Hello^1000", "It is just a digital album.^1000", "Come on in !^2000"],
+    typeSpeed: 100,
+    backSpeed: 50,
     fadeOut: false,
     smartBackspace: true,
     cursorChar: "_",
@@ -30,7 +30,7 @@ function displayNone() {
     loadingEl.setAttribute("style", "display: none");
 }
 window.onload = function () {
-    start_fun = setTimeout(fade_in, 1000);
+    start_fun = setTimeout(fade_in, 14500);
 };
 
 function fade_in() {
