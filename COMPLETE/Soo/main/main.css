@@ -260,6 +260,7 @@ section.innerbox {
   border-radius: 30px;
   text-shadow: 3px 3px 3px rgb(47, 75, 119);
   font-family: "Noto Sans", sans-serif;
+  letter-spacing: 0.01vw;
 }
 .third .bbaegom1 {
   border-radius: 23px;
@@ -268,7 +269,8 @@ section.innerbox {
 .third h1.from {
   position: absolute;
   top: 22vw;
-  left: 3vw;
+  left: 2vw;
+  letter-spacing: 0.01vw;
 }
 .third h1.the {
   position: absolute;
@@ -280,6 +282,7 @@ section.innerbox {
   position: absolute;
   top: 22vw;
   left: 32vw;
+  letter-spacing: 0.01vw;
 }
 .third #count {
   font-size: 7vw;

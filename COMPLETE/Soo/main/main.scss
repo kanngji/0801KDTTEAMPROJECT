@@ -344,6 +344,7 @@ section.innerbox {
     border-radius: 30px;
     text-shadow: 3px 3px 3px rgb(47, 75, 119);
     font-family: "Noto Sans", sans-serif;
+    letter-spacing: 0.01vw;
     // text-shadow: 6px 6px 7px rgba(166, 180, 200, 0.7), -6px -6px 6px rgba(255, 255, 255, 0.8);
 
     & .bbaegom1 {
@@ -354,7 +355,8 @@ section.innerbox {
     & h1.from {
         position: absolute;
         top: 22vw;
-        left: 3vw;
+        left: 2vw;
+        letter-spacing: 0.01vw;
     }
 
     & h1.the {
@@ -368,6 +370,7 @@ section.innerbox {
         position: absolute;
         top: 22vw;
         left: 32vw;
+        letter-spacing: 0.01vw;
     }
 
     & #count {

@@ -49,7 +49,7 @@ function mainMove() {
 enterBtn.addEventListener("click", function () {
     albumEl.setAttribute("style", "display: none");
     loadingEl.setAttribute("style", "display: block");
-    loadingEl.animate({ transform: ["scale(1)", "scale(1.75)", "scale(1.325)", "scale(1)"] }, { duration: 5000, fill: "forwards", easing: "ease" });
+    loadingEl.animate({ transform: ["scale(1)", "scale(1.75)"] }, { duration: 5000, fill: "forwards", easing: "ease" });
     // setTimeout(displayNone, 5000);
     setTimeout(mainMove, 4000);
 });
