@@ -153,7 +153,7 @@ section.innerbox::after {
   position: absolute;
   top: 138.7vw;
   width: 100%;
-  height: 500vw;
+  height: 550vw;
   background-color: white;
 }
 .second .red {
@@ -201,6 +201,60 @@ section.innerbox::after {
   letter-spacing: 1px;
   line-height: 8vw;
   color: rgb(252, 26, 64);
+}
+.second::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 500vw;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(18, 41, 67));
+}
+
+.third {
+  position: absolute;
+  top: 687.1vw;
+  width: 100%;
+  height: 500vw;
+  background-color: rgb(18, 41, 67);
+  font-size: 9vw;
+  color: rgb(11, 24, 39);
+}
+.third .bbaegom1 {
+  width: 100%;
+}
+.third h1.from {
+  position: absolute;
+  top: 23vw;
+  left: 5vw;
+}
+.third h1.the {
+  position: absolute;
+  top: 25vw;
+  left: 30vw;
+  font-size: 3vw;
+}
+.third h1.birthday {
+  position: absolute;
+  top: 23vw;
+  left: 35vw;
+}
+.third #count {
+  font-size: 7vw;
+  letter-spacing: 0.3px;
+  line-height: 5.5vw;
+  font-weight: 700;
+  position: absolute;
+  top: 40vw;
+  left: 40vw;
+}
+.third .bbaegom2 {
+  position: absolute;
+  width: 27vw;
+  top: 30.7vw;
+  left: 0.1vw;
 }
 
 /*# sourceMappingURL=main.css.map */

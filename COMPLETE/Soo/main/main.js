@@ -153,3 +153,78 @@ ScrollTrigger.create({
 //     .fromTo(".cloud1", { y: 100 }, { y: -800 }, 0)
 //     .fromTo(".cloud2", { y: -150 }, { y: -500 }, 0)
 //     .fromTo(".cloud3", { y: -50 }, { y: -650 }, 0);
+
+//
+
+const dday = new Date("2021-10-01:17:20:00+0900").getTime();
+
+setInterval(function () {
+    const today = new Date().getTime();
+    const gap = today - dday;
+    const day = Math.floor(gap / (1000 * 60 * 60 * 24)) - 300;
+    const hour = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const min = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
+    const sec = Math.floor((gap % (1000 * 60)) / 1000);
+    const month = Math.floor(gap / (1000 * 60 * 60 * 24 * 30));
+
+    document.getElementById("month").innerHTML = month + " months ";
+    document.getElementById("day").innerHTML = day + " days ";
+    document.getElementById("hour").innerHTML = hour + " ";
+    document.getElementById("min").innerHTML = min + " ";
+    document.getElementById("sec").innerHTML = sec + " ";
+}, 1000);
+
+const birth = gsap.timeline();
+
+birth
+    .to(".from", {
+        color: "rgb(256, 256, 256)",
+        webkitTextStroke: "10px rgb(11, 24, 39)",
+        duration: 1,
+    })
+    .to(".the", {
+        color: "rgb(256, 256, 256)",
+        webkitTextStroke: "4px rgb(11, 24, 39)",
+        duration: 1,
+    })
+    .to(".birthday", {
+        color: "rgb(256, 256, 256)",
+        webkitTextStroke: "10px rgb(11, 24, 39)",
+        duration: 1,
+    })
+    .to("#month", {
+        color: "rgb(256, 256, 256)",
+        webkitTextStroke: "7px rgb(11, 24, 39)",
+        duration: 1,
+    })
+    .to("#day", {
+        color: "rgb(256, 256, 256)",
+        webkitTextStroke: "7px rgb(11, 24, 39)",
+        duration: 1,
+    })
+    .to("#hour", {
+        color: "rgb(256, 256, 256)",
+        webkitTextStroke: "7px rgb(11, 24, 39)",
+        duration: 1,
+    })
+    .to("#min", {
+        color: "rgb(256, 256, 256)",
+        webkitTextStroke: "7px rgb(11, 24, 39)",
+        duration: 1,
+    })
+    .to("#sec", {
+        color: "rgb(256, 256, 256)",
+        webkitTextStroke: "7px rgb(11, 24, 39)",
+        duration: 5,
+    });
+
+ScrollTrigger.create({
+    animation: birth,
+    trigger: ".third",
+    start: "top -48%",
+    // end: "top 20%",
+    end: "+=10000",
+    scrub: 2,
+    markers: true,
+    pin: true,
+});
