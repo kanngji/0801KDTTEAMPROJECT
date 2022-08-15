@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Corben:700");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -17,7 +19,7 @@ body {
 
 .bg {
   background-image: radial-gradient(50% 176%, #000000 80%, #061922 100%);
-  min-height: 3000vw;
+  min-height: 2000vw;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -48,14 +50,14 @@ body {
 
 #star-top-layer {
   will-change: transform;
-  transform: translateY(-768px);
-  animation: fall 22.5s infinite linear;
+  transform: translateY(-10vw);
+  animation: fall 40s infinite linear;
 }
 
 #star-bottom-layer {
   will-change: transform;
-  transform: translateY(-768px);
-  animation: fall 45s infinite linear;
+  transform: translateY(-10vw);
+  animation: fall 80s infinite linear;
 }
 
 @keyframes fall {
@@ -69,35 +71,26 @@ body {
   left: 10vw;
   width: 80vw;
   height: 2000vw;
-  border: 5px solid #f8f8f8;
-  border-radius: 30px;
 }
 
 section.innerbox {
-  width: 100%;
-  height: 150vw;
-  background-color: lightpink;
-  border-radius: 23px;
-}
-section.innerbox::after {
-  content: "";
-  display: block;
   position: absolute;
-  top: 100vw;
-  left: 0px;
-  width: 100%;
-  height: 80vh;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+  left: 17.3vw;
+  width: 42vw;
+  height: 42vw;
+  background: linear-gradient(130deg, lightpink, rgb(179, 102, 102));
+  border: 5px solid #f8f8f8;
+  border-radius: 50%;
 }
 
 #intro {
   position: absolute;
-  top: 10vw;
-  left: 28vw;
+  top: 5vw;
+  left: 10.5vw;
 }
 
 .cls-1 {
-  stroke: black;
+  stroke: white;
   stroke-miterlimit: 10;
   stroke-width: 1px;
 }
@@ -193,15 +186,19 @@ section.innerbox::after {
     fill: transparent;
   }
   to {
-    fill: black;
+    fill: white;
   }
 }
 .second {
   position: absolute;
   top: 138.7vw;
-  width: 100%;
-  height: 550vw;
+  left: -17vw;
+  width: 80vw;
+  height: 480vw;
   background-color: white;
+  border: 5px solid #f8f8f8;
+  border-radius: 30px;
+  font-family: "Noto Sans", sans-serif;
 }
 .second .red {
   text-align: center;
@@ -249,45 +246,40 @@ section.innerbox::after {
   line-height: 8vw;
   color: rgb(252, 26, 64);
 }
-.second::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 500vw;
-  left: 0px;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(18, 41, 67));
-}
 
 .third {
   position: absolute;
   top: 687.1vw;
-  width: 100%;
-  height: 200vw;
+  left: -17vw;
+  width: 80vw;
+  height: 94.4vw;
   background-color: rgb(18, 41, 67);
   font-size: 9vw;
   color: rgb(15, 33, 53);
+  border: 5px solid #f8f8f8;
+  border-radius: 30px;
   text-shadow: 3px 3px 3px rgb(47, 75, 119);
+  font-family: "Noto Sans", sans-serif;
 }
 .third .bbaegom1 {
+  border-radius: 23px;
   width: 100%;
 }
 .third h1.from {
   position: absolute;
   top: 22vw;
-  left: 5vw;
+  left: 3vw;
 }
 .third h1.the {
   position: absolute;
-  top: 24vw;
-  left: 30vw;
+  top: 23vw;
+  left: 27vw;
   font-size: 3vw;
 }
 .third h1.birthday {
   position: absolute;
   top: 22vw;
-  left: 35vw;
+  left: 32vw;
 }
 .third #count {
   font-size: 7vw;
@@ -307,10 +299,14 @@ section.innerbox::after {
 
 #fourth {
   position: absolute;
-  width: 100%;
-  height: 200vw;
+  width: 80vw;
+  height: 52.5vw;
   background-color: white;
   top: 1405vw;
+  left: -17vw;
+  border: 5px solid #f8f8f8;
+  border-radius: 30px;
+  font-family: "Noto Sans", sans-serif;
 }
 #fourth .wrap div {
   width: 79.5vw;
@@ -318,62 +314,34 @@ section.innerbox::after {
   position: absolute;
   top: 0vw;
   opacity: 0;
+  border-radius: 23px;
+}
+#fourth .wrap div img {
+  position: absolute;
+  left: 30vw;
+  top: 8vw;
+  border-radius: 2vw;
 }
 #fourth .wrap .red {
   background-color: #f25c54;
 }
-#fourth .wrap .red img {
-  position: absolute;
-  right: 0;
-  top: 10vw;
-}
 #fourth .wrap .orange {
   background-color: #ff8c42;
-}
-#fourth .wrap .orange img {
-  position: absolute;
-  right: 0;
-  top: 10vw;
 }
 #fourth .wrap .yellow {
   background-color: #f9dc5c;
 }
-#fourth .wrap .yellow img {
-  position: absolute;
-  right: 0;
-  top: 10vw;
-}
 #fourth .wrap .green {
   background-color: #76c893;
-}
-#fourth .wrap .green img {
-  position: absolute;
-  right: 0;
-  top: 10vw;
 }
 #fourth .wrap .sky {
   background-color: #90caf9;
 }
-#fourth .wrap .sky img {
-  position: absolute;
-  right: 0;
-  top: 10vw;
-}
 #fourth .wrap .violet {
   background-color: #e5b3fe;
 }
-#fourth .wrap .violet img {
-  position: absolute;
-  right: 0;
-  top: 10vw;
-}
 #fourth .wrap .black {
   background-color: #212529;
-}
-#fourth .wrap .black img {
-  position: absolute;
-  right: 0;
-  top: 10vw;
 }
 #fourth #btns {
   position: absolute;
@@ -387,6 +355,8 @@ section.innerbox::after {
   cursor: pointer;
   z-index: 999;
   text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
 }
 #fourth #btns .btn {
   width: 5vw;
@@ -401,10 +371,9 @@ section.innerbox::after {
 
 .btn_red {
   display: inline-block;
-  color: #343434;
+  color: transparent;
   transition: color 250ms, text-shadow 250ms;
   text-decoration: none;
-  text-shadow: 0px 1px 0px rgb(255, 255, 255);
   position: relative;
   z-index: 0;
 }
@@ -416,7 +385,7 @@ section.innerbox::after {
   transform: translateX(-50%);
   content: "";
   width: 100%;
-  height: 3px;
+  height: 6px;
   background-color: #f25c54;
   transition: all 250ms;
 }
@@ -431,10 +400,9 @@ section.innerbox::after {
 
 .btn_yellow {
   display: inline-block;
-  color: #343434;
+  color: transparent;
   transition: color 250ms, text-shadow 250ms;
   text-decoration: none;
-  text-shadow: 0px 1px 0px rgb(255, 255, 255);
   position: relative;
   z-index: 0;
 }
@@ -446,7 +414,7 @@ section.innerbox::after {
   transform: translateX(-45%);
   content: "";
   width: 130%;
-  height: 3px;
+  height: 6px;
   background-color: #f9dc5c;
   transition: all 250ms;
 }
@@ -461,10 +429,9 @@ section.innerbox::after {
 
 .btn_orange {
   display: inline-block;
-  color: #343434;
+  color: transparent;
   transition: color 250ms, text-shadow 250ms;
   text-decoration: none;
-  text-shadow: 0px 1px 0px rgb(255, 255, 255);
   position: relative;
   z-index: 0;
 }
@@ -476,7 +443,7 @@ section.innerbox::after {
   transform: translateX(-40%);
   content: "";
   width: 150%;
-  height: 3px;
+  height: 6px;
   background-color: #ff8c42;
   transition: all 250ms;
 }
@@ -491,10 +458,9 @@ section.innerbox::after {
 
 .btn_green {
   display: inline-block;
-  color: #343434;
+  color: transparent;
   transition: color 250ms, text-shadow 250ms;
   text-decoration: none;
-  text-shadow: 0px 1px 0px rgb(255, 255, 255);
   position: relative;
   z-index: 0;
 }
@@ -506,7 +472,7 @@ section.innerbox::after {
   transform: translateX(-47%);
   content: "";
   width: 120%;
-  height: 3px;
+  height: 6px;
   background-color: #76c893;
   transition: all 250ms;
 }
@@ -521,10 +487,9 @@ section.innerbox::after {
 
 .btn_sky {
   display: inline-block;
-  color: #343434;
+  color: transparent;
   transition: color 250ms, text-shadow 250ms;
   text-decoration: none;
-  text-shadow: 0px 1px 0px rgb(255, 255, 255);
   position: relative;
   z-index: 0;
 }
@@ -536,7 +501,7 @@ section.innerbox::after {
   transform: translateX(-50%);
   content: "";
   width: 100%;
-  height: 3px;
+  height: 6px;
   background-color: #90caf9;
   transition: all 250ms;
 }
@@ -551,10 +516,9 @@ section.innerbox::after {
 
 .btn_violet {
   display: inline-block;
-  color: #343434;
+  color: transparent;
   transition: color 250ms, text-shadow 250ms;
   text-decoration: none;
-  text-shadow: 0px 1px 0px rgb(255, 255, 255);
   position: relative;
   z-index: 0;
 }
@@ -566,7 +530,7 @@ section.innerbox::after {
   transform: translateX(-50%);
   content: "";
   width: 130%;
-  height: 3px;
+  height: 6px;
   background-color: #e5b3fe;
   transition: all 250ms;
 }
@@ -581,10 +545,9 @@ section.innerbox::after {
 
 .btn_black {
   display: inline-block;
-  color: #343434;
+  color: transparent;
   transition: color 250ms, text-shadow 250ms;
   text-decoration: none;
-  text-shadow: 0px 1px 0px rgb(255, 255, 255);
   position: relative;
   z-index: 0;
 }
@@ -596,7 +559,7 @@ section.innerbox::after {
   transform: translateX(-50%);
   content: "";
   width: 100%;
-  height: 3px;
+  height: 6px;
   background-color: #212529;
   transition: all 250ms;
 }
