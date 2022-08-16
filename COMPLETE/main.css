@@ -1,18 +1,18 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  width: 100%;
-  background: url(./img/space.jpg);
-  height: 1000vw;
-  overflow-x: hidden;
+    width: 100%;
+    background: url(./img/space.jpg);
+    height: 1000vw;
+    overflow-x: hidden;
 }
 /* =================================================================================== */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Koulen&family=Roboto:wght@700;900&display=swap");
@@ -26,151 +26,151 @@ font-family: 'Roboto', sans-serif; */
 } */
 /* BANNER */
 #pg_1 .banner {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #pg_1 .banner video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* CONTAINER */
 #pg_1 .container {
-  display: flex;
-  flex-direction: column;
-  z-index: 3;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
 }
 
 #pg_1 .container h2 {
-  display: block;
-  width: 100%;
-  height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  font-size: 11vw;
-  text-align: center;
-  text-transform: uppercase;
-  color: rgba(245, 243, 243, 0.5);
-  mix-blend-mode: screen;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    font-size: 11vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(245, 243, 243, 0.5);
+    mix-blend-mode: screen;
 }
 
 #pg_1 .container span {
-  display: inline-block;
+    display: inline-block;
 }
 
 /* TITLE */
 #pg_1 .container .title1 {
-  transform: translate(600vw, 0);
+    transform: translate(600vw, 0);
 }
 
 #pg_1:hover .container .title1 {
-  transform: translate(18.5vw, 0);
-  transition: 4s;
-  transition-delay: 4s;
+    transform: translate(18.5vw, 0);
+    transition: 4s;
+    transition-delay: 4s;
 }
 
 #pg_1:active .container .title1 {
-  transform: translate(22.7vw, 16.7vw);
-  transition: 1s;
+    transform: translate(22.7vw, 16.7vw);
+    transition: 1s;
 }
 
 #pg_1 .container .title2 {
-  transform: translate(-600vw, 0);
+    transform: translate(-600vw, 0);
 }
 
 #pg_1:hover .container .title2 {
-  transform: translate(-11vw, 0);
-  transition: 4s;
-  transition-delay: 6s;
+    transform: translate(-11vw, 0);
+    transition: 4s;
+    transition-delay: 6s;
 }
 
 #pg_1 .container .title3 {
-  transform: translate(600vw, 0);
+    transform: translate(600vw, 0);
 }
 
 #pg_1:hover .container .title3 {
-  transform: translate(19vw, 0);
-  transition: 3s;
-  transition-delay: 8s;
+    transform: translate(19vw, 0);
+    transition: 3s;
+    transition-delay: 8s;
 }
 
 #pg_1:active .container .title3 {
-  transform: translate(13.5vw, -16.5vw);
-  transition: 1s;
+    transform: translate(13.5vw, -16.5vw);
+    transition: 1s;
 }
 
 #pg_1 .container .title1 .title_neon {
-  animation: glow 2s 15s ease-in-out infinite;
+    animation: glow 2s 15s ease-in-out infinite;
 }
 
 #pg_1 .container .title1 .title_opacity0 {
-  animation: shadownone 2s 15s ease infinite;
-  transition: 2s;
-  margin-top: 4vh;
+    animation: shadownone 2s 15s ease infinite;
+    transition: 2s;
+    margin-top: 4vh;
 }
 
 #pg_1 .container .title2 .title_neon {
-  animation: glow 5s 16s ease-in-out infinite;
-  transition-delay: 0.1s;
-  margin-top: 4vh;
+    animation: glow 5s 16s ease-in-out infinite;
+    transition-delay: 0.1s;
+    margin-top: 4vh;
 }
 
 #pg_1 .container .title2 .title_opacity0 {
-  animation: shadownone 2s 16s ease infinite;
-  transition-delay: 0.1s;
-  margin-top: 4vh;
+    animation: shadownone 2s 16s ease infinite;
+    transition-delay: 0.1s;
+    margin-top: 4vh;
 }
 
 #pg_1 .container .title3 .title_neon {
-  animation: glow 2s 17s ease-in-out infinite;
-  margin-top: 4vh;
+    animation: glow 2s 17s ease-in-out infinite;
+    margin-top: 4vh;
 }
 
 #pg_1 .container .title3 .title_opacity0 {
-  animation: shadownone 2s 17s ease infinite;
+    animation: shadownone 2s 17s ease infinite;
 }
 
 @keyframes glow {
-  0%,
-  100% {
-    color: #fff;
-    text-shadow: 0 0 10px #0652dd, 0 0 50px #0652dd, 0 0 100px #0652dd;
-  }
+    0%,
+    100% {
+        color: #fff;
+        text-shadow: 0 0 10px #0652dd, 0 0 50px #0652dd, 0 0 100px #0652dd;
+    }
 }
 
 @keyframes shadownone {
-  0%,
-  100% {
-    opacity: 0;
-  }
+    0%,
+    100% {
+        opacity: 0;
+    }
 }
 
 .noneDisplay {
-  position: absolute;
-  top: 50vw;
+    position: absolute;
+    top: 50vw;
 }
 /* =================================================================================== */
 /* No-Content */
 .noContent {
-  width: 100%;
-  height: 100vw;
-  position: relative;
+    width: 100%;
+    height: 100vw;
+    position: relative;
 }
 
 .noContent section {
-  position: absolute;
-  top: 44vw;
-  left: 50vw;
-  z-index: 3;
+    position: absolute;
+    top: 44vw;
+    left: 50vw;
+    z-index: 3;
 }
 
 /* 
@@ -186,246 +186,246 @@ section::after {
 } */
 
 #section03 a {
-  padding-top: 60px;
-  text-decoration: none;
-  color: white;
-  position: absolute;
-  top: -1vw;
+    padding-top: 60px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: -1vw;
 }
 #section03 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 46px;
-  height: 46px;
-  margin-left: -23px;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
 }
 #section03 a span::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: "";
-  width: 16px;
-  height: 16px;
-  margin: -12px 0 0 -8px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
 }
 #section03 a span::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  content: "";
-  width: 44px;
-  height: 44px;
-  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
-  border-radius: 100%;
-  opacity: 0;
-  -webkit-animation: sdb03 3s infinite;
-  animation: sdb03 3s infinite;
-  box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: "";
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: sdb03 3s infinite;
+    animation: sdb03 3s infinite;
+    box-sizing: border-box;
 }
 @-webkit-keyframes sdb03 {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  60% {
-    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 @keyframes sdb03 {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  60% {
-    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 /* SeungSoo */
 /* .greensock {
   position: relative;
 } */
 .greensock .intro {
-  height: 100vw;
-  width: 100%;
-  color: white;
-  font: 7vw/1.8 "arial";
-  top: 0px;
+    height: 100vw;
+    width: 100%;
+    color: white;
+    font: 7vw/1.8 "arial";
+    top: 0px;
 }
 
 .greensock .intro .h1 {
-  position: absolute;
-  top: 10%;
+    position: absolute;
+    top: 10%;
 }
 
 .greensock .photo {
-  width: 150px;
-  height: 210px;
-  transform: rotate(180deg);
-  z-index: 20;
+    width: 150px;
+    height: 210px;
+    transform: rotate(180deg);
+    z-index: 20;
 }
 
 /* .greensock .container .things {
   position: relative;
 } */
 .greensock .intro .container {
-  color: white;
-  font-size: 8vw;
+    color: white;
+    font-size: 8vw;
 }
 
 .greensock .intro .container .t1 {
-  position: absolute;
-  top: 15vw;
-  left: 10vw;
+    position: absolute;
+    top: 15vw;
+    left: 10vw;
 }
 
 .greensock .intro .container .t2 {
-  position: absolute;
-  top: 15vw;
-  left: 10vw;
-  line-height: 15vw;
-  text-align: center;
-  z-index: -2;
+    position: absolute;
+    top: 15vw;
+    left: 10vw;
+    line-height: 15vw;
+    text-align: center;
+    z-index: -2;
 }
 
 .greensock .intro .container .t3 {
-  position: absolute;
-  top: 12vw;
-  left: 10vw;
-  line-height: 15vw;
-  text-align: center;
-  z-index: -2;
+    position: absolute;
+    top: 12vw;
+    left: 10vw;
+    line-height: 15vw;
+    text-align: center;
+    z-index: -2;
 }
 
 .greensock .intro .container .t4 {
-  position: absolute;
-  top: 15vw;
-  left: 10vw;
-  line-height: 15vw;
-  text-align: center;
-  z-index: -2;
+    position: absolute;
+    top: 15vw;
+    left: 10vw;
+    line-height: 15vw;
+    text-align: center;
+    z-index: -2;
 }
 
 .greensock .intro .container .t5 {
-  position: absolute;
-  top: 15vw;
-  left: 20vw;
-  text-align: center;
-  z-index: -2;
+    position: absolute;
+    top: 15vw;
+    left: 20vw;
+    text-align: center;
+    z-index: -2;
 }
 
 .greensock .container .things {
-  z-index: -1;
+    z-index: -1;
 }
 .greensock .container .things .aster1 {
-  width: 20vw;
-  height: 20vw;
-  position: absolute;
-  top: 200vw;
-  left: 20vw;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 200vw;
+    left: 20vw;
 }
 
 .greensock .container .things .aster2 {
-  width: 20vw;
-  height: 20vw;
-  position: absolute;
-  /* top: 230vw;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    /* top: 230vw;
   left: 70vw;
   z-index: -1; */
 }
 
 .greensock .container .things .aster3 {
-  width: 20vw;
-  height: 20vw;
-  position: absolute;
-  top: 240vw;
-  left: 0;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 240vw;
+    left: 0;
 }
 
 .greensock .container .things .aster4 {
-  width: 20vw;
-  height: 20vw;
-  position: absolute;
-  top: 260vw;
-  left: 0;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 260vw;
+    left: 0;
 }
 
 .greensock .container .things .aster5 {
-  width: 20vw;
-  height: 20vw;
-  position: absolute;
-  top: 280vw;
-  left: 0;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 280vw;
+    left: 0;
 }
 
 .greensock .container .things .aster6 {
-  width: 20vw;
-  height: 20vw;
-  position: absolute;
-  top: 300vw;
-  left: 0;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 300vw;
+    left: 0;
 }
 
 .greensock .container .things .aster7 {
-  width: 20vw;
-  height: 20vw;
-  position: absolute;
-  top: 320vw;
-  left: 0;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 320vw;
+    left: 0;
 }
 
 .greensock .container .things .aster8 {
-  width: 20vw;
-  height: 20vw;
-  position: absolute;
-  top: 340vw;
-  left: 0;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 340vw;
+    left: 0;
 }
 
 .greensock .container .things .nebula {
-  width: 40vw;
-  height: 30vw;
-  position: absolute;
-  top: 230vw;
-  left: 50vw;
-  z-index: -1;
+    width: 40vw;
+    height: 30vw;
+    position: absolute;
+    top: 230vw;
+    left: 50vw;
+    z-index: -1;
 }
 
 .greensock .container .things .sate {
-  width: 20vw;
-  height: 20vw;
-  position: absolute;
-  top: 380vw;
-  left: 0;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 380vw;
+    left: 0;
 }
 
 .greensock .container .things .ufo {
-  width: 20vw;
-  height: 20vw;
-  position: absolute;
-  top: 400vw;
-  left: 0;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 400vw;
+    left: 0;
 }
 /* #pg_2 {
     width: 100%;
@@ -496,88 +496,88 @@ section::after {
 /* SUN */
 
 #pg_3 {
-  position: relative;
-  width: 100%;
-  height: 200vw;
+    position: relative;
+    width: 100%;
+    height: 200vw;
 }
 #pg_3 .sun {
-  background-image: url(./img/sun1.png);
-  display: flex;
-  background-repeat: no-repeat;
-  position: absolute;
-  /* transform: translate(56vh, 50vh); */
-  /* transform: translate(40vw, 30vw); */
-  height: 100vw;
-  width: 100vw;
-  top: -10vw;
-  left: 24vw;
-  /* animation: rotate 5s linear infinite; */
+    background-image: url(./img/sun1.png);
+    display: flex;
+    background-repeat: no-repeat;
+    position: absolute;
+    /* transform: translate(56vh, 50vh); */
+    /* transform: translate(40vw, 30vw); */
+    height: 100vw;
+    width: 100vw;
+    top: -10vw;
+    left: 24vw;
+    /* animation: rotate 5s linear infinite; */
 }
 
 #pg_3 .sun.animate {
-  transition: 5s;
-  transform: translate(-27vw, 60vw) scale(1.1);
+    transition: 5s;
+    transform: translate(-27vw, 60vw) scale(1.1);
 }
 
 /* PLANET */
 #pg_3 .wrapper {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40vw;
-  width: 40vw;
-  left: 100vh;
-  top: 50vw;
-  opacity: 0;
-  transition: 1s;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vw;
+    width: 40vw;
+    left: 100vh;
+    top: 50vw;
+    opacity: 0;
+    transition: 1s;
 }
 
 #pg_3 .wrapper.on {
-  opacity: 1;
+    opacity: 1;
 }
 
 #pg_3 .wrapper .card {
-  margin-right: 10vw;
-  width: 430px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 7vw;
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-  animation: animate 15s linear infinite;
-  animation-delay: calc(3s * var(--delay));
+    margin-right: 10vw;
+    width: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7vw;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    animation: animate 15s linear infinite;
+    animation-delay: calc(3s * var(--delay));
 }
 
 #pg_3 .wrapper .card:last-child {
-  animation-delay: calc(-3s * var(--delay));
+    animation-delay: calc(-3s * var(--delay));
 }
 
 /* 지정된 공간에 hover 하면 애니메이션 멈추기 */
 #pg_3 .wrapper:hover .card {
-  animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 #pg_3 .card .content {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 /* HTML 말고 css로 background image 를 줘야 애니메이션 먹음 */
 #pg_3 .wrapper .card .img {
-  height: 20vh;
-  width: 20vh;
-  position: absolute;
-  border-radius: 50%;
-  transition: 0.5s;
-  background-repeat: no-repeat;
-  cursor: pointer;
+    height: 20vh;
+    width: 20vh;
+    position: absolute;
+    border-radius: 50%;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 #pg_3 .wrapper .card .img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* 이미지 hover 했을 때 자전하는 것처럼 표현 */
@@ -587,34 +587,34 @@ section::after {
 
 /* EXPLORE 버튼 */
 #pg_3 .card > a {
-  text-decoration: none;
-  padding: 9px 20px;
-  border-radius: 25px;
-  background: linear-gradient(to bottom, #ed7b84 0%, #9055ff 100%);
-  color: #fff;
-  transition: 0.8s;
-  margin-left: 20vw;
-  margin-bottom: -4vw;
+    text-decoration: none;
+    padding: 9px 20px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom, #ed7b84 0%, #9055ff 100%);
+    color: #fff;
+    transition: 0.8s;
+    margin-left: 20vw;
+    margin-bottom: -4vw;
 }
 
 #pg_3 .card > a:hover {
-  color: black;
+    color: black;
 }
 
 /* 우주선 이모티콘 */
 #pg_3 .spaceship i {
-  position: absolute;
-  font-size: 40px;
-  color: white;
-  top: 200vh;
-  left: -8vh;
-  z-index: 1;
-  animation: spaceship 10s linear infinite;
-  opacity: 0;
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    top: 200vh;
+    left: -8vh;
+    z-index: 1;
+    animation: spaceship 10s linear infinite;
+    opacity: 0;
 }
 
 #pg_3 .spaceship.on i {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* 점프하는 사람 이모티콘 */
@@ -630,72 +630,72 @@ section::after {
 
 /* 슬라이드 애니메이션 */
 @keyframes animate {
-  0% {
-    opacity: 0;
-    transform: translateY(100%) scale(0.5);
-  }
-  5%,
-  20% {
-    opacity: 0.4;
-    transform: translateY(100%) scale(0.7);
-  }
-  25%,
-  40% {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0%) scale(1);
-  }
-  45%,
-  60% {
-    opacity: 0.4;
-    transform: translateY(-100%) scale(0.7);
-  }
-  65%,
-  100% {
-    opacity: 0;
-    transform: translateY(-100%) scale(0.5);
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(100%) scale(0.5);
+    }
+    5%,
+    20% {
+        opacity: 0.4;
+        transform: translateY(100%) scale(0.7);
+    }
+    25%,
+    40% {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0%) scale(1);
+    }
+    45%,
+    60% {
+        opacity: 0.4;
+        transform: translateY(-100%) scale(0.7);
+    }
+    65%,
+    100% {
+        opacity: 0;
+        transform: translateY(-100%) scale(0.5);
+    }
 }
 
 /* 행성 자전하는 애니메이션 */
 @keyframes rotate {
-  to {
-    background-position: -200%, 0;
-  }
+    to {
+        background-position: -200%, 0;
+    }
 }
 
 /* 점프하는 애니메이션 */
 @keyframes jump {
-  0% {
-    transform: translate(0, 0);
-  }
+    0% {
+        transform: translate(0, 0);
+    }
 
-  50% {
-    transform: translate(0, -3vh);
-  }
+    50% {
+        transform: translate(0, -3vh);
+    }
 
-  100% {
-    transform: translateY(-1vh);
-  }
+    100% {
+        transform: translateY(-1vh);
+    }
 }
 
 /* 우주선 애니메이션 */
 @keyframes spaceship {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  25% {
-    transform: translate(40vh, -40vh) rotate(-270deg);
-  }
-  50% {
-    transform: translate(80vh, -80vh) rotate(100deg);
-  }
-  75% {
-    transform: translate(40vh, -40vh);
-  }
-  100% {
-    z-index: 0;
-  }
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(40vh, -40vh) rotate(-270deg);
+    }
+    50% {
+        transform: translate(80vh, -80vh) rotate(100deg);
+    }
+    75% {
+        transform: translate(40vh, -40vh);
+    }
+    100% {
+        z-index: 0;
+    }
 }
 /* 
 .card>.earth:active .card .content .img{
@@ -703,128 +703,129 @@ section::after {
 } */
 /* =================================================================================== */
 #gradient2 {
-  position: relative;
-  background-image: url(./img/space.jpg);
-  width: 100%;
-  height: 20vw;
-  /* border: 1px solid white; */
+    position: relative;
+    background-image: url(./img/space.jpg);
+    width: 100%;
+    height: 20vw;
+    /* border: 1px solid white; */
 }
 #gradient2::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 20vw;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgb(255, 255, 255));
 }
 #pg_4 {
-  width: 100%;
-  height: 100vw;
-  background-color: black;
-  position: relative;
-  /* border: 2px solid #fff; */
+    width: 100%;
+    height: 100vw;
+    background-color: white;
+    position: relative;
+    /* border: 2px solid #fff; */
 }
+
 /* #pg_5::before {
-  content: "";
-  position: absolute;
-  display: block;
-  z-index: 2;
-  width: 100%;
-  height: 40vh;
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 2;
+    width: 100%;
+    height: 40vh;
 
-  border: 1px solid yellow;
+    border: 1px solid yellow;
 
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(247, 94, 87, 1));
-} */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(247, 94, 87, 1));
+}
 
-/* #pg_4 .box-with-text {
-  background-image: url(./img/nebula1.png);
-  width: 150vw;
-  height: 50vw;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+#pg_4 .box-with-text {
+    background-image: url(./img/nebula1.png);
+    width: 150vw;
+    height: 50vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .box-with-text {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  background-size: cover;
-  /* 요소의 공백을 어떻게 처리할까? */
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    /* 요소의 공백을 어떻게 처리할까? */
 /* white-space: nowrap;
-  background-position: 50% 50%;
-  text-align: center;
-  text-transform: uppercase;
-  font: 15vw/1 Open Sans, impact;
+    background-position: 50% 50%;
+    text-align: center;
+    text-transform: uppercase;
+    font: 15vw/1 Open Sans, impact;
 } */
 
 /* 강지훈부분 끝 */
 
 .arrows {
-  /**/
-  position: absolute;
-  bottom: 48vw;
-  right: 3vw;
-  /**/
-  width: 15vw;
-  height: 15vw;
-  z-index: 999;
-  /* cursor: pointer; */
+    /**/
+    position: absolute;
+    bottom: 48vw;
+    right: 3vw;
+    /**/
+    width: 15vw;
+    height: 15vw;
+    z-index: 999;
+    /* cursor: pointer; */
 }
 
 .arrows::before {
-  content: "";
-  position: absolute;
-  width: 3.3vw;
-  height: 3.3vw;
-  border-left: 3.3vw solid rgba(63, 113, 221, 0.5);
-  border-bottom: 3.3vw solid rgba(63, 113, 221, 0.5);
-  transform: translate(3.3vw, 13.2vw) rotate(-135deg);
-  animation: arrows 2s linear infinite -2s;
-  z-index: 999;
-  cursor: pointer;
+    content: "";
+    position: absolute;
+    width: 3.3vw;
+    height: 3.3vw;
+    border-left: 3.3vw solid rgba(63, 113, 221, 0.5);
+    border-bottom: 3.3vw solid rgba(63, 113, 221, 0.5);
+    transform: translate(3.3vw, 13.2vw) rotate(-135deg);
+    animation: arrows 2s linear infinite -2s;
+    z-index: 999;
+    cursor: pointer;
 }
 
 @keyframes arrows {
-  0% {
-    border-left: 3.3vw solid rgba(63, 113, 221, 0.5);
-    border-bottom: 3.3vw solid rgba(63, 113, 221, 0.5);
-    transform: translate(-2.6vw, 0) rotate(-135deg);
-  }
+    0% {
+        border-left: 3.3vw solid rgba(63, 113, 221, 0.5);
+        border-bottom: 3.3vw solid rgba(63, 113, 221, 0.5);
+        transform: translate(-2.6vw, 0) rotate(-135deg);
+    }
 
-  10%,
-  90% {
-    border-left: 3.3vw solid rgba(63, 113, 221, 0.5);
-    border-bottom: 3.3vw solid rgba(63, 113, 221, 0.5);
-  }
+    10%,
+    90% {
+        border-left: 3.3vw solid rgba(63, 113, 221, 0.5);
+        border-bottom: 3.3vw solid rgba(63, 113, 221, 0.5);
+    }
 
-  50% {
-    border-left: 3.3vw solid rgba(63, 113, 221, 0.5);
-    border-bottom: 3.3vw solid rgba(63, 113, 221, 0.5);
-    transform: translate(1.6vw, 0px) rotate(-135deg);
-  }
+    50% {
+        border-left: 3.3vw solid rgba(63, 113, 221, 0.5);
+        border-bottom: 3.3vw solid rgba(63, 113, 221, 0.5);
+        transform: translate(1.6vw, 0px) rotate(-135deg);
+    }
 
-  100% {
-    border-left: 3.3vw solid rgba(63, 113, 221, 0.5);
-    border-bottom: 3.3vw solid rgba(63, 113, 221, 0.5);
-    transform: translate(4.6vw, 0) rotate(-135deg);
-  }
+    100% {
+        border-left: 3.3vw solid rgba(63, 113, 221, 0.5);
+        border-bottom: 3.3vw solid rgba(63, 113, 221, 0.5);
+        transform: translate(4.6vw, 0) rotate(-135deg);
+    }
 }
 
 .what {
-  position: absolute;
-  top: 6vw;
-  left: 30vw;
+    position: absolute;
+    top: 6vw;
+    left: 30vw;
 }
 
 .your {
-  position: absolute;
-  top: 20vw;
-  left: 35vw;
+    position: absolute;
+    top: 20vw;
+    left: 35vw;
 }
 
 .planet {
-  position: absolute;
-  top: 33.5vw;
-  left: 28vw;
+    position: absolute;
+    top: 33.5vw;
+    left: 28vw;
 }
