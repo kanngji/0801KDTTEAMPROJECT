@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../1/mypage/img/night-space-sky-stars-nebula-night-sky-71706-wallhere.com.jpg);
+}
+
+.wrapper {
+  margin-top: 5%;
+}
+
+.wrapper h1 {
+  font-size: 5vw;
+  margin-bottom: 15vw;
+  text-align: center;
+  color: white;
+}
+
+.team {
+  display: flex;
+  text-align: center;
+  width: auto;
+  justify-content: center;
+  /* border: 1px solid #000; */
+}
+
+.team .team_member {
+  background-color: #fff;
+  margin: 1vw;
+  margin-bottom: 6vw;
+  width: 100%;
+  padding: 3vw;
+  line-height: 2vw;
+  color: #8e8b8b;
+  position: relative;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 5vw;
+}
+/* 승수 코드네임 색깔 */
+#J h3 {
+  color: rgb(243, 65, 65);
+}
+/* 지훈 코드네임 색깔 */
+#G h3 {
+  color: rgb(74, 241, 180);
+}
+/* 민정 코드네임 색깔 */
+#E h3 {
+  color: rgb(71, 71, 239);
+}
+/* 원 코드네임 색깔 */
+#one h3 {
+  color: rgb(238, 36, 238);
+}
+
+.team .team_member p.role {
+  color: #ccc;
+  font-size: 2vw;
+  text-transform: uppercase;
+  margin: 2vw 0;
+}
+/* 이미지 크기 조절 */
+.team .team_member .team_img {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  position: absolute;
+  top: -10vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.team .team_member .team_img img {
+  width: 10vw;
+  height: 10vw;
+}
