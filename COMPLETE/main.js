@@ -308,7 +308,7 @@ const white = document.querySelector(".white");
 setTimeout(() => {
     planet.style = "transition: 1s";
     planet.style.opacity = 0;
-}, 6500);
+}, 7000);
 
 setTimeout(() => {
     jojong.style = "transition: 1s";
@@ -317,7 +317,7 @@ setTimeout(() => {
 
 setTimeout(() => {
     white.setAttribute("style", "display: block");
-}, 7000);
+}, 6000);
 
 // =====================================================================================================
 // Pg4 Whats your planet
