@@ -243,7 +243,7 @@ prevBtn.addEventListener("click", function () {
     mvImg.setAttribute("src", `img/movie${num - 1}.jfif`);
     mvtitleBoxcolor.style.backgroundColor = movies[num - 1].boxColor;
     mvTitle.style.color = movies[num - 1].letterColor;
-    bdColor.style.border = `1px solid ${movies[num - 1].borderColor}`;
+    bdColor.style.border = `2px solid ${movies[num - 1].borderColor}`;
   }
   num--;
   console.log(num);
@@ -269,7 +269,7 @@ nextBtn.addEventListener("click", function () {
   mvImg.setAttribute("src", `img/movie${num + 1}.jfif`);
   mvtitleBoxcolor.style.backgroundColor = movies[num + 1].boxColor;
   mvTitle.style.color = movies[num + 1].letterColor;
-  bdColor.style.border = `1px solid ${movies[num + 1].borderColor}`;
+  bdColor.style.border = `2px solid ${movies[num + 1].borderColor}`;
 
   num++;
   console.log(num);

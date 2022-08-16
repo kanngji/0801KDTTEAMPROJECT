@@ -3,13 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
+body {
   background-image: url(../1/mypage/img/night-space-sky-stars-nebula-night-sky-71706-wallhere.com.jpg);
+  /* width: 100%;
+  height: 100vh; */
 }
 
 #jh-first .container {
   width: 100%;
   height: 100vh;
+  /* height: 30vh; */
   background-image: url(../img/blackhole1.jpg);
   position: relative;
   background-size: cover;
@@ -48,6 +51,10 @@ body{
   right: 0;
   bottom: 0;
 }
+#last {
+  width: 100%;
+  height: 100vh;
+}
 header {
   display: flex;
   /* position: relative; */
@@ -67,14 +74,11 @@ header .logo {
   /* position: absolute; */
   margin-left: 2%;
 }
-header .logo img {
+/* header .logo img {
   width: 100px;
   border-radius: 20%;
-  /* box-shadow: 0, 0, 5%, rgb(46, 154, 139); */
-  /* position: absolute; */
-  /* height: 100px; */
-  /* object-fit: contain; */
-}
+ 
+} */
 header .intro {
   margin-left: 5%;
   font-size: 2vw;
@@ -95,26 +99,32 @@ header .sns > a:hover {
   /* border: 1px solid #000; */
   width: 100%;
   height: 5vw;
-  border: 1px solid #eee;
+  /* border: 1px solid #eee; */
   /* background-color: yellow */
   /* display: inline-block; */
+  /* border-bottom: 1px solid #000; */
+  margin-bottom: 5vw;
+
+  /* margin-bottom: 1px solid black; */
   text-align: center;
   align-items: center;
   font-size: 2vw;
   line-height: 5vw;
+  background-color: #fff;
 }
 #jh-second {
   width: 50%;
   /* height: 100vh; */
-  /* border: 2px solid #000; */
-  margin: auto;
+  /* border: 2px solid yellow; */
+  justify-content: center;
+  margin: 0 auto;
   position: relative;
 }
 
 #jh-second .container {
   width: 100%;
-  height: 100%;
-  border: 1px solid red;
+  height: 165vh;
+  /* border: 1px solid red; */
   /* border: 1px solid #000; */
   position: relative;
 }
@@ -125,13 +135,19 @@ header .sns > a:hover {
 #jh-second .container #title {
   font-size: 2vw;
   padding: 2vw;
-  color: red;
+  color: black;
+  background-color: #fff;
   text-align: center;
+  /* background-color: #fff; */
+  /* border: 1px solid #000; */
 }
-
+#jh-second .container .mv-img {
+  width: 100%;
+}
 #jh-second .container .mv-img img {
   width: 100%;
-  height: 30%;
+  /* height: 100%; */
+  object-fit: cover;
 }
 
 #jh-second .container #director {
@@ -139,32 +155,38 @@ header .sns > a:hover {
   padding: 1vw;
   border-bottom: 1px solid #eee;
   /* justify-content: space-between; */
+  background-color: #fff;
 }
 
 #jh-second .container #actor {
   display: flex;
   padding: 1vw;
   border-bottom: 1px solid #eee;
+  background-color: #fff;
 }
 #jh-second .container #genre {
   display: flex;
   padding: 1vw;
   border-bottom: 1px solid #eee;
+  background-color: #fff;
 }
 #jh-second .container #time {
   display: flex;
   padding: 1vw;
   border-bottom: 1px solid #eee;
+  background-color: #fff;
 }
 #jh-second .container #rating {
   display: flex;
   padding: 1vw;
   border-bottom: 1px solid #eee;
+  background-color: #fff;
 }
 
 #jh-second .container #soundtrack {
   display: flex;
   padding: 1vw;
+  background-color: #fff;
 }
 #jh-second .container #soundtrack span {
   margin-right: 1vw;
@@ -192,6 +214,7 @@ header .sns > a:hover {
   /* border: 1px solid black; */
   /* justify-content: center; */
   justify-content: space-between;
+  /* background-color: #fff; */
 }
 
 #jh-third .btns {
@@ -210,11 +233,11 @@ header .sns > a:hover {
 
 #jh-third .btns i {
   cursor: pointer;
-  color: black;
+  color: white;
 }
 
 #jh-third nav .btns a {
-  color: black;
+  color: white;
 }
 #soundtrack a {
   color: black;

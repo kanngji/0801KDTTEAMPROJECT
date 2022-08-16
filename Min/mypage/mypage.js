@@ -41,6 +41,9 @@ btn2.addEventListener("click", function () {
     btn2.style.transform = "translateY(0vw)";
     box2.style.opacity = 0;
     clicked2 = 0;
+    grand_img.style.opacity = 0;
+    lasvegas_img.style.opacity = 0;
+    walt_img.style.opacity = 0;
   }
 });
 
@@ -59,6 +62,9 @@ btn3.addEventListener("click", function () {
     btn3.style.transform = "translateY(0vw)";
     box3.style.opacity = 0;
     clicked3 = 0;
+    interlaken_img.style.opacity = 0;
+    jungfrau_img.style.opacity = 0;
+    luzern_img.style.opacity = 0;
   }
 });
 
@@ -73,10 +79,6 @@ const dub_img = document.querySelector(".lee .under_box1 .dub_pic img");
 
 dub.addEventListener("click",function(){
     dub_img.style.opacity = 1;
-    dub_img.style.zindex = 2;
-
-    flit_img.style.zindex = 1;
-    split_img.style.zindex = 1;
 
 })
 
@@ -86,10 +88,6 @@ const flit_img = document.querySelector(".lee .under_box1 .flit_pic img");
 
 flit.addEventListener("click",function(){
     flit_img.style.opacity = 1;
-    flit_img.style.zindex = 2;
-
-    dub_img.style.zindex = 1;
-    split_img.style.zindex = 1;
 })
 
 const split = document.querySelector(".lee .under_box1 .best_place .split");
