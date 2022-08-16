@@ -19,6 +19,9 @@ btn1.addEventListener("click", function () {
     btn1.style.transform = "translateY(0vw)";
     box1.style.opacity = 0;
     clicked1 = 0;
+    dub_img.style.opacity = 0;
+    flit_img.style.opacity = 0;
+    split_img.style.opacity = 0;
   }
 });
 
