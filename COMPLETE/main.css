@@ -787,6 +787,17 @@ section::after {
     z-index: 2;
     top: 915vw;
     left: 40vw;
+    animation: bigger 7s forwards linear;
+}
+
+@keyframes bigger {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 6;
+    }
 }
 
 #exitEarth .white {

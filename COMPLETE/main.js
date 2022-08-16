@@ -308,12 +308,12 @@ const white = document.querySelector(".white");
 setTimeout(() => {
     planet.style = "transition: 1s";
     planet.style.opacity = 0;
-}, 7000);
+}, 7200);
 
 setTimeout(() => {
     jojong.style = "transition: 1s";
     jojong.style.opacity = 0;
-}, 8000);
+}, 8250);
 
 setTimeout(() => {
     white.setAttribute("style", "display: block");
