@@ -7,7 +7,110 @@ body {
   background-image: url(../1/mypage/img/night-space-sky-stars-nebula-night-sky-71706-wallhere.com.jpg);
   /* width: 100%;
   height: 100vh; */
+  position: relative;
 }
+/* SIDEBAR */
+/* 정강이 로고 */
+.logo {
+  z-index: 100;
+  position: absolute;
+  margin-top: 6vw;
+  width: 10vw;
+  height: 10vw;
+
+  left: 3vw;
+  /* border: 1px solid #fff; */
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.navigation {
+  display: none;
+  position: fixed;
+  z-index: 99;
+}
+.navigation.open {
+  display: block;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  width: 100%;
+  z-index: 999;
+}
+
+.navigation ul li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 3vw;
+  margin-left: 1.5vw;
+  /* padding: 0 2px; */
+  /* border: 1px solid #fff; */
+  z-index: 999;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  text-decoration: none;
+}
+/* 행성 아이콘 */
+.navigation ul li a img {
+  /* position: relative; */
+  display: block;
+  min-width: 3vw;
+  height: 3vw;
+  line-height: 7vw;
+  transition: 0.5s;
+  margin-right: 1vw;
+}
+
+/* .navigation ul li.active {
+    transform: translateX(5vw);
+  }
+  .navigation.open ul li.active {
+    transform: translateX(10vw);
+  } */
+#orange {
+  color: rgb(239, 91, 11);
+}
+
+#purple {
+  color: purple;
+}
+
+#green {
+  color: rgb(142, 231, 142);
+}
+
+#blue {
+  color: rgb(33, 71, 244);
+}
+
+.navigation ul li a .text {
+  position: relative;
+  padding: 0;
+  height: 12vw;
+  display: flex;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.navigation.open ul li a .text {
+  opacity: 1;
+  visibility: visible;
+}
+/* SIDEBAR 끝 */
 
 #jh-first .container {
   width: 100%;
@@ -58,7 +161,7 @@ body {
 header {
   display: flex;
   /* position: relative; */
-  height: 5vw;
+  height: 6vw;
   /* padding: 1px; */
   width: 100%;
   /* height: 1%; */
@@ -70,18 +173,18 @@ header {
   justify-content: space-between;
   /* position: relative; */
 }
-header .logo {
-  /* position: absolute; */
-  margin-left: 2%;
-}
+
 /* header .logo img {
   width: 100px;
   border-radius: 20%;
  
 } */
 header .intro {
-  margin-left: 5%;
+  margin: auto;
   font-size: 2vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 header .sns {
