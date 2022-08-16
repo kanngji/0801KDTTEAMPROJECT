@@ -1,12 +1,115 @@
 body {
   /* background-color: rgb(10, 10, 10); */
-  background-image: url(./img/pngegg\ \(1\).png);
+  /* background-image: url(./img/pngegg\\(1\).png); */
+  /* background-image: url(./img/pngegg\\(1\).png); */
+  background-image: url(./img/pngegg1.png);
   background-color: black;
   height: 100vh;
   margin: 0px;
   overflow: hidden;
 }
 
+.logo {
+  z-index: 100;
+  /* position: absolute; */
+  position: fixed;
+  top: 0.5vw;
+  width: 10vw;
+  height: 10vw;
+
+  left: 0.5vw;
+  /* border: 1px solid #fff; */
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.navigation {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 10vw;
+}
+.navigation.open {
+  display: block;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  width: 100%;
+  z-index: 999;
+}
+
+.navigation ul li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 3vw;
+  margin-left: 1.5vw;
+  /* padding: 0 2px; */
+  /* border: 1px solid #fff; */
+  z-index: 999;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  text-decoration: none;
+}
+/* 행성 아이콘 */
+.navigation ul li a img {
+  /* position: relative; */
+  display: block;
+  min-width: 3vw;
+  height: 3vw;
+  line-height: 7vw;
+  transition: 0.5s;
+  margin-right: 1vw;
+}
+
+/* .navigation ul li.active {
+    transform: translateX(5vw);
+  }
+  .navigation.open ul li.active {
+    transform: translateX(10vw);
+  } */
+#orange {
+  color: rgb(239, 91, 11);
+}
+
+#purple {
+  color: purple;
+}
+
+#green {
+  color: rgb(142, 231, 142);
+}
+
+#blue {
+  color: rgb(33, 71, 244);
+}
+
+.navigation ul li a .text {
+  position: relative;
+  padding: 0;
+  height: 12vw;
+  display: flex;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.navigation.open ul li a .text {
+  opacity: 1;
+  visibility: visible;
+}
 #gallery {
   height: 140vmax;
   width: 140vmax;
@@ -22,10 +125,8 @@ body {
 
 .tile:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 4px #e4e4e4,
-  0 0 15px #e4e4e4,
-  0 0 40px #e4e4e4,
-  0 0 150px #e4e4e4;
+  box-shadow: 0 0 4px #e4e4e4, 0 0 15px #e4e4e4, 0 0 40px #e4e4e4,
+    0 0 150px #e4e4e4;
   transition: 1s;
 }
 /* #e4e4e4 */
@@ -299,7 +400,6 @@ body {
   right: 0;
   animation: spaceMan 20s linear 5s infinite;
   z-index: 1;
-
 }
 
 @keyframes spaceMan {
@@ -364,4 +464,3 @@ body {
     transform: scale(1.1);
   }
 }
-

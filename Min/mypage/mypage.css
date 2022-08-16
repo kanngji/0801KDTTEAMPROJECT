@@ -1,816 +1,899 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@600&family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@600&family=Lobster&display=swap");
 
 /* font-family: 'Arvo', serif;
 font-family: 'Cinzel', serif;
 font-family: 'Lobster', cursive; */
 
-
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(../img/space2.jpg);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/space2.jpg);
 }
 
 .lee {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  z-index: 100;
+  /* position: absolute; */
+  position: fixed;
+  top: 0.5vw;
+  width: 10vw;
+  height: 10vw;
+
+  left: 0.5vw;
+  /* border: 1px solid #fff; */
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.navigation {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 10vw;
+}
+.navigation.open {
+  display: block;
 }
 
+.navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  width: 100%;
+  z-index: 999;
+  margin-top: 3vw;
+}
+
+.navigation ul li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 3vw;
+  margin-left: 1.5vw;
+  /* padding: 0 2px; */
+  /* border: 1px solid #fff; */
+  z-index: 999;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  text-decoration: none;
+}
+/* 행성 아이콘 */
+.navigation ul li a img {
+  /* position: relative; */
+  display: block;
+  min-width: 3vw;
+  height: 3vw;
+  line-height: 7vw;
+  transition: 0.5s;
+  margin-right: 1vw;
+}
+
+/* .navigation ul li.active {
+      transform: translateX(5vw);
+    }
+    .navigation.open ul li.active {
+      transform: translateX(10vw);
+    } */
+#orange {
+  color: rgb(239, 91, 11);
+}
+
+#purple {
+  color: purple;
+}
+
+#green {
+  color: rgb(142, 231, 142);
+}
+
+#blue {
+  color: rgb(33, 71, 244);
+}
+
+.navigation ul li a .text {
+  position: relative;
+  padding: 0;
+  height: 12vw;
+  display: flex;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.navigation.open ul li a .text {
+  opacity: 1;
+  visibility: visible;
+}
+.lee .favorite {
+  display: flex;
+  justify-content: center;
+}
 .lee .favorite p {
-    font-size: 3vw;
-    color: white;
-    position: absolute;
-    left: 3vw;
-    font-family: 'Lobster';
+  font-size: 3vw;
+  color: white;
+  position: absolute;
+  /* left: 7vw; */
+  display: block;
+  /* border: 1px solid #fff; */
+  text-align: center;
+  align-items: center;
+
+  font-family: "Lobster";
 }
 
 .lee .slider .slides .croatia p {
-    font-size: 2.6vw;
-    /* color: rgb(206, 168, 64); */
-    color: white;
-    position: absolute;
-    transform: translate(7.5vw, -3vw);
-    font-family: 'Cinzel';
-    transition: 0.5s;
-    opacity: 0;
-    z-index: 2;
-    text-shadow:-1.5px 0px rgb(206, 168, 64), 0px 1.5px rgb(206, 168, 64), 1.5px 0px 
-    rgb(206, 168, 64), 0px -1.5px rgb(206, 168, 64);
+  font-size: 2.6vw;
+  /* color: rgb(206, 168, 64); */
+  color: white;
+  position: absolute;
+  transform: translate(7.5vw, -3vw);
+  font-family: "Cinzel";
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 2;
+  text-shadow: -1.5px 0px rgb(206, 168, 64), 0px 1.5px rgb(206, 168, 64),
+    1.5px 0px rgb(206, 168, 64), 0px -1.5px rgb(206, 168, 64);
 }
 
 .lee .slider {
-    position: absolute;
-    width: 25vw;
-    height: 15vw;
-    border-radius: 10px;
-    overflow: hidden;
-    top: 15vw;
-    left: 7vw;
-    transition: 0.5s;
-    cursor: pointer;
-    z-index: 1;
+  position: absolute;
+  width: 25vw;
+  height: 15vw;
+  border-radius: 10px;
+  overflow: hidden;
+  top: 15vw;
+  left: 7vw;
+  transition: 0.5s;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.lee .slider:hover .slides .croatia p{
-    transform: translate(7.5vw, -2vw);
-    opacity: 1;
+.lee .slider:hover .slides .croatia p {
+  transform: translate(7.5vw, -2vw);
+  opacity: 1;
 }
-
 
 .lee .slider:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .lee .slider .slides {
-    width: 500%;
-    height: 15vw;
-    display: flex;
+  width: 500%;
+  height: 15vw;
+  display: flex;
 }
 
 .lee .slider .slides input {
-    display: none;
+  display: none;
 }
 
 .lee .slider .slides .slide {
-    width: 20%;
-    transition: 2s;
+  width: 20%;
+  transition: 2s;
 }
 
 .lee .slider .slides .slide img {
-    width: 25vw;
-    height: 15vw;
+  width: 25vw;
+  height: 15vw;
 }
 
 /* CSS for manual slide navigation */
 
-
 .lee .slider .navigation_manual {
-    position: absolute;
-    width: 25vw;
-    margin-top: -2vw;
-    display: flex;
-    justify-content: center;
+  position: absolute;
+  width: 25vw;
+  margin-top: -2vw;
+  display: flex;
+  justify-content: center;
 }
 
 .lee .slider .navigation_manual .manual_btn {
-    border: 2px solid black;
-    padding: 0.2vw;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
+  border: 2px solid black;
+  padding: 0.2vw;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .lee .slider .navigation_manual .manual_btn:not(:last-child) {
-    margin-right: 2vw;
+  margin-right: 2vw;
 }
 
 .lee .slider .navigation_manual .manual_btn:hover {
-    background-color:rgb(206, 168, 64) ;
+  background-color: rgb(206, 168, 64);
 }
 
 .lee .slider .slides #radio1:checked ~ .first {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .lee .slider .slides #radio2:checked ~ .first {
-    margin-left: -20%;
+  margin-left: -20%;
 }
 
 .lee .slider .slides #radio3:checked ~ .first {
-    margin-left: -40%;
+  margin-left: -40%;
 }
 
 .lee .slider .slides #radio4:checked ~ .first {
-    margin-left: -60%;
+  margin-left: -60%;
 }
-
-
 
 /* BTN1 */
 .lee .btn1 {
-    position: absolute;
-    width: 9vw;
-    height: 2vw;
-    background-color: rgb(206, 168, 64);
-    top: 31vw;
-    left: 15vw;
-    border-radius: 14px;
-    text-align: center;
-    z-index: 2;
-    transition: 0.5s;
+  position: absolute;
+  width: 9vw;
+  height: 2vw;
+  background-color: rgb(206, 168, 64);
+  top: 31vw;
+  left: 15vw;
+  border-radius: 14px;
+  text-align: center;
+  z-index: 2;
+  transition: 0.5s;
 }
 
 .lee .btn1 p {
-    position: absolute;
-    font-size: 1vw;
-    text-align: center;
-    font-family: 'Lobster';
-    color: black;
-    left: 0.8vw;
-    top: -0.7vw;
-    cursor: pointer;
+  position: absolute;
+  font-size: 1vw;
+  text-align: center;
+  font-family: "Lobster";
+  color: black;
+  left: 0.8vw;
+  top: -0.7vw;
+  cursor: pointer;
 }
 
 /* SLIDER1 UNDERBOX */
 
 .lee .under_box1 {
-    width: 25vw;
-    height: 26vw;
-    /* background-color: rgba(250, 246, 246, 0.5); */
-    background-color: rgba(206, 168, 64, 0.4);
-    position: absolute;
-    top: 22vw;
-    left: 7vw;
-    border-radius: 10px;
-    transition: 0.5s;
-    opacity: 0;
+  width: 25vw;
+  height: 26vw;
+  /* background-color: rgba(250, 246, 246, 0.5); */
+  background-color: rgba(206, 168, 64, 0.4);
+  position: absolute;
+  top: 22vw;
+  left: 7vw;
+  border-radius: 10px;
+  transition: 0.5s;
+  opacity: 0;
 }
 
 .lee .under_box1 .flag {
-    position: absolute;
-    width: 11vw;
-    height: 11vw;
-    background:url(../img/croatia_flag.png);
-    top: 1.5vw;
-    left: 0.5vw;
-    background-size: contain;
-    background-repeat: no-repeat;
+  position: absolute;
+  width: 11vw;
+  height: 11vw;
+  background: url(../img/croatia_flag.png);
+  top: 1.5vw;
+  left: 0.5vw;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.lee .under_box1 .cro_info{
-    position: absolute;
-    top: 2.2vw;
-    left: 12vw;
-    font-size: 1.1vw;
-    font-family: 'Arvo';
-    color: rgb(202, 199, 199);
+.lee .under_box1 .cro_info {
+  position: absolute;
+  top: 2.2vw;
+  left: 12vw;
+  font-size: 1.1vw;
+  font-family: "Arvo";
+  color: rgb(202, 199, 199);
 }
 
 .lee .under_box1 .best_place_word {
-    font-size: 2vw;
-    font-family: 'Cinzel';
-    margin-left: 6vw;
-    position: absolute;
-    top: 11vw;
-    color: white;
+  font-size: 2vw;
+  font-family: "Cinzel";
+  margin-left: 6vw;
+  position: absolute;
+  top: 11vw;
+  color: white;
 }
 
 .lee .under_box1 .best_place .dub {
-    font-size: 1.2vw;
-    position: absolute;
-    align-items: center;
-    font-family:  'Arvo';
-    top: 16vw;
-    left: 2vw;
-    cursor: pointer;
-    transition: 0.5s;
-    color: rgb(202, 199, 199);
+  font-size: 1.2vw;
+  position: absolute;
+  align-items: center;
+  font-family: "Arvo";
+  top: 16vw;
+  left: 2vw;
+  cursor: pointer;
+  transition: 0.5s;
+  color: rgb(202, 199, 199);
 }
 
 .lee .under_box1 .best_place .dub:hover {
-    transform: scale(1.1);
-    color: rgb(211, 153, 46);
+  transform: scale(1.1);
+  color: rgb(211, 153, 46);
 }
 
 .lee .under_box1 .dub_pic img {
-    position: absolute;
-    width: 24vw;
-    height: 13vw;
-    z-index: 1;
-    left: 0.5vw;
-    top: 0.2vw;
-    opacity: 0;
-    transition: 0.5s;
-    border-radius: 10px;
+  position: absolute;
+  width: 24vw;
+  height: 13vw;
+  z-index: 1;
+  left: 0.5vw;
+  top: 0.2vw;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 10px;
 }
 
 .lee .under_box1 .best_place .flit {
-    font-size: 1.2vw;
-    position: absolute;
-    align-items: center;
-    font-family:  'Arvo';
-    top: 19vw;
-    left: 2vw;
-    cursor: pointer;
-    transition: 0.5s;
-    color: rgb(202, 199, 199);
+  font-size: 1.2vw;
+  position: absolute;
+  align-items: center;
+  font-family: "Arvo";
+  top: 19vw;
+  left: 2vw;
+  cursor: pointer;
+  transition: 0.5s;
+  color: rgb(202, 199, 199);
 }
 
 .lee .under_box1 .best_place .flit:hover {
-    transform: scale(1.1);
-    color: rgb(73, 134, 32);
+  transform: scale(1.1);
+  color: rgb(73, 134, 32);
 }
 
 .lee .under_box1 .flit_pic img {
-    position: absolute;
-    width: 24vw;
-    height: 13vw;
-    z-index: 1;
-    left: 0.5vw;
-    top: 0.2vw;
-    opacity: 0;
-    transition: 0.5s;
-    border-radius: 10px;
+  position: absolute;
+  width: 24vw;
+  height: 13vw;
+  z-index: 1;
+  left: 0.5vw;
+  top: 0.2vw;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 10px;
 }
 
 .lee .under_box1 .best_place .split {
-    font-size: 1.2vw;
-    position: absolute;
-    align-items: center;
-    font-family:  'Arvo';
-    top: 22vw;
-    left: 2vw;
-    cursor: pointer;
-    color: rgb(202, 199, 199);
-    transition: 0.5s;
+  font-size: 1.2vw;
+  position: absolute;
+  align-items: center;
+  font-family: "Arvo";
+  top: 22vw;
+  left: 2vw;
+  cursor: pointer;
+  color: rgb(202, 199, 199);
+  transition: 0.5s;
 }
 
 .lee .under_box1 .best_place .split:hover {
-    transform: scale(1.1);
-    color: rgb(178, 196, 245);
+  transform: scale(1.1);
+  color: rgb(178, 196, 245);
 }
 
 .lee .under_box1 .split_pic img {
-    position: absolute;
-    width: 24vw;
-    height: 13vw;
-    z-index: 1;
-    left: 0.5vw;
-    top: 0.2vw;
-    opacity: 0;
-    transition: 0.5s;
-    border-radius: 10px;
+  position: absolute;
+  width: 24vw;
+  height: 13vw;
+  z-index: 1;
+  left: 0.5vw;
+  top: 0.2vw;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 10px;
 }
-
-
-
 
 /************************************** SLIDE2R2 ***********************************/
 .lee .slider2 {
-    position: absolute;
-    width: 25vw;
-    height: 15vw;
-    border-radius: 10px;
-    overflow: hidden;
-    top: 15vw;
-    left: 38.5vw;
-    transition: 0.5s;
-    cursor: pointer;
-    z-index: 1;
+  position: absolute;
+  width: 25vw;
+  height: 15vw;
+  border-radius: 10px;
+  overflow: hidden;
+  top: 15vw;
+  left: 38.5vw;
+  transition: 0.5s;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .lee .slider2:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .lee .slider2 .slides2 {
-    width: 500%;
-    height: 15vw;
-    display: flex;
+  width: 500%;
+  height: 15vw;
+  display: flex;
 }
 
 .lee .slider2 .slides2 .usa p {
-    font-size: 2.6vw;
-    /* color: rgb(206, 70, 17); */
-    color: white;
-    position: absolute;
-    transform: translate(9.5vw, -3vw);
-    font-family: 'Cinzel';
-    transition: 0.5s;
-    opacity: 0;
-    text-shadow:-1.5px 0px rgb(206, 70, 17), 0px 1.5px rgb(206, 70, 17), 1.5px 0px 
-    rgb(206, 70, 17), 0px -1.5px rgb(206, 70, 17);
+  font-size: 2.6vw;
+  /* color: rgb(206, 70, 17); */
+  color: white;
+  position: absolute;
+  transform: translate(9.5vw, -3vw);
+  font-family: "Cinzel";
+  transition: 0.5s;
+  opacity: 0;
+  text-shadow: -1.5px 0px rgb(206, 70, 17), 0px 1.5px rgb(206, 70, 17),
+    1.5px 0px rgb(206, 70, 17), 0px -1.5px rgb(206, 70, 17);
 }
 
-
-.lee .slider2:hover .slides2 .usa p{
-    transform: translate(9.5vw, -2vw);
-    opacity: 1;
+.lee .slider2:hover .slides2 .usa p {
+  transform: translate(9.5vw, -2vw);
+  opacity: 1;
 }
 
 .lee .slider2 .slides2 input {
-    display: none;
+  display: none;
 }
 
 .lee .slider2 .slides2 .slide2 {
-    width: 20%;
-    transition: 2s;
+  width: 20%;
+  transition: 2s;
 }
 
 .lee .slider2 .slides2 .slide2 img {
-    width: 25vw;
-    height: 15vw;
+  width: 25vw;
+  height: 15vw;
 }
 
 /* CSS for manual slide navigation */
 
-
 .lee .slider2 .navigation_manual2 {
-    position: absolute;
-    width: 25vw;
-    margin-top: -2vw;
-    display: flex;
-    justify-content: center;
+  position: absolute;
+  width: 25vw;
+  margin-top: -2vw;
+  display: flex;
+  justify-content: center;
 }
 
 .lee .slider2 .navigation_manual2 .manual_btn {
-    border: 2px solid black;
-    padding: 0.2vw;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
+  border: 2px solid black;
+  padding: 0.2vw;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .lee .slider2 .navigation_manual2 .manual_btn:not(:last-child) {
-    margin-right: 2vw;
+  margin-right: 2vw;
 }
 
 .lee .slider2 .navigation_manual2 .manual_btn:hover {
-    background-color:rgb(206, 70, 17);
+  background-color: rgb(206, 70, 17);
 }
 
 .lee .slider2 .slides2 #radio5:checked ~ .first {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .lee .slider2 .slides2 #radio6:checked ~ .first {
-    margin-left: -20%;
+  margin-left: -20%;
 }
 
 .lee .slider2 .slides2 #radio7:checked ~ .first {
-    margin-left: -40%;
+  margin-left: -40%;
 }
 
 .lee .slider2 .slides2 #radio8:checked ~ .first {
-    margin-left: -60%;
+  margin-left: -60%;
 }
 
 /* SLIDER2 BTN2 */
 
 .lee .btn2 {
-    position: absolute;
-    width: 9vw;
-    height: 2vw;
-    background-color: rgb(206, 70, 17);
-    top: 31vw;
-    left: 47vw;
-    border-radius: 14px;
-    text-align: center;
-    z-index: 2;
-    transition: 0.5s;
+  position: absolute;
+  width: 9vw;
+  height: 2vw;
+  background-color: rgb(206, 70, 17);
+  top: 31vw;
+  left: 47vw;
+  border-radius: 14px;
+  text-align: center;
+  z-index: 2;
+  transition: 0.5s;
 }
 
 .lee .btn2 p {
-    position: absolute;
-    font-size: 1vw;
-    text-align: center;
-    font-family: 'Lobster';
-    color: black;
-    left: 1.2vw;
-    top: -0.7vw;
-    cursor: pointer;
+  position: absolute;
+  font-size: 1vw;
+  text-align: center;
+  font-family: "Lobster";
+  color: black;
+  left: 1.2vw;
+  top: -0.7vw;
+  cursor: pointer;
 }
 
 /* SLIDER2 UNDERBOX */
 
 .lee .under_box2 {
-    width: 25vw;
-    height: 26vw;
-    background-color: rgba(218, 89, 38, 0.4);
-    position: absolute;
-    top: 22vw;
-    left: 38.5vw;
-    border-radius: 10px;
-    transition: 0.5s;
-    opacity: 0;
+  width: 25vw;
+  height: 26vw;
+  background-color: rgba(218, 89, 38, 0.4);
+  position: absolute;
+  top: 22vw;
+  left: 38.5vw;
+  border-radius: 10px;
+  transition: 0.5s;
+  opacity: 0;
 }
 
 .lee .under_box2 .flag2 {
-    position: absolute;
-    width: 11vw;
-    height: 11vw;
-    background:url(../img/usa_flag.png);
-    top: 3vw;
-    left: 0.5vw;
-    background-size: contain;
-    background-repeat: no-repeat;
+  position: absolute;
+  width: 11vw;
+  height: 11vw;
+  background: url(../img/usa_flag.png);
+  top: 3vw;
+  left: 0.5vw;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.lee .under_box2 .usa_info{
-    position: absolute;
-    top: 2.8vw;
-    left: 12vw;
-    font-size: 0.9vw;
-    font-family: 'Arvo';
-    color: rgb(202, 199, 199);
+.lee .under_box2 .usa_info {
+  position: absolute;
+  top: 2.8vw;
+  left: 12vw;
+  font-size: 0.9vw;
+  font-family: "Arvo";
+  color: rgb(202, 199, 199);
 }
 
 .lee .under_box2 .best_place_word2 {
-    font-size: 2vw;
-    font-family: 'Cinzel';
-    margin-left: 6vw;
-    position: absolute;
-    top: 11vw;
-    color: white;
+  font-size: 2vw;
+  font-family: "Cinzel";
+  margin-left: 6vw;
+  position: absolute;
+  top: 11vw;
+  color: white;
 }
 
 .lee .under_box2 .grand {
-    font-size: 1.2vw;
-    position: absolute;
-    align-items: center;
-    font-family:  'Arvo';
-    top: 16vw;
-    left: 2vw;
-    cursor: pointer;
-    color: rgb(202, 199, 199);
-    transition: 0.5s;
+  font-size: 1.2vw;
+  position: absolute;
+  align-items: center;
+  font-family: "Arvo";
+  top: 16vw;
+  left: 2vw;
+  cursor: pointer;
+  color: rgb(202, 199, 199);
+  transition: 0.5s;
 }
 
 .lee .under_box2 .grand:hover {
-    transform: scale(1.1);
-    color: rgb(196, 137, 49);
+  transform: scale(1.1);
+  color: rgb(196, 137, 49);
 }
 
 .lee .under_box2 .grand_pic img {
-    position: absolute;
-    width: 24vw;
-    height: 13vw;
-    z-index: 1;
-    left: 0.5vw;
-    top: 0.2vw;
-    transition: 0.5s;
-    border-radius: 10px;
-    opacity: 0;
+  position: absolute;
+  width: 24vw;
+  height: 13vw;
+  z-index: 1;
+  left: 0.5vw;
+  top: 0.2vw;
+  transition: 0.5s;
+  border-radius: 10px;
+  opacity: 0;
 }
 
 .lee .under_box2 .lasvegas {
-    font-size: 1.2vw;
-    position: absolute;
-    align-items: center;
-    font-family:  'Arvo';
-    top: 19vw;
-    left: 2vw;
-    cursor: pointer;
-    color: rgb(202, 199, 199);
-    transition: 0.5s;
+  font-size: 1.2vw;
+  position: absolute;
+  align-items: center;
+  font-family: "Arvo";
+  top: 19vw;
+  left: 2vw;
+  cursor: pointer;
+  color: rgb(202, 199, 199);
+  transition: 0.5s;
 }
 
 .lee .under_box2 .lasvegas:hover {
-    transform: scale(1.1);
-    color: rgb(170, 56, 170);
+  transform: scale(1.1);
+  color: rgb(170, 56, 170);
 }
 
 .lee .under_box2 .lasvegas_pic img {
-    position: absolute;
-    width: 24vw;
-    height: 13vw;
-    z-index: 1;
-    left: 0.5vw;
-    top: 0.2vw;
-    transition: 0.5s;
-    border-radius: 10px;
-    opacity: 0;
+  position: absolute;
+  width: 24vw;
+  height: 13vw;
+  z-index: 1;
+  left: 0.5vw;
+  top: 0.2vw;
+  transition: 0.5s;
+  border-radius: 10px;
+  opacity: 0;
 }
 
 .lee .under_box2 .walt {
-    font-size: 1.2vw;
-    position: absolute;
-    align-items: center;
-    font-family:  'Arvo';
-    top: 22vw;
-    left: 2vw;
-    cursor: pointer;
-    color: rgb(202, 199, 199);
-    transition: 0.5s;
+  font-size: 1.2vw;
+  position: absolute;
+  align-items: center;
+  font-family: "Arvo";
+  top: 22vw;
+  left: 2vw;
+  cursor: pointer;
+  color: rgb(202, 199, 199);
+  transition: 0.5s;
 }
 
 .lee .under_box2 .walt:hover {
-    transform: scale(1.1);
-    color: pink;
+  transform: scale(1.1);
+  color: pink;
 }
 
 .lee .under_box2 .walt_pic img {
-    position: absolute;
-    width: 24vw;
-    height: 13vw;
-    z-index: 1;
-    left: 0.5vw;
-    top: 0.2vw;
-    transition: 0.5s;
-    border-radius: 10px;
-    opacity: 0;
+  position: absolute;
+  width: 24vw;
+  height: 13vw;
+  z-index: 1;
+  left: 0.5vw;
+  top: 0.2vw;
+  transition: 0.5s;
+  border-radius: 10px;
+  opacity: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /************************************** SLIDE2R3 ***********************************/
 
 .lee .slider3 {
-    position: absolute;
-    width: 25vw;
-    height: 15vw;
-    border-radius: 10px;
-    overflow: hidden;
-    top: 15vw;
-    left: 70vw;
-    cursor: pointer;
-    transition: 0.5s;
-    z-index: 1
+  position: absolute;
+  width: 25vw;
+  height: 15vw;
+  border-radius: 10px;
+  overflow: hidden;
+  top: 15vw;
+  left: 70vw;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 1;
 }
 
 .lee .slider3:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-
 .lee .slider3 .slides3 {
-    width: 500%;
-    height: 15vw;
-    display: flex;
+  width: 500%;
+  height: 15vw;
+  display: flex;
 }
 
 .lee .slider3 .slides3 .switzerland p {
-    font-size: 2.6vw;
-    color: white;
-    position: absolute;
-    transform: translate(4vw, -3vw);
-    font-family: 'Cinzel';
-    transition: 0.5s;
-    opacity: 0;
-    text-shadow:-1.5px 0px rgb(69, 113, 207), 0px 1.5px rgb(69, 113, 207), 1.5px 0px 
-    rgb(69, 113, 207), 0px -1.5px rgb(69, 113, 207);
+  font-size: 2.6vw;
+  color: white;
+  position: absolute;
+  transform: translate(4vw, -3vw);
+  font-family: "Cinzel";
+  transition: 0.5s;
+  opacity: 0;
+  text-shadow: -1.5px 0px rgb(69, 113, 207), 0px 1.5px rgb(69, 113, 207),
+    1.5px 0px rgb(69, 113, 207), 0px -1.5px rgb(69, 113, 207);
 }
 
-.lee .slider3:hover .slides3 .switzerland p{
-    transform: translate(4vw, -2vw);
-    opacity: 1;
+.lee .slider3:hover .slides3 .switzerland p {
+  transform: translate(4vw, -2vw);
+  opacity: 1;
 }
 
 .lee .slider3 .slides3 input {
-    display: none;
+  display: none;
 }
 
 .lee .slider3 .slides3 .slide3 {
-    width: 20%;
-    transition: 2s;
+  width: 20%;
+  transition: 2s;
 }
 
 .lee .slider3 .slides3 .slide3 img {
-    width: 25vw;
-    height: 15vw;
+  width: 25vw;
+  height: 15vw;
 }
 
 /* CSS for manual slide navigation */
 
-
 .lee .slider3 .navigation_manual3 {
-    position: absolute;
-    width: 25vw;
-    margin-top: -2vw;
-    display: flex;
-    justify-content: center;
+  position: absolute;
+  width: 25vw;
+  margin-top: -2vw;
+  display: flex;
+  justify-content: center;
 }
 
 .lee .slider3 .navigation_manual3 .manual_btn {
-    border: 2px solid black;
-    padding: 0.2vw;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
+  border: 2px solid black;
+  padding: 0.2vw;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .lee .slider3 .navigation_manual3 .manual_btn:not(:last-child) {
-    margin-right: 2vw;
+  margin-right: 2vw;
 }
 
 .lee .slider3 .navigation_manual3 .manual_btn:hover {
-    background-color:rgb(69, 113, 207) ;
+  background-color: rgb(69, 113, 207);
 }
 
 .lee .slider3 .slides3 #radio9:checked ~ .first {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .lee .slider3 .slides3 #radio10:checked ~ .first {
-    margin-left: -20%;
+  margin-left: -20%;
 }
 
 .lee .slider3 .slides3 #radio11:checked ~ .first {
-    margin-left: -40%;
+  margin-left: -40%;
 }
 
 .lee .slider3 .slides3 #radio12:checked ~ .first {
-    margin-left: -60%;
+  margin-left: -60%;
 }
 
 /* SLIDER3 BTN3 */
 .lee .btn3 {
-    position: absolute;
-    width: 11vw;
-    height: 2vw;
-    background-color: rgb(115, 150, 224) ;
-    top: 31vw;
-    left: 77.5vw;
-    border-radius: 14px;
-    text-align: center;
-    z-index: 2;
-    transition: 0.5s;
+  position: absolute;
+  width: 11vw;
+  height: 2vw;
+  background-color: rgb(115, 150, 224);
+  top: 31vw;
+  left: 77.5vw;
+  border-radius: 14px;
+  text-align: center;
+  z-index: 2;
+  transition: 0.5s;
 }
 
 .lee .btn3 p {
-    position: absolute;
-    font-size: 1vw;
-    text-align: center;
-    font-family: 'Lobster';
-    color: black;
-    left: 0.7vw;
-    top: -0.5vw;
-    cursor: pointer;
+  position: absolute;
+  font-size: 1vw;
+  text-align: center;
+  font-family: "Lobster";
+  color: black;
+  left: 0.7vw;
+  top: -0.5vw;
+  cursor: pointer;
 }
-
 
 /* SLIDER3 UNDERBOX */
 
 .lee .under_box3 {
-    width: 25vw;
-    height: 26vw;
-    background-color: rgba(115, 150, 224, 0.4);
-    position: absolute;
-    top: 22vw;
-    left: 70vw;
-    border-radius: 10px;
-    transition: 0.5s;
-    opacity: 0;
+  width: 25vw;
+  height: 26vw;
+  background-color: rgba(115, 150, 224, 0.4);
+  position: absolute;
+  top: 22vw;
+  left: 70vw;
+  border-radius: 10px;
+  transition: 0.5s;
+  opacity: 0;
 }
 
 .lee .under_box3 .flag3 {
-    position: absolute;
-    width: 11vw;
-    height: 11vw;
-    background:url(../img/switzerland_flag.png);
-    top: 3vw;
-    left: 0.5vw;
-    background-size: contain;
-    background-repeat: no-repeat;
+  position: absolute;
+  width: 11vw;
+  height: 11vw;
+  background: url(../img/switzerland_flag.png);
+  top: 3vw;
+  left: 0.5vw;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.lee .under_box3 .switzerland_info{
-    position: absolute;
-    top: 2vw;
-    left: 12vw;
-    font-size: 1.1vw;
-    font-family: 'Arvo';
-    color: rgb(202, 199, 199);
+.lee .under_box3 .switzerland_info {
+  position: absolute;
+  top: 2vw;
+  left: 12vw;
+  font-size: 1.1vw;
+  font-family: "Arvo";
+  color: rgb(202, 199, 199);
 }
 
 .lee .under_box3 .best_place_word3 {
-    font-size: 2vw;
-    font-family: 'Cinzel';
-    margin-left: 6vw;
-    position: absolute;
-    top: 11vw;
-    color: white;
+  font-size: 2vw;
+  font-family: "Cinzel";
+  margin-left: 6vw;
+  position: absolute;
+  top: 11vw;
+  color: white;
 }
 
 .lee .under_box3 .interlaken {
-    font-size: 1.2vw;
-    position: absolute;
-    align-items: center;
-    font-family:  'Arvo';
-    top: 16vw;
-    left: 2vw;
-    cursor: pointer;
-    color: rgb(202, 199, 199);
-    transition: 0.5s;
+  font-size: 1.2vw;
+  position: absolute;
+  align-items: center;
+  font-family: "Arvo";
+  top: 16vw;
+  left: 2vw;
+  cursor: pointer;
+  color: rgb(202, 199, 199);
+  transition: 0.5s;
 }
 
 .lee .under_box3 .interlaken:hover {
-    transform: scale(1.1);
-    color: rgb(116, 190, 116) ;
+  transform: scale(1.1);
+  color: rgb(116, 190, 116);
 }
 
 .lee .under_box3 .interlaken_pic img {
-    position: absolute;
-    width: 24vw;
-    height: 13vw;
-    z-index: 1;
-    left: 0.5vw;
-    top: 0.2vw;
-    transition: 0.5s;
-    border-radius: 10px;
-    opacity: 0;
+  position: absolute;
+  width: 24vw;
+  height: 13vw;
+  z-index: 1;
+  left: 0.5vw;
+  top: 0.2vw;
+  transition: 0.5s;
+  border-radius: 10px;
+  opacity: 0;
 }
 
 .lee .under_box3 .jungfrau {
-    font-size: 1.2vw;
-    position: absolute;
-    align-items: center;
-    font-family:  'Arvo';
-    top: 19vw;
-    left: 2vw;
-    cursor: pointer;
-    color: rgb(202, 199, 199);
-    transition: 0.5s;
+  font-size: 1.2vw;
+  position: absolute;
+  align-items: center;
+  font-family: "Arvo";
+  top: 19vw;
+  left: 2vw;
+  cursor: pointer;
+  color: rgb(202, 199, 199);
+  transition: 0.5s;
 }
 
 .lee .under_box3 .jungfrau:hover {
-    transform: scale(1.1);
-    color: rgb(138, 197, 221);
+  transform: scale(1.1);
+  color: rgb(138, 197, 221);
 }
 
 .lee .under_box3 .jungfrau_pic img {
-    position: absolute;
-    width: 24vw;
-    height: 13vw;
-    z-index: 1;
-    left: 0.5vw;
-    top: 0.2vw;
-    transition: 0.5s;
-    border-radius: 10px;
-    opacity: 0;
+  position: absolute;
+  width: 24vw;
+  height: 13vw;
+  z-index: 1;
+  left: 0.5vw;
+  top: 0.2vw;
+  transition: 0.5s;
+  border-radius: 10px;
+  opacity: 0;
 }
 
 .lee .under_box3 .luzern {
-    font-size: 1.2vw;
-    position: absolute;
-    align-items: center;
-    font-family:  'Arvo';
-    top: 22vw;
-    left: 2vw;
-    cursor: pointer;
-    color: rgb(202, 199, 199);
-    transition: 0.5s;
+  font-size: 1.2vw;
+  position: absolute;
+  align-items: center;
+  font-family: "Arvo";
+  top: 22vw;
+  left: 2vw;
+  cursor: pointer;
+  color: rgb(202, 199, 199);
+  transition: 0.5s;
 }
 
 .lee .under_box3 .luzern:hover {
-    transform: scale(1.1);
-    color: rgb(145, 60, 60);
+  transform: scale(1.1);
+  color: rgb(145, 60, 60);
 }
 
 .lee .under_box3 .luzern_pic img {
-    position: absolute;
-    width: 24vw;
-    height: 13vw;
-    z-index: 1;
-    left: 0.5vw;
-    top: 0.2vw;
-    transition: 0.5s;
-    border-radius: 10px;
-    opacity: 0;
+  position: absolute;
+  width: 24vw;
+  height: 13vw;
+  z-index: 1;
+  left: 0.5vw;
+  top: 0.2vw;
+  transition: 0.5s;
+  border-radius: 10px;
+  opacity: 0;
 }
