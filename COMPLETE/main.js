@@ -333,6 +333,6 @@ ScrollTrigger.create({
   // end: "top 20%",
   end: "+=5000",
   scrub: 2,
-  markers: true,
+  //   markers: true,
   pin: true,
 });
