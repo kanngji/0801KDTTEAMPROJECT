@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@600&family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@600&family=Lobster&display=swap");
 
 /* font-family: 'Arvo', serif;
 font-family: 'Cinzel', serif;
@@ -15,6 +14,7 @@ body {
     width: 100%;
     height: 100vw;
     background-image: url(../Min/img/space2.jpg);
+    overflow-x: hidden;
 }
 
 .random_page .scroll {
@@ -27,7 +27,7 @@ body {
     position: absolute;
     top: 5vw;
     left: 40vw;
-    font-family: 'Cinzel';
+    font-family: "Cinzel";
 }
 
 .random_page .scroll i {
@@ -43,7 +43,7 @@ body {
     margin-top: 20vw;
     margin-left: 15vw;
     color: pink;
-    font-family: 'Lobster';
+    font-family: "Lobster";
 }
 
 .random_page #your p {
@@ -51,7 +51,7 @@ body {
     position: absolute;
     left: 50vw;
     color: pink;
-    font-family: 'Lobster';
+    font-family: "Lobster";
 }
 
 .random_page #planet p {
@@ -59,7 +59,7 @@ body {
     margin-top: 18vw;
     margin-left: 15vw;
     color: pink;
-    font-family: 'Lobster';
+    font-family: "Lobster";
 }
 
 .random_page .find_your_planet {
@@ -69,7 +69,7 @@ body {
     left: 20vw;
     text-align: center;
     position: absolute;
-    font-family: 'Cinzel';
+    font-family: "Cinzel";
 }
 
 .random_page #container #button_container {
@@ -77,29 +77,29 @@ body {
 }
 
 .random_page #container #button_container .main_btn {
-    width :7vw;
+    width: 7vw;
     height: 3vw;
     left: 64vw;
     position: absolute;
-    background: linear-gradient(to right,#614385, #516395);
+    background: linear-gradient(to right, #614385, #516395);
     font-size: 1.5vw;
     color: white;
     border-radius: 10px;
-    font-family: 'Cinzel';
+    font-family: "Cinzel";
     cursor: pointer;
     display: block;
 }
 
-.random_page #container #button_container .restart_btn{
-    width :7vw;
+.random_page #container #button_container .restart_btn {
+    width: 7vw;
     height: 3vw;
     left: 72vw;
     position: absolute;
-    background: linear-gradient(to right,#614385, #516395);
+    background: linear-gradient(to right, #614385, #516395);
     font-size: 1.5vw;
     color: white;
     border-radius: 10px;
-    font-family: 'Cinzel';
+    font-family: "Cinzel";
     cursor: pointer;
 }
 
@@ -128,19 +128,15 @@ body {
     font-size: 5vw;
     color: white;
     left: 11.7vw;
-    top:10.5vw;
+    top: 10.5vw;
     animation: load 2s linear infinite;
 }
 
 @keyframes load {
-    
     100% {
-    	transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
-
-
-
 
 /* FOOTER */
 
@@ -151,7 +147,6 @@ footer {
     margin-top: 10vw;
 }
 
-
 /* REGISTER */
 footer .footer_inner .register {
     position: absolute;
@@ -160,9 +155,9 @@ footer .footer_inner .register {
 footer .footer_inner .register p {
     font-size: 1.6vw;
     color: white;
-    margin-top: 3vw ;
+    margin-top: 3vw;
     margin-left: 8vw;
-    font-family: 'Arvo';
+    font-family: "Arvo";
 }
 
 footer .footer_inner .register .register_btn {
@@ -177,7 +172,7 @@ footer .footer_inner .register .register_btn {
 footer .footer_inner .register .register_btn span {
     font-size: 1.1vw;
     color: pink;
-    font-family: 'Arvo';
+    font-family: "Arvo";
     cursor: pointer;
 }
 
@@ -187,7 +182,6 @@ footer .footer_inner .register .register_btn span i {
     margin-left: 1vw;
 }
 
-
 /* SHARE */
 footer .footer_inner .share {
     position: absolute;
@@ -196,9 +190,9 @@ footer .footer_inner .share {
 footer .footer_inner .share p {
     font-size: 1.6vw;
     color: white;
-    margin-top: 3vw ;
+    margin-top: 3vw;
     margin-left: 39vw;
-    font-family: 'Arvo';
+    font-family: "Arvo";
 }
 
 footer .footer_inner .share .share_icons {
@@ -213,7 +207,6 @@ footer .footer_inner .share .share_icons i {
     margin-left: 1.8vw;
 }
 
-
 /* SAVE */
 footer .footer_inner .save {
     position: absolute;
@@ -222,9 +215,9 @@ footer .footer_inner .save {
 footer .footer_inner .save p {
     font-size: 1.6vw;
     color: white;
-    margin-top: 3vw ;
+    margin-top: 3vw;
     margin-left: 71vw;
-    font-family: 'Arvo';
+    font-family: "Arvo";
 }
 
 footer .footer_inner .save_icons {
@@ -235,7 +228,7 @@ footer .footer_inner .save_icons {
 
 footer .footer_inner .save_icons i {
     font-size: 1.5vw;
-    color: pink
+    color: pink;
 }
 
 footer .footer_inner .team_member p {
@@ -244,7 +237,7 @@ footer .footer_inner .team_member p {
     left: 89vw;
     color: black;
     font-size: 0.8vw;
-    font-family:'Arvo';;
+    font-family: "Arvo";
     text-align: center;
     background-color: pink;
     padding: 0.5vw 1vw;
