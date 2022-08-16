@@ -32,7 +32,7 @@ body {
     /* position: absolute; */
     position: fixed;
     top: 0.5vw;
-    width: 6vw;
+    width: 7vw;
     height: 6vw;
 
     left: 0.5vw;
@@ -114,23 +114,24 @@ body {
   .navigation.open ul li.active {
     transform: translateX(10vw);
   } */
-#orange {
+
+/* #orange0 {
     color: rgb(239, 91, 11);
 }
 
-#purple {
+#purple0 {
     color: purple;
 }
 
-#green {
+#green0 {
     color: rgb(142, 231, 142);
 }
 
-#blue {
+#blue0 {
     color: rgb(33, 71, 244);
-}
+} */
 
-.navigation ul li a .text {
+.navigation ul li a .text0 {
     position: relative;
     padding: 0;
     height: 12vw;
@@ -142,10 +143,11 @@ body {
     transition: 0.5s;
 }
 
-.navigation.open ul li a .text {
+.navigation.open ul li a .text0 {
     opacity: 1;
     visibility: visible;
 }
+
 .bg__content {
     position: relative;
     align-self: center;
@@ -441,9 +443,9 @@ section.innerbox {
 }
 #fourth .wrap div img {
     position: absolute;
-    left: 30vw;
-    top: 8vw;
-    border-radius: 2vw;
+    left: 0vw;
+    top: 0vw;
+    border-radius: 1.2vw;
 }
 #fourth .wrap .red {
     background-color: #f25c54;
