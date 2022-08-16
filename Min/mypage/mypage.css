@@ -467,6 +467,12 @@ body {
     left: 2vw;
     cursor: pointer;
     color: rgb(202, 199, 199);
+    transition: 0.5s;
+}
+
+.lee .under_box2 .grand:hover {
+    transform: scale(1.1);
+    color: rgb(196, 137, 49);
 }
 
 .lee .under_box2 .grand_pic img {
@@ -490,6 +496,12 @@ body {
     left: 2vw;
     cursor: pointer;
     color: rgb(202, 199, 199);
+    transition: 0.5s;
+}
+
+.lee .under_box2 .lasvegas:hover {
+    transform: scale(1.1);
+    color: rgb(170, 56, 170);
 }
 
 .lee .under_box2 .lasvegas_pic img {
@@ -513,6 +525,12 @@ body {
     left: 2vw;
     cursor: pointer;
     color: rgb(202, 199, 199);
+    transition: 0.5s;
+}
+
+.lee .under_box2 .walt:hover {
+    transform: scale(1.1);
+    color: pink;
 }
 
 .lee .under_box2 .walt_pic img {
@@ -719,6 +737,12 @@ body {
     left: 2vw;
     cursor: pointer;
     color: rgb(202, 199, 199);
+    transition: 0.5s;
+}
+
+.lee .under_box3 .interlaken:hover {
+    transform: scale(1.1);
+    color: rgb(116, 190, 116) ;
 }
 
 .lee .under_box3 .interlaken_pic img {
@@ -742,6 +766,12 @@ body {
     left: 2vw;
     cursor: pointer;
     color: rgb(202, 199, 199);
+    transition: 0.5s;
+}
+
+.lee .under_box3 .jungfrau:hover {
+    transform: scale(1.1);
+    color: rgb(138, 197, 221);
 }
 
 .lee .under_box3 .jungfrau_pic img {
@@ -765,6 +795,12 @@ body {
     left: 2vw;
     cursor: pointer;
     color: rgb(202, 199, 199);
+    transition: 0.5s;
+}
+
+.lee .under_box3 .luzern:hover {
+    transform: scale(1.1);
+    color: rgb(145, 60, 60);
 }
 
 .lee .under_box3 .luzern_pic img {
