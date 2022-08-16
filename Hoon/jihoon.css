@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  background-image: url(../1/mypage/img/night-space-sky-stars-nebula-night-sky-71706-wallhere.com.jpg);
+}
 
 #jh-first .container {
   width: 100%;
