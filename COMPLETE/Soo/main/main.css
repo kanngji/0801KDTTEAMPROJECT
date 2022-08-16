@@ -366,10 +366,22 @@ section.innerbox {
   height: 5vw;
 }
 #fourth #btns .btn_orange {
-  margin-right: 2.5vw;
+  margin-right: 1vw;
 }
 #fourth #btns .btn_yellow {
+  margin-right: 1vw;
+}
+#fourth #btns .btn_green {
   margin-right: 1.5vw;
+}
+#fourth #btns .btn_green {
+  margin-right: 1.5vw;
+}
+#fourth #btns .btn_sky {
+  margin-right: 0.5vw;
+}
+#fourth #btns .btn_violet {
+  margin-right: 1vw;
 }
 
 .btn_red {
@@ -387,7 +399,7 @@ section.innerbox {
   left: 50%;
   transform: translateX(-50%);
   content: "";
-  width: 100%;
+  width: 130%;
   height: 6px;
   background-color: #f25c54;
   transition: all 250ms;
@@ -398,7 +410,7 @@ section.innerbox {
 }
 .btn_red:hover::after {
   height: 65%;
-  width: 110%;
+  width: 130%;
 }
 
 .btn_yellow {
@@ -416,7 +428,7 @@ section.innerbox {
   left: 50%;
   transform: translateX(-42%);
   content: "";
-  width: 140%;
+  width: 130%;
   height: 6px;
   background-color: #f9dc5c;
   transition: all 250ms;
@@ -427,7 +439,7 @@ section.innerbox {
 }
 .btn_yellow:hover::after {
   height: 65%;
-  width: 140%;
+  width: 130%;
 }
 
 .btn_orange {
@@ -445,7 +457,7 @@ section.innerbox {
   left: 50%;
   transform: translateX(-38%);
   content: "";
-  width: 160%;
+  width: 130%;
   height: 6px;
   background-color: #ff8c42;
   transition: all 250ms;
@@ -456,7 +468,7 @@ section.innerbox {
 }
 .btn_orange:hover::after {
   height: 65%;
-  width: 160%;
+  width: 130%;
 }
 
 .btn_green {
@@ -474,7 +486,7 @@ section.innerbox {
   left: 50%;
   transform: translateX(-44%);
   content: "";
-  width: 120%;
+  width: 130%;
   height: 6px;
   background-color: #76c893;
   transition: all 250ms;
@@ -503,7 +515,7 @@ section.innerbox {
   left: 50%;
   transform: translateX(-50%);
   content: "";
-  width: 100%;
+  width: 130%;
   height: 6px;
   background-color: #90caf9;
   transition: all 250ms;
@@ -514,7 +526,7 @@ section.innerbox {
 }
 .btn_sky:hover::after {
   height: 65%;
-  width: 100%;
+  width: 130%;
 }
 
 .btn_violet {
@@ -561,7 +573,7 @@ section.innerbox {
   left: 50%;
   transform: translateX(-48%);
   content: "";
-  width: 120%;
+  width: 130%;
   height: 6px;
   background-color: #212529;
   transition: all 250ms;
@@ -572,7 +584,7 @@ section.innerbox {
 }
 .btn_black:hover::after {
   height: 65%;
-  width: 120%;
+  width: 130%;
 }
 
 /*# sourceMappingURL=main.css.map */
