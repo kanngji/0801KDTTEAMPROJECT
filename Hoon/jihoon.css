@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(../1/mypage/img/night-space-sky-stars-nebula-night-sky-71706-wallhere.com.jpg);
+  background-image: url(../1/pg_1/mypage/img/night-space-sky-stars-nebula-night-sky-71706-wallhere.com.jpg);
   /* width: 100%;
   height: 100vh; */
   position: relative;
@@ -13,12 +13,13 @@ body {
 /* 정강이 로고 */
 .logo {
   z-index: 100;
-  position: absolute;
-  margin-top: 6vw;
+  /* position: absolute; */
+  position: fixed;
+  top: 0.5vw;
   width: 10vw;
   height: 10vw;
 
-  left: 3vw;
+  left: 0.5vw;
   /* border: 1px solid #fff; */
 }
 .logo img {
@@ -29,6 +30,7 @@ body {
   display: none;
   position: fixed;
   z-index: 99;
+  top: 10vw;
 }
 .navigation.open {
   display: block;
