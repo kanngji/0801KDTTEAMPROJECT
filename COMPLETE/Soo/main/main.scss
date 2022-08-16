@@ -396,7 +396,7 @@ section.innerbox {
 #fourth {
   position: absolute;
   width: 80vw;
-  height: 52.5vw;
+  height: 46.5vw;
   background-color: white;
   top: 1405vw;
   left: -17vw;
@@ -539,9 +539,9 @@ section.innerbox {
     z-index: -1;
     bottom: 2vw;
     left: 50%;
-    transform: translateX(-45%);
+    transform: translateX(-42%);
     content: "";
-    width: 130%;
+    width: 140%;
     height: 6px;
     background-color: #f9dc5c;
     transition: all 250ms;
@@ -553,7 +553,7 @@ section.innerbox {
 
     &::after {
       height: 65%;
-      width: 130%;
+      width: 140%;
     }
   }
 }
@@ -573,9 +573,9 @@ section.innerbox {
     z-index: -1;
     bottom: 2vw;
     left: 50%;
-    transform: translateX(-40%);
+    transform: translateX(-38%);
     content: "";
-    width: 150%;
+    width: 160%;
     height: 6px;
     background-color: #ff8c42;
     transition: all 250ms;
@@ -587,7 +587,7 @@ section.innerbox {
 
     &::after {
       height: 65%;
-      width: 150%;
+      width: 160%;
     }
   }
 }
@@ -607,7 +607,7 @@ section.innerbox {
     z-index: -1;
     bottom: 2vw;
     left: 50%;
-    transform: translateX(-47%);
+    transform: translateX(-44%);
     content: "";
     width: 120%;
     height: 6px;
@@ -621,7 +621,7 @@ section.innerbox {
 
     &::after {
       height: 65%;
-      width: 120%;
+      width: 130%;
     }
   }
 }
@@ -675,7 +675,7 @@ section.innerbox {
     z-index: -1;
     bottom: 2vw;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-47%);
     content: "";
     width: 130%;
     height: 6px;
@@ -709,9 +709,9 @@ section.innerbox {
     z-index: -1;
     bottom: 2vw;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-48%);
     content: "";
-    width: 100%;
+    width: 120%;
     height: 6px;
     background-color: #212529;
     transition: all 250ms;
@@ -723,7 +723,7 @@ section.innerbox {
 
     &::after {
       height: 65%;
-      width: 110%;
+      width: 120%;
     }
   }
 }
