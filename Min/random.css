@@ -81,9 +81,9 @@ body {
     height: 3vw;
     left: 64vw;
     position: absolute;
-    background-color: pink;
+    background: linear-gradient(to right,#614385, #516395);
     font-size: 1.5vw;
-    color: black;
+    color: white;
     border-radius: 10px;
     font-family: 'Cinzel';
     cursor: pointer;
@@ -95,9 +95,9 @@ body {
     height: 3vw;
     left: 72vw;
     position: absolute;
-    background-color: pink;
+    background: linear-gradient(to right,#614385, #516395);
     font-size: 1.5vw;
-    color: black;
+    color: white;
     border-radius: 10px;
     font-family: 'Cinzel';
     cursor: pointer;
@@ -106,12 +106,12 @@ body {
 .random_page #container #inner_container {
     width: 29vw;
     height: 29vw;
-    border: 2px solid pink;
     margin-top: 10vw;
     margin-left: 33vw;
     align-items: center;
     transition: 1s;
     object-fit: cover;
+    /* border: 1px solid pink; */
     position: relative;
 }
 
