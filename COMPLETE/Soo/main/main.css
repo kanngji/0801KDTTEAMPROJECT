@@ -313,7 +313,7 @@ section.innerbox {
 }
 #fourth .wrap div {
   width: 79.5vw;
-  height: 52vw;
+  height: 45.9vw;
   position: absolute;
   top: 0vw;
   opacity: 0;
@@ -351,7 +351,7 @@ section.innerbox {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  top: 43vw;
+  top: 42vw;
   left: 12.5vw;
   width: 55vw;
   font-size: 2vw;
