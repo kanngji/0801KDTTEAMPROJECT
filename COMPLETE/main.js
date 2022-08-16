@@ -281,6 +281,43 @@ window.addEventListener("scroll", function () {
     //     sunAnimate.classList.add("on");
     // }
 });
+// 지구탈출
+// let exitEarth = gsap.timeline();
+// exitEarth.to(".bigEarth", {
+//     y: 2100,
+//     scale: 8,
+//     duration: 13,
+//     opacity: 1,
+// });
+
+// ScrollTrigger.create({
+//     animation: exitEarth,
+//     trigger: "#exitEarth",
+//     start: "top top",
+//     // end: "top 20%",
+//     end: "+=5000",
+//     scrub: 2,
+//     markers: true,
+//     pin: true,
+// });
+
+const planet = document.querySelector(".bigEarth>img");
+const jojong = document.querySelector(".background img");
+const white = document.querySelector(".white");
+
+setTimeout(() => {
+    planet.style = "transition: 1s";
+    planet.style.opacity = 0;
+}, 6500);
+
+setTimeout(() => {
+    jojong.style = "transition: 1s";
+    jojong.style.opacity = 0;
+}, 8000);
+
+setTimeout(() => {
+    white.setAttribute("style", "display: block");
+}, 7000);
 
 // =====================================================================================================
 // Pg4 Whats your planet
