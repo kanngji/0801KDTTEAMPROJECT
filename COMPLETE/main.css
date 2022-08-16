@@ -760,7 +760,29 @@ section::after {
 } */
 
 /* 강지훈부분 끝 */
+#esc {
+    position: absolute;
+    top: 830vw;
+    left: 43vw;
+    font-size: 7vw;
+}
 
+#esc .exitBtn {
+    text-decoration: none;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+
+    color: white;
+    z-index: 9;
+}
+
+#videoLocate {
+    position: absolute;
+    top: 900vw;
+    width: 10vw;
+    height: 10vw;
+}
 /* 비행기타고 지구 떠나기 */
 
 #exitEarth .background .jojong {
@@ -796,7 +818,7 @@ section::after {
     }
 
     100% {
-        scale: 6;
+        scale: 4.5;
     }
 }
 
