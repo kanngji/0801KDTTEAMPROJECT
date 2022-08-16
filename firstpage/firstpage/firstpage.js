@@ -12,7 +12,7 @@ const white = document.querySelector(".white")
 setTimeout(() => {
     planet.style = "transition: 1s"
     planet.style.opacity = 0;
-}, 6000);
+}, 6500);
 
 setTimeout(() => {
     jojong.style = "transition: 1s"
