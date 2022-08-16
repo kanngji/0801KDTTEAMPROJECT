@@ -777,8 +777,8 @@ section::after {
   position: absolute;
   width: 3.3vw;
   height: 3.3vw;
-  border-left: 3.3vw solid rgba(255, 255, 255, 0.5);
-  border-bottom: 3.3vw solid rgba(255, 255, 255, 0.5);
+  border-left: 3.3vw solid rgba(63, 113, 221, 0.5);
+  border-bottom: 3.3vw solid rgba(63, 113, 221, 0.5);
   transform: translate(3.3vw, 13.2vw) rotate(-135deg);
   animation: arrows 2s linear infinite -2s;
   z-index: 999;
@@ -787,26 +787,26 @@ section::after {
 
 @keyframes arrows {
   0% {
-    border-left: 3.3vw solid rgba(255, 255, 255, 0.5);
-    border-bottom: 3.3vw solid rgba(255, 255, 255, 0.5);
+    border-left: 3.3vw solid rgba(63, 113, 221, 0.5);
+    border-bottom: 3.3vw solid rgba(63, 113, 221, 0.5);
     transform: translate(-2.6vw, 0) rotate(-135deg);
   }
 
   10%,
   90% {
-    border-left: 3.3vw solid rgba(255, 255, 255, 0.5);
-    border-bottom: 3.3vw solid rgba(255, 255, 255, 0.5);
+    border-left: 3.3vw solid rgba(63, 113, 221, 0.5);
+    border-bottom: 3.3vw solid rgba(63, 113, 221, 0.5);
   }
 
   50% {
-    border-left: 3.3vw solid rgba(255, 255, 255, 0.5);
-    border-bottom: 3.3vw solid rgba(255, 255, 255, 0.5);
+    border-left: 3.3vw solid rgba(63, 113, 221, 0.5);
+    border-bottom: 3.3vw solid rgba(63, 113, 221, 0.5);
     transform: translate(1.6vw, 0px) rotate(-135deg);
   }
 
   100% {
-    border-left: 3.3vw solid rgba(255, 255, 255, 0.5);
-    border-bottom: 3.3vw solid rgba(255, 255, 255, 0.5);
+    border-left: 3.3vw solid rgba(63, 113, 221, 0.5);
+    border-bottom: 3.3vw solid rgba(63, 113, 221, 0.5);
     transform: translate(4.6vw, 0) rotate(-135deg);
   }
 }
