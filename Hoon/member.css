@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=IBM+Plex+Sans+KR&display=swap');
+
+/* font-family: 'Gugi', cursive;
+font-family: 'IBM Plex Sans KR', sans-serif; */
+
+
+
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +24,7 @@ body {
   margin-bottom: 15vw;
   text-align: center;
   color: white;
+  font-family:'Gugi';
 }
 
 .team {
@@ -45,18 +53,22 @@ h3 {
 /* 승수 코드네임 색깔 */
 #J h3 {
   color: rgb(243, 65, 65);
+  font-family:'Gugi';
 }
 /* 지훈 코드네임 색깔 */
 #G h3 {
   color: rgb(74, 241, 180);
+  font-family:'Gugi';
 }
 /* 민정 코드네임 색깔 */
 #E h3 {
   color: rgb(71, 71, 239);
+  font-family:'Gugi';
 }
 /* 원 코드네임 색깔 */
 #one h3 {
   color: rgb(238, 36, 238);
+  font-family:'Gugi';
 }
 
 .team .team_member p.role {
@@ -64,6 +76,7 @@ h3 {
   font-size: 2vw;
   text-transform: uppercase;
   margin: 2vw 0;
+  font-family:'Gugi';
 }
 /* 이미지 크기 조절 */
 .team .team_member .team_img {
@@ -79,4 +92,8 @@ h3 {
 .team .team_member .team_img img {
   width: 10vw;
   height: 10vw;
+}
+
+.description p {
+  font-family: 'IBM Plex Sans KR';
 }

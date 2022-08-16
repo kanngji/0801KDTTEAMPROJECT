@@ -79,7 +79,6 @@ const dub_img = document.querySelector(".lee .under_box1 .dub_pic img");
 
 dub.addEventListener("click",function(){
     dub_img.style.opacity = 1;
-
 })
 
 
