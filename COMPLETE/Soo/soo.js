@@ -55,3 +55,15 @@ enterBtn.addEventListener("click", function () {
 });
 
 // ===============================================================================================
+// 우클릭 빨강
+let rightClicked = 0;
+document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+    if (rightClicked == 0) {
+        document.querySelector("body").style = "cursor: url('./dot.png'), auto";
+        rightClicked = 1;
+    } else {
+        document.querySelector("body").style = "cursor: default";
+        rightClicked = 0;
+    }
+});
