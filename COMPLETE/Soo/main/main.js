@@ -251,7 +251,7 @@ ScrollTrigger.create({
     trigger: ".third",
     start: "top -48%",
     // end: "top 20%",
-    end: "+=10000",
+    end: "+=6000",
     scrub: 2,
     // markers: true,
     pin: true,
