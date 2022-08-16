@@ -22,9 +22,6 @@ btn1.addEventListener("click", function () {
   }
 });
 
-// slider1.style.transform = "translateY(-10vw)"
-// btn1.style.transform = "translateY(-10vw)"
-// box1.style.opacity = 1;
 
 const slider2 = document.querySelector(".lee .slider2");
 const btn2 = document.querySelector(".lee .btn2");

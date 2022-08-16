@@ -29,14 +29,17 @@ body {
 }
 
 .lee .slider .slides .croatia p {
-    font-size: 2vw;
-    color: rgb(206, 168, 64);
+    font-size: 2.6vw;
+    /* color: rgb(206, 168, 64); */
+    color: white;
     position: absolute;
-    transform: translate(8.8vw, -3vw);
+    transform: translate(7.5vw, -3vw);
     font-family: 'Cinzel';
     transition: 0.5s;
     opacity: 0;
     z-index: 2;
+    text-shadow:-1.5px 0px rgb(206, 168, 64), 0px 1.5px rgb(206, 168, 64), 1.5px 0px 
+    rgb(206, 168, 64), 0px -1.5px rgb(206, 168, 64);
 }
 
 .lee .slider {
@@ -53,7 +56,7 @@ body {
 }
 
 .lee .slider:hover .slides .croatia p{
-    transform: translate(8.5vw, -1vw);
+    transform: translate(7.5vw, -2vw);
     opacity: 1;
 }
 
@@ -157,7 +160,8 @@ body {
 .lee .under_box1 {
     width: 25vw;
     height: 26vw;
-    background-color: rgba(250, 246, 246, 0.5);
+    /* background-color: rgba(250, 246, 246, 0.5); */
+    background-color: rgba(206, 168, 64, 0.4);
     position: absolute;
     top: 22vw;
     left: 7vw;
@@ -183,6 +187,7 @@ body {
     left: 12vw;
     font-size: 1.1vw;
     font-family: 'Arvo';
+    color: rgb(202, 199, 199);
 }
 
 .lee .under_box1 .best_place_word {
@@ -191,6 +196,7 @@ body {
     margin-left: 6vw;
     position: absolute;
     top: 11vw;
+    color: white;
 }
 
 .lee .under_box1 .best_place .dub {
@@ -201,6 +207,13 @@ body {
     top: 16vw;
     left: 2vw;
     cursor: pointer;
+    transition: 0.5s;
+    color: rgb(202, 199, 199);
+}
+
+.lee .under_box1 .best_place .dub:hover {
+    transform: scale(1.1);
+    color: rgb(211, 153, 46);
 }
 
 .lee .under_box1 .dub_pic img {
@@ -223,6 +236,13 @@ body {
     top: 19vw;
     left: 2vw;
     cursor: pointer;
+    transition: 0.5s;
+    color: rgb(202, 199, 199);
+}
+
+.lee .under_box1 .best_place .flit:hover {
+    transform: scale(1.1);
+    color: rgb(73, 134, 32);
 }
 
 .lee .under_box1 .flit_pic img {
@@ -245,6 +265,13 @@ body {
     top: 22vw;
     left: 2vw;
     cursor: pointer;
+    color: rgb(202, 199, 199);
+    transition: 0.5s;
+}
+
+.lee .under_box1 .best_place .split:hover {
+    transform: scale(1.1);
+    color: rgb(178, 196, 245);
 }
 
 .lee .under_box1 .split_pic img {
@@ -287,18 +314,21 @@ body {
 }
 
 .lee .slider2 .slides2 .usa p {
-    font-size: 2vw;
-    color: rgb(206, 70, 17);
+    font-size: 2.6vw;
+    /* color: rgb(206, 70, 17); */
+    color: white;
     position: absolute;
-    transform: translate(10.5vw, -3vw);
+    transform: translate(9.5vw, -3vw);
     font-family: 'Cinzel';
     transition: 0.5s;
     opacity: 0;
+    text-shadow:-1.5px 0px rgb(206, 70, 17), 0px 1.5px rgb(206, 70, 17), 1.5px 0px 
+    rgb(206, 70, 17), 0px -1.5px rgb(206, 70, 17);
 }
 
 
 .lee .slider2:hover .slides2 .usa p{
-    transform: translate(10.5vw, -1vw);
+    transform: translate(9.5vw, -2vw);
     opacity: 1;
 }
 
@@ -390,7 +420,7 @@ body {
 .lee .under_box2 {
     width: 25vw;
     height: 26vw;
-    background-color: rgba(250, 246, 246, 0.5);
+    background-color: rgba(218, 89, 38, 0.4);
     position: absolute;
     top: 22vw;
     left: 38.5vw;
@@ -416,6 +446,7 @@ body {
     left: 12vw;
     font-size: 0.9vw;
     font-family: 'Arvo';
+    color: rgb(202, 199, 199);
 }
 
 .lee .under_box2 .best_place_word2 {
@@ -424,6 +455,7 @@ body {
     margin-left: 6vw;
     position: absolute;
     top: 11vw;
+    color: white;
 }
 
 .lee .under_box2 .grand {
@@ -434,6 +466,7 @@ body {
     top: 16vw;
     left: 2vw;
     cursor: pointer;
+    color: rgb(202, 199, 199);
 }
 
 .lee .under_box2 .grand_pic img {
@@ -456,6 +489,7 @@ body {
     top: 19vw;
     left: 2vw;
     cursor: pointer;
+    color: rgb(202, 199, 199);
 }
 
 .lee .under_box2 .lasvegas_pic img {
@@ -478,6 +512,7 @@ body {
     top: 22vw;
     left: 2vw;
     cursor: pointer;
+    color: rgb(202, 199, 199);
 }
 
 .lee .under_box2 .walt_pic img {
@@ -533,17 +568,19 @@ body {
 }
 
 .lee .slider3 .slides3 .switzerland p {
-    font-size: 2vw;
-    color: rgb(6, 16, 27);
+    font-size: 2.6vw;
+    color: white;
     position: absolute;
-    transform: translate(6vw, -3vw);
+    transform: translate(4vw, -3vw);
     font-family: 'Cinzel';
     transition: 0.5s;
     opacity: 0;
+    text-shadow:-1.5px 0px rgb(69, 113, 207), 0px 1.5px rgb(69, 113, 207), 1.5px 0px 
+    rgb(69, 113, 207), 0px -1.5px rgb(69, 113, 207);
 }
 
 .lee .slider3:hover .slides3 .switzerland p{
-    transform: translate(6vw, -1vw);
+    transform: translate(4vw, -2vw);
     opacity: 1;
 }
 
@@ -635,7 +672,7 @@ body {
 .lee .under_box3 {
     width: 25vw;
     height: 26vw;
-    background-color: rgba(250, 246, 246, 0.5);
+    background-color: rgba(115, 150, 224, 0.4);
     position: absolute;
     top: 22vw;
     left: 70vw;
@@ -661,6 +698,7 @@ body {
     left: 12vw;
     font-size: 1.1vw;
     font-family: 'Arvo';
+    color: rgb(202, 199, 199);
 }
 
 .lee .under_box3 .best_place_word3 {
@@ -669,6 +707,7 @@ body {
     margin-left: 6vw;
     position: absolute;
     top: 11vw;
+    color: white;
 }
 
 .lee .under_box3 .interlaken {
@@ -679,6 +718,7 @@ body {
     top: 16vw;
     left: 2vw;
     cursor: pointer;
+    color: rgb(202, 199, 199);
 }
 
 .lee .under_box3 .interlaken_pic img {
@@ -701,6 +741,7 @@ body {
     top: 19vw;
     left: 2vw;
     cursor: pointer;
+    color: rgb(202, 199, 199);
 }
 
 .lee .under_box3 .jungfrau_pic img {
@@ -723,6 +764,7 @@ body {
     top: 22vw;
     left: 2vw;
     cursor: pointer;
+    color: rgb(202, 199, 199);
 }
 
 .lee .under_box3 .luzern_pic img {
