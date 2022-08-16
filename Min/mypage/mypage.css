@@ -48,6 +48,7 @@ body {
 }
 
 .navigation ul {
+  position: absolute;
   display: flex;
   position: absolute;
   top: -10vw;
@@ -82,11 +83,6 @@ body {
   text-align: center;
   text-decoration: none;
   /* width: 100%; */
-}
-.navigation ul li span {
-  /* border: 1px solid #fff; */
-  /* text-align: start; */
-  /* float: left; */
 }
 
 /* 행성 아이콘 */
