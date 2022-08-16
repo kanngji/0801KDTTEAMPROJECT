@@ -4,6 +4,34 @@
 //     console.log(`Letter is ${i} is${logo[i].getTotalLength()}`);
 // }
 
+// 로고
+
+const logo = document.querySelector(".logo");
+const liEl = document.querySelector("ul");
+const imgEl = document.querySelectorAll(".navigation ul li a img");
+
+let logoClick = 0;
+if (logoClick == 0) {
+    for (let i = 0; i < 5; i++) {
+        imgEl[i].setAttribute("style", "display: none;");
+    }
+    liEl.setAttribute("style", "display: none;");
+}
+logo.addEventListener("click", function () {
+    if (logoClick == 0) {
+        for (let i = 0; i < 5; i++) {
+            imgEl[i].setAttribute("style", "display: block;");
+        }
+        liEl.setAttribute("style", "display: block;");
+
+        liEl.style.animation = "move0 1s forwards ease";
+        logoClick = 1;
+    } else if (logoClick == 1) {
+        liEl.style.animation = "";
+        liEl.style.animation = "fade 1s forwards ease";
+        logoClick = 0;
+    }
+});
 // GreenSock
 gsap.registerPlugin(ScrollTrigger);
 const red = gsap.timeline();
