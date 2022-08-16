@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@600&family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+/* font-family: 'Nanum Gothic Coding', monospace; */
 
 /* font-family: 'Arvo', serif;
 font-family: 'Cinzel', serif;
@@ -25,13 +27,13 @@ body {
   top: 0.5vw;
   width: 10vw;
   height: 10vw;
-
   left: 0.5vw;
   /* border: 1px solid #fff; */
 }
 .logo img {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 .navigation {
   display: none;
@@ -45,7 +47,9 @@ body {
 
 .navigation ul {
   display: flex;
-  flex-direction: column;
+  position: absolute;
+  top: -10vw;
+  /* flex-direction: column; */
   gap: 3vw;
   width: 100%;
   z-index: 999;
@@ -57,7 +61,7 @@ body {
   position: relative;
   width: 100%;
   height: 3vw;
-  margin-left: 1.5vw;
+  margin-left: 4vw;
   /* padding: 0 2px; */
   /* border: 1px solid #fff; */
   z-index: 999;
@@ -114,12 +118,14 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
+  font-family: 'Nanum Gothic Coding';
 }
 
 .navigation.open ul li a .text {
   opacity: 1;
   visibility: visible;
 }
+
 .lee .favorite {
   display: flex;
   justify-content: center;
