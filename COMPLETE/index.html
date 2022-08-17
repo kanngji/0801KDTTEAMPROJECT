@@ -140,14 +140,18 @@
     </section>
 
     <section id="esc">
-      <a href="#videoLocate" class="exitBtn">EXIT</a>
+      <a href="#videoLocate" id="play" class="exitBtn">EXIT</a>
     </section>
 
     <section id="exitEarth">
       <div class="background">
         <!-- <div class="white" style="display: none"></div> -->
         <img src="../firstpage/firstpage/cockpit.png" alt="조종실 사진" class="jojong"/>
-        <video src="../firstpage/hole.mp4" autoplay muted></video>
+        <!-- <video src="../firstpage/hole.mp4" autoplay muted> -->
+          <video id="hz">
+            <source src="../firstpage/hole.mp4" type="video/mp4">
+          </video>
+        <!-- </video> -->
 
         <div class="bigEarth">
             <img src="../firstpage/firstpage/planet4.png" alt="지구 사진" />
