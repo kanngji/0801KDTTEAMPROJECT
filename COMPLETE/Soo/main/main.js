@@ -251,7 +251,7 @@ birth
 ScrollTrigger.create({
   animation: birth,
   trigger: ".third",
-  start: "top -48%",
+  start: "top -32%",
   // end: "top 20%",
   end: "+=6000",
   scrub: 2,

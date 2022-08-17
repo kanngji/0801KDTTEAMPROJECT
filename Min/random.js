@@ -1,23 +1,23 @@
 AOS.init({
-    offset: 550,
-    duration: 900,
+  offset: 700,
+  duration: 900,
 });
 
 //이미지 불러오기
 image_array = [`planet1.png`, `planet2.png`, `planet3.png`, `planet4.png`, `planet5.png`, `planet6.png`];
 
 function get_random_image() {
-    //랜덤 index 가져오기
-    random_index = Math.floor(Math.random() * image_array.length);
+  //랜덤 index 가져오기
+  random_index = Math.floor(Math.random() * image_array.length);
 
-    //이미지를 랜덤 인댁스로 받기
-    selected_image = image_array[random_index];
+  //이미지를 랜덤 인댁스로 받기
+  selected_image = image_array[random_index];
 
-    //이미지 보여지기
+  //이미지 보여지기
 
-    setTimeout(() => {
-        shower.src = `./images/${selected_image}`;
-    }, 2000);
+  setTimeout(() => {
+    shower.src = `./images/${selected_image}`;
+  }, 2000);
 }
 
 const mainbtn = document.querySelector(".main_btn");
@@ -26,26 +26,26 @@ const loading = document.querySelector(".loading");
 const shower = document.querySelector("#image_shower");
 
 mainbtn.addEventListener("click", function () {
-    loading.style.opacity = 1;
-    shower.style.display = "block";
-    get_random_image();
+  loading.style.opacity = 1;
+  shower.style.display = "block";
+  get_random_image();
 });
 
 restartbtn.addEventListener("click", function () {
-    loading.style.opacity = 0;
-    shower.style.display = "none";
-    shower.src = "";
+  loading.style.opacity = 0;
+  shower.style.display = "none";
+  shower.src = "";
 });
 
 // 우클릭 빨강
 let rightClicked = 0;
 document.addEventListener("contextmenu", function (event) {
-    event.preventDefault();
-    if (rightClicked == 0) {
-        document.querySelector("body").style = "cursor: url('./dot.png'), auto";
-        rightClicked = 1;
-    } else {
-        document.querySelector("body").style = "cursor: default";
-        rightClicked = 0;
-    }
+  event.preventDefault();
+  if (rightClicked == 0) {
+    document.querySelector("body").style = "cursor: url('./dot.png'), auto";
+    rightClicked = 1;
+  } else {
+    document.querySelector("body").style = "cursor: default";
+    rightClicked = 0;
+  }
 });
