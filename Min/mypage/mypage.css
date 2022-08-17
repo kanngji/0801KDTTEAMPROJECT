@@ -65,7 +65,7 @@ body {
   /* display: flex; */
   width: 100%;
   height: 3vw;
-  margin-left: 8vw;
+  margin-left: 4vw;
   /* margin-left: 4vw; */
   /* padding: 0 2px; */
   /* border: 1px solid #fff; */
@@ -120,15 +120,18 @@ body {
 
 .navigation ul li a .text {
   position: relative;
+  font-size: 1.5vw;
+  /* text-shadow: -1.5px 0px rgb(17, 206, 206), 0px 1.5px rgb(17, 206, 206),
+  1.5px 0px rgb(17, 206, 206), 0px -1.5px rgb(17, 206, 206); */
   padding: 0;
-  height: 12vw;
+  height: 10vw;
   display: flex;
   align-items: center;
   color: white;
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
-  font-family: "Nanum Gothic Coding";
+  font-family: 'Cinzel';
 }
 
 .navigation.open ul li a .text {
@@ -149,7 +152,8 @@ body {
   /* border: 1px solid #fff; */
   text-align: center;
   align-items: center;
-
+  text-shadow: -1.5px 0px rgb(14, 83, 83), 0px 1.5px rgb(14, 83, 83),
+  1.5px 0px rgb(14, 83, 83), 0px -1.5px rgb(14, 83, 83);
   font-family: "Lobster";
 }
 
