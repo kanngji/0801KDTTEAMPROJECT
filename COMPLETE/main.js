@@ -375,7 +375,8 @@ function playVideo() {
   const jojong = document.querySelector(".background img");
   const white = document.querySelector(".white");
 
-  planet.style.animation = "bigger 12s forwards linear";
+  planet.style.animation = "bigger 12s forwards ease";
+
   setTimeout(() => {
     planet.style = "transition: 1s";
     planet.style.opacity = 0;
