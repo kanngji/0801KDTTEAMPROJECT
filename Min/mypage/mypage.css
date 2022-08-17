@@ -41,6 +41,7 @@ body {
   position: fixed;
   z-index: 99;
   top: 10vw;
+  left: 3vw;
 }
 .navigation.open {
   display: block;
@@ -65,8 +66,8 @@ body {
   /* display: flex; */
   width: 100%;
   height: 3vw;
-  margin-left: 4vw;
-  /* margin-left: 4vw; */
+  /* margin-left: 10vw; */
+  margin-left: 5vw;
   /* padding: 0 2px; */
   /* border: 1px solid #fff; */
   z-index: 999;
