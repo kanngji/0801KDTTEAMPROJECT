@@ -1,5 +1,3 @@
-
-
 body {
   /* background-color: rgb(10, 10, 10); */
   /* background-image: url(./img/pngegg\\(1\).png); */
@@ -99,7 +97,7 @@ body {
 .navigation ul li a .text {
   position: relative;
   padding: 0;
-  height: 12vw;
+  height: 3vw;
   display: flex;
   align-items: center;
   color: white;
@@ -127,8 +125,7 @@ body {
 
 .tile:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 4px #e4e4e4, 0 0 15px #e4e4e4, 0 0 40px #e4e4e4,
-    0 0 150px #e4e4e4;
+  box-shadow: 0 0 4px #e4e4e4, 0 0 15px #e4e4e4, 0 0 40px #e4e4e4, 0 0 150px #e4e4e4;
   transition: 1s;
 }
 /* #e4e4e4 */
@@ -466,3 +463,27 @@ body {
     transform: scale(1.1);
   }
 }
+/* 
+@keyframes move0 {
+  0% {
+    opacity: 0;
+    transform: translate(-10vw, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-10vw, 0);
+  }
+} */

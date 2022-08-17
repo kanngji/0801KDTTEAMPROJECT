@@ -100,7 +100,7 @@ body {
 .navigation ul li a .text {
   position: relative;
   padding: 0;
-  height: 12vw;
+  height: 3vw;
   display: flex;
   align-items: center;
   color: white;
